@@ -34,6 +34,7 @@ TARGET_BOM_EUR = 40
 | Cells (2026-09-29) | two 18650 in parallel for a full day of play | BT101 + BT102 on one 1S rail; nothing else changes electrically. About 4000 mAh, 3500 usable |
 | Charger (2026-09-29) | negotiated 2 A USB-C charge, integrated battery management | BQ25601 (switching, NVDC power path, ship mode, I2C 0x6B) replaces TP4056, SS34 and the AO3401A load-share FET. HUSB238 PD sink (I2C 0x08) reports the source's 5 V current so firmware sets the input limit; 5 V only, never 9 V. MAX17048 fuel gauge (I2C 0x36) replaces the VBAT divider, GPIO39 is now free. New PWR button on QON (wake from ship mode). Charger INT + gauge ALRT go to GPIO39 (PWR_INT, RTC wake); the expander keeps GPS 1PPS |
 | Expansion (2026-09-29) | spare IO wanted for game gadgets | second TCA9555 (U602, 0x21) with EXP0-9 on a 2x10 header J602 (GND, +3V3, VBAT_SW, VSYS, SDA, SCL, EXP0-9, OUT1, OUT2, GND), two AO3400A low-side drivers with SS34 flyback for motors or solenoids up to 2 A; INT shared with the first expander on GPIO32 |
+| Microphone (2026-09-29) | walkie-talkie voice and sound triggers wanted | MSM421ACT006 analog MEMS mic with an LMV321 x48 preamp on LCD_3V3; second TS5A3159 (U503) picks radio AF or mic for GPIO36 (ADC_SEL); mic summed into the radio MIC_IN divider through 2x 4.7 k with a 2N7002 mute (MIC_MUTE, default muted). Digital I2S mic rejected: no ESP32 pins left |
 | Datasheet review (2026-09-29) | all findings applied, see docs/review.md | 22 component changes: PTT pull-up, RADIO_EN pull-down, boost and VBAT_SW fed from VSYS, series resistors on UART lines into switched modules, auto-reset polarity fixed, LIS3DH SA0 tied hard, IR drive limits, soft start, feed-forward cap, GPS pi pads |
 | Flash | 16 MB | ESP32-WROOM-32E-N16 |
 | Board sides | battery and most parts on the back, screen/buttons/pot/LEDs/IR on the front | two-sided SMT assembly; the 5 THT parts (speaker, SMA, 2 antennas, pot) can be JLC-assembled or hand-soldered |
@@ -79,7 +80,8 @@ FH12-12S stand-in (same size, EasyEDA has no model for it).
 
    Audio:  DAC1 (GPIO25) -+-> TS5A3159 mux <-- radio AF_OUT --> 1 uF --> 220k --> NS4150B INP
                           +-> 100k/1k divider --> 1 uF --> radio MIC_IN
-           radio AF_OUT --> 47k --> 1 uF --> 100k/100k bias 1.65 V --> 10k/1nF --> ADC1 GPIO36
+           radio AF_OUT --> 47k --+-> TS5A3159 (ADC_SEL) --> 1 uF --> 100k/100k bias 1.65 V --> 10k/1nF --> ADC1 GPIO36
+           MEMS mic --> LMV321 x48 -+-> 22k -^   +-> 1 uF, 2x 4.7k (2N7002 mute) --> radio MIC_IN node
 ```
 
 Six hierarchical sheets, as requested: `power`, `mcu`, `radio`, `lora_gps`, `audio`, `io`
@@ -228,6 +230,9 @@ symbol and footprint usable as is, "custom" = drawn from the datasheet.
 | Q1 | FUXINSEMI FS8205A | C908265 | E | 22 478 | 0.07 | custom symbol, SOT-23-6 footprint | dual N-FET for DW01A |
 | U103 | TI TPS62A02DRLR | C5350187 | E | 33 628 | 0.08 | lib (SOT-563) | 3V3 buck, 2 A, 2.4 MHz, Iq 23 uA (replaces SY8089A1) |
 | U104 | TI TPS61023DRLR | C919459 | E | 36 746 | 0.25 | custom symbol, SOT-563 | radio boost 4.6 V, 3.7 A switch, true disconnect |
+| U503 | TI TS5A3159DCKR (second) | C46388 | E | 40 675 | 0.31 | custom symbol, SC-70-6 | ADC input mux: radio AF_OUT or microphone |
+| U504 | TI LMV321IDBVR | C7972 | E (preferred) | 239 666 | 0.10 | lib (SOT-23-5) | microphone preamp x48, 1 MHz GBW, rail to rail out |
+| MK501 | MEMSensing MSM421ACT006 | C51928207 | E | 4 373 | 0.19 | custom (LGA-4 2.75 x 1.85, top port, STEP) | analog MEMS mic, -42 dBV/Pa, 59 dB SNR, 1.5 to 3.6 V, 175 uA |
 | U202 | Torex XC6206P332MR-G | C5446 | **B** | 480 132 | 0.14 | lib | 3.3 V LDO for the CH340C |
 | L101, L102, L103 | Sunlord SWPA4030S1R0NT 1 uH | C42193 | E | 9 505 | 0.06 | lib 4x4 mm | Isat 5.7 A, one part number for buck, boost and charger |
 
@@ -270,6 +275,8 @@ symbol and footprint usable as is, "custom" = drawn from the datasheet.
 | 1 uF 0603 | C15849 | 8 | audio coupling, NS4150B bypass, ESP EN RC |
 | 100 nF 0603 | C14663 | 25 | decoupling |
 | 22 pF 0603 | C1653 | 2 | spare |
+| 2N7002 SOT-23 | C8545 | 1 | microphone mute (Q501) |
+| 100 pF 0603 | C14858 | 1 | microphone RF bypass (C516) |
 | Resistors 0603 1 %: 10 k C25804, 100 k C25803, 1 k C21190, 4.7 k C23162, 470 C23179, 2.2 k C4190, 5.1 k C23186, 22 C23345, 1 M C22935, 100 C22775, 330 C23138 | | about 60 | 220 k, 47 k, 15, 33 and 2 k to be confirmed Basic during BOM |
 | Red LED 0603 KT-0603R | C2286 | 2 | CHRG, STDBY |
 
@@ -321,8 +328,15 @@ socket, 2x 2N7002 1.8 V level shifters, PWRKEY NPN, GSM spring, 0 R links to the
 MUX_SEL on IN (low = DAC); COM through 100 nF and 220 k to NS4150B INP, INN through 220 k
 and 100 nF to GND, Bypass 1 uF, VCC on VBAT_SW with 470 uF + 10 uF + 100 nF, CTRL through
 10 k from AMP_SD with 100 k to GND on the chip side, BTL outputs straight to the speaker.
-DAC1 through 100 k / 1 k and 1 uF to MIC_IN (33 mVpp full scale). AF_OUT through 47 k and
-1 uF to a 100 k / 100 k bias, then 10 k and 1 nF to GPIO36.
+DAC1 through 100 k / 1 k and 1 uF to MIC_IN (33 mVpp full scale). AF_OUT through 47 k to the NO
+input of a second TS5A3159 (U503), the mic preamp through 22 k to NC, ADC_SEL (U602 P14, high =
+radio) on IN; COM through 1 uF to a 100 k / 100 k bias, then 10 k and 1 nF to GPIO36.
+Microphone: MSM421ACT006 analog MEMS capsule (top port, 1 k / 4.7 uF supply filter from LCD_3V3,
+100 pF at the output against UHF pickup), 1 uF into an LMV321 non-inverting stage on LCD_3V3
+(470 k / 10 k + 1 uF, gain 48, biased at LCD_3V3 / 2 through 100 k). Output MIC_AMP goes to the
+ADC mux and, through 1 uF and 4.7 k + 4.7 k, into the 1 k node of the DAC divider (about
+9 mVrms at MIC_IN for speech); a 2N7002 (MIC_MUTE, U602 P15, expander default high = muted)
+shorts the midpoint. Whole block is off with LCD_3V3 (about 0.3 mA when on).
 
 **io**: 12-pin ZIF for the HS20HS072RX (logic on LCD_3V3, backlight LEDs from VBAT_SW
 through 20 R with an SS8050 PWM sink on LCD_BL), 10 k pot on LCD_3V3 with 10 k / 100 nF to
@@ -330,7 +344,7 @@ GPIO34, 3 buttons to the expander with 100 nF each, 3x WS2812B-2020 on VBAT_SW w
 each and 330 R on data, IRM-H638T on LCD_3V3 with 100 R + 4.7 uF and 10 k pull-up on OUT to
 GPIO35, VSMY2940G from VBAT_SW through 12 R with an SS8050 driver (330 R base) on GPIO26.
 Expansion: second TCA9555 at 0x21 (A0 high, INT wire-ORed onto EXP_INT, 100 nF), P00-P11 as
-EXP0-9 plus DRV1/DRV2, P14-P17 spare; 2x10 header J602: 1 GND, 2 +3V3, 3 VBAT_SW, 4 VSYS,
+EXP0-9 plus DRV1/DRV2, P14 ADC_SEL and P15 MIC_MUTE for the audio sheet, P16-P17 spare; 2x10 header J602: 1 GND, 2 +3V3, 3 VBAT_SW, 4 VSYS,
 5 SDA, 6 SCL, 7-16 EXP0-9, 17 OUT1, 18 OUT2, 19-20 GND; OUT1/OUT2 are AO3400A low-side
 switches (10 k gate pull-down, SS34 flyback to VBAT_SW) driven by DRV1/DRV2.
 
@@ -339,7 +353,8 @@ Firmware rules that the hardware relies on: configure the TCA9555 first thing af
 before AMP_SD, AMP_SD off before AUX_EN; drive GPIO17 low before RADIO_EN goes low and wait
 300 to 500 ms after it goes high; drive GPIO14 low while GPS_EN is low; keep LCD_EN on while
 SPI is active; IR carrier at 38 kHz and 50 % duty or less, bursts under 100 ms; DTMF at 50 to
-70 % DAC amplitude; dim the WS2812B below 3.4 V cell voltage.
+70 % DAC amplitude; dim the WS2812B below 3.4 V cell voltage; MIC_MUTE low only while talking
+and AMP_SD low whenever the mic is live or the radio transmits (feedback).
 
 ---
 
@@ -361,15 +376,16 @@ SPI is active; IR carrier at 38 kHz and 50 % duty or less, bursts under 100 ms; 
 | SMA, 868 spring, pot, 5 buttons, 3x WS2812, IRM, IR LED, 2x 470 uF | 1.88 | 1.73 |
 | Discretes (FETs, NPN) and passives (about 130 pcs) | 1.30 | 1.20 |
 | Expansion: second TCA9555, 2x10 header, 2x AO3400A, 2x SS34 | 0.95 | 0.87 |
+| Microphone: MSM421ACT006, LMV321, second TS5A3159, 2N7002, 12 passives | 0.65 | 0.60 |
 | Review-round additions: N16 instead of N4 (+1.21), boost TPS61023 + L (+0.31), high-power IR LED (+0.73), LDO (+0.14) | 2.4 | 2.2 |
-| **Parts subtotal** | **40.8** | **37.5** |
-| Extended-part loading fees: about 31 part numbers x 3 USD / 25 boards | 3.7 | 3.4 |
+| **Parts subtotal** | **41.5** | **38.1** |
+| Extended-part loading fees: about 32 part numbers x 3 USD / 25 boards | 3.8 | 3.5 |
 | SMT assembly (about 330 joints x 0.0017 USD + 25 USD setup / 25) | 1.6 | 1.5 |
 | THT assembly (speaker, 3 antennas and SMA, pot): about 10 joints, setup about 35 USD / 25 | 1.8 | 1.7 |
 | PCB, 2 layer, 70 x 100 mm, 1.6 mm, ENIG (about 55 USD / 25) | 2.2 | 2.0 |
-| **Estimated total per unit** | **about 50** | **about 46** |
+| **Estimated total per unit** | **about 51** | **about 47** |
 
-About 5 EUR over the 40 EUR target after the 2026-09-29 power decision (second cell holder 1.2, charger/PD/gauge
+About 7 EUR over the 40 EUR target after the 2026-09-29 power, expansion and microphone decisions (second cell holder 1.2, charger/PD/gauge
 stack 3.3 plus one more loading fee). The SA818S-U alone is 20 % of it. The cellular option adds about 14 USD when
 fitted. Dropping the fuel gauge saves 1.9 USD, going back to N4 flash 1.1 EUR.
 

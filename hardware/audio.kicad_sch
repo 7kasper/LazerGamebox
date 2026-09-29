@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "lazergamebox_gen")
 	(generator_version "10.0")
-	(uuid "06e346e2-2316-4379-b1a4-38a0c9fc75a0")
+	(uuid "d9873756-86ef-46b8-aa7a-cbdbbdec6574")
 	(paper "A3")
 	(title_block
 		(title "audio")
@@ -10,6 +10,204 @@
 		(company "")
 	)
 	(lib_symbols
+		(symbol "Amplifier_Operational:LMV321"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LMV321"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "single opamp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23* *SC*70*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LMV321_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08)
+						(xy 5.08 0)
+						(xy -5.08 -5.08)
+						(xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LMV321_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -630,6 +828,300 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "LazerGamebox:LCD_3V3"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LCD_3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"LCD_3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LCD_3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LCD_3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LazerGamebox:MIC_MEMS_ANALOG"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MK"
+				(at -5.08 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MIC_MEMS_ANALOG"
+				(at -5.08 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LazerGamebox_lcsc:MIC-SMD_4P-L2.8-W1.9-P1.01-TL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/C51928207.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "MEMSensing MSM421ACT006 analog top-port MEMS microphone, -42 dBV/Pa, 1.5 to 3.6 V, LGA-4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MIC_MEMS_ANALOG_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MIC_MEMS_ANALOG_1_1"
+				(pin output line
+					(at 10.16 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 8.89 270)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 5.08)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LazerGamebox:NS4150B"
 			(pin_names
 				(offset 1.016)
@@ -1182,6 +1674,339 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transistor_FET:2N7002"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2N7002"
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+				(at 5.08 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "N-Channel Switching MOSFET"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "2N7002_0_1"
+				(polyline
+					(pts
+						(xy 0.254 1.905)
+						(xy 0.254 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0)
+						(xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286)
+						(xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.508)
+						(xy 0.762 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.27)
+						(xy 0.762 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.778)
+						(xy 3.302 -1.778)
+						(xy 3.302 1.778)
+						(xy 0.762 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 0)
+						(xy 2.032 0.381)
+						(xy 2.032 -0.381)
+						(xy 1.016 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54)
+						(xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54)
+						(xy 2.54 0)
+						(xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.921 0.381)
+						(xy 3.683 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381)
+						(xy 2.921 -0.254)
+						(xy 3.683 -0.254)
+						(xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "2N7002_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -1455,7 +2280,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "2358776a-65bd-46ea-b2c3-a723e5e24f40")
+		(uuid "fcbc4e89-5dae-4b90-841b-4fa59346b2a6")
 	)
 	(rectangle
 		(start 158 20)
@@ -1467,7 +2292,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "c54290b6-fa03-4603-b4f3-5c6d1f14ed68")
+		(uuid "acb3f6ec-23a2-4887-95a3-ec565ef64cf0")
 	)
 	(rectangle
 		(start 12 113)
@@ -1479,7 +2304,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "90467c9b-2703-41b6-867f-49d3f21dcf8d")
+		(uuid "52af6887-7bc9-49e5-89a3-6e994bece078")
 	)
 	(rectangle
 		(start 158 113)
@@ -1491,9 +2316,21 @@
 		(fill
 			(type none)
 		)
-		(uuid "90895a61-5008-4e48-8b2b-10b6c0b3ae7e")
+		(uuid "386a83e2-63eb-449c-95e8-cb6b83600c87")
 	)
-	(text "AUDIO: DAC or radio audio -> class-D amp -> speaker; DAC -> radio mic; radio audio -> ADC for DTMF"
+	(rectangle
+		(start 12 198)
+		(end 405 252)
+		(stroke
+			(width 0.2)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "ef2e7076-db35-46c1-863c-b7e4a620f3d9")
+	)
+	(text "AUDIO: DAC or radio audio -> class-D amp -> speaker; DAC and mic -> radio mic; radio audio or mic -> ADC"
 		(exclude_from_sim no)
 		(at 14 13.2 0)
 		(effects
@@ -1503,7 +2340,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "64d279a3-3ef2-4d8c-b43e-00c02778334a")
+		(uuid "58b47120-46f2-4b30-baa3-dcb425669842")
 	)
 	(text "NS4150B gain = 2 x 240k / 220k = 2.2. MUX_SEL low = ESP32 DAC to the speaker, high = radio receive audio to the speaker."
 		(exclude_from_sim no)
@@ -1514,7 +2351,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "fbb4e6a8-afbb-4691-9ff9-61a053df3b84")
+		(uuid "611149e9-dac1-4ecc-8467-e1a4186ccef7")
 	)
 	(text "SOURCE SELECT (TS5A3159)"
 		(exclude_from_sim no)
@@ -1526,7 +2363,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "7ebe8c65-a9fa-4206-a581-0800b520cce0")
+		(uuid "9e48114e-2d0d-4390-ae8a-341ceede7efc")
 	)
 	(text "DAC1 is 0-3.3 V unipolar; R501 limits current into the switch.\nAC coupling after the switch (C501)."
 		(exclude_from_sim no)
@@ -1537,7 +2374,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "0e76af5d-fdee-46c5-b7f6-039c96352211")
+		(uuid "8400a7e3-e700-4547-8486-60bfcb19dee5")
 	)
 	(text "CLASS-D AMPLIFIER (NS4150B) + 30 mm SPEAKER"
 		(exclude_from_sim no)
@@ -1549,7 +2386,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "5d4a4d91-1d30-413f-b85e-3e3828ed6130")
+		(uuid "5a6befeb-184a-4f47-ba70-f1c57289e58b")
 	)
 	(text "R504 keeps the amp off until firmware drives AMP_SD high; R511 limits the current into CTRL while VBAT_SW is off.\nFirmware: AUX_EN high a few ms before AMP_SD high, AMP_SD low before AUX_EN low."
 		(exclude_from_sim no)
@@ -1560,7 +2397,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "02054cae-68d7-435f-9685-dcda51cb139b")
+		(uuid "216613cf-6378-4713-92b7-88847e32978d")
 	)
 	(text "Filter-free BTL output: keep speaker traces short and away from the radio. VCC on VBAT_SW with 470 uF bulk.\nMax output about 1 W into 8 ohm at 3.7 V."
 		(exclude_from_sim no)
@@ -1571,7 +2408,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "e39a65e0-88ab-4590-a719-97aef08d2224")
+		(uuid "a24c40b3-9e5e-47a5-8daf-864989eb2802")
 	)
 	(text "DAC -> RADIO MIC_IN (100:1)"
 		(exclude_from_sim no)
@@ -1583,9 +2420,9 @@
 			)
 			(justify left top)
 		)
-		(uuid "c15a3cf9-fcf3-4367-9e46-bd95a839e9f0")
+		(uuid "c49bf886-9d73-4979-9e66-fb4a3e700e70")
 	)
-	(text "3.3 Vpp DAC -> 33 mVpp at MIC_IN, AC coupled.\nUsed for DTMF / tone signalling over the radio."
+	(text "3.3 Vpp DAC -> 33 mVpp at MIC_IN, AC coupled; MIC_TX adds the\nmicrophone (about 9 mVrms speech). DTMF, tones and voice over the radio."
 		(exclude_from_sim no)
 		(at 14 177 0)
 		(effects
@@ -1594,9 +2431,9 @@
 			)
 			(justify left top)
 		)
-		(uuid "24743a88-c74a-4942-87a9-ed7cb24e3e46")
+		(uuid "99f40bbc-b5d7-4ff2-ab3e-f25d59064649")
 	)
-	(text "RADIO AF_OUT -> ADC1 (software Goertzel DTMF decoder)"
+	(text "ADC INPUT MUX (TS5A3159): RADIO AF_OUT or MIC -> ADC1 (software Goertzel DTMF decoder)"
 		(exclude_from_sim no)
 		(at 159.5 114 0)
 		(effects
@@ -1606,9 +2443,9 @@
 			)
 			(justify left top)
 		)
-		(uuid "ecdbfd39-5010-4830-8dd7-2881c25f0216")
+		(uuid "8dd30727-9f07-4e44-8233-2596c72867eb")
 	)
-	(text "AF_OUT is 700 mV / 200 ohm: R507 with the 50k bias gives about 0.35 Vrms swing around 1.65 V at GPIO36.\nR510/C510 = 16 kHz anti-alias for a 40 kHz ADC sample rate."
+	(text "AF_OUT is 700 mV / 200 ohm: R507 with the 50k bias gives about 0.35 Vrms swing around 1.65 V at GPIO36; R515 passes 0.7 of MIC_AMP.\nADC_SEL high (expander default) = radio, low = microphone. R510/C510 = 16 kHz anti-alias for a 40 kHz ADC sample rate."
 		(exclude_from_sim no)
 		(at 160 177 0)
 		(effects
@@ -1617,31 +2454,108 @@
 			)
 			(justify left top)
 		)
-		(uuid "051bf31d-1196-4f7b-b560-1b46efa02fdd")
+		(uuid "42540bc9-a994-4c53-983d-deafa2d3fcb7")
+	)
+	(text "MICROPHONE: MEMS mic -> LMV321 x48 -> radio MIC_IN (muted by default) and ADC mux"
+		(exclude_from_sim no)
+		(at 13.5 199 0)
+		(effects
+			(font
+				(size 2 2)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b01c507b-e241-49c8-86dc-dd14f7178db5")
+	)
+	(text "MSM421ACT006: -42 dBV/Pa, 170 ohm output, 1.5 to 3.6 V, top port (hole in the enclosure above it). Runs on LCD_3V3 through R516/C512.\nU504 gain 1 + R520/R521 = 48 (34 dB), bandwidth about 20 kHz from the 1 MHz GBW, output biased at LCD_3V3 / 2 (MIC_VMID).\nSpeech at 20 cm gives about 100 mVrms at MIC_AMP; R513/R514 into the 1k DAC node give about 9 mVrms at MIC_IN (rated deviation).\nQ501 shorts the radio path unless MIC_MUTE is low (expander default high = muted). ADC path: R515 into U503 with ADC_SEL low.\nOff in sleep with LCD_3V3 (about 0.3 mA when on). Firmware mutes the speaker while the mic is live or the radio transmits."
+		(exclude_from_sim no)
+		(at 165 206 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+			(justify left top)
+		)
+		(uuid "4f0704a6-48fb-4a0c-9536-91b1f0951579")
 	)
 	(junction
 		(at 220.98 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e02ca167-089d-406c-a9c5-27100d619545")
+		(uuid "1d2e8b54-b22a-458b-b982-6fa4212d8aa6")
 	)
 	(junction
 		(at 62.23 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a67c3523-a3e8-4c12-85de-b79455c165e8")
+		(uuid "b7265670-65db-4a8b-aca8-8bc4168165e6")
 	)
 	(junction
-		(at 224.79 144.78)
+		(at 250.19 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8abd8bcf-c743-4b53-80b8-b33d7d7291b2")
+		(uuid "3f2851ed-0b75-4e4d-abef-c75981af65d2")
 	)
 	(junction
-		(at 265.43 144.78)
+		(at 284.48 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ad2645e7-bbf4-4424-9bda-786589b025c2")
+		(uuid "f2196795-e6b6-4c8c-a382-2aa877e17621")
+	)
+	(junction
+		(at 27.94 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e970e6c1-bffc-4bf3-a5c2-b2dd6312f1af")
+	)
+	(junction
+		(at 27.94 237.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc50953c-7fd9-4fde-9152-737b9dda3c5e")
+	)
+	(junction
+		(at 39.37 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5129aa44-98bb-4536-98bd-dcbf29ddd5a1")
+	)
+	(junction
+		(at 68.58 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2aa5118b-27c1-4cf0-a3f6-2322dfb22e48")
+	)
+	(junction
+		(at 72.39 233.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "413f8efb-8f96-4608-ae85-7e5e1e2ef6c9")
+	)
+	(junction
+		(at 100.33 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "077fdc8f-9393-430e-89d2-fa8c23284f13")
+	)
+	(junction
+		(at 105.41 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab032d14-9bec-4ebb-a795-ba16b0fecba6")
+	)
+	(junction
+		(at 135.89 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a46a5ea8-a3fc-460c-ba27-ee6aed405fc5")
+	)
+	(junction
+		(at 330.2 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbb439cc-f312-4cc4-8250-d2977cdddce4")
 	)
 	(wire
 		(pts
@@ -1652,7 +2566,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3befa17a-055f-43f3-a606-dd576719a865")
+		(uuid "70af2d79-63d3-45a0-bc29-f2b67d16f39c")
 	)
 	(wire
 		(pts
@@ -1663,7 +2577,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8882ff19-172e-4002-9441-9239c2bfff4f")
+		(uuid "5c74b805-e93b-411a-a29f-ced3a3be1d25")
 	)
 	(wire
 		(pts
@@ -1674,7 +2588,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a7889c39-408d-445a-985d-5c2dbebea462")
+		(uuid "3e44d042-c7af-41e7-b4a7-069a312ecd63")
 	)
 	(wire
 		(pts
@@ -1685,7 +2599,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4bfea49e-dc57-4ca0-9e02-b8b451a36bc2")
+		(uuid "81426c99-de88-4de3-811a-f9ee824a99fe")
 	)
 	(wire
 		(pts
@@ -1696,7 +2610,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e0a82f72-066d-4cec-8eee-c9ad9a3d2d43")
+		(uuid "a9343e0e-1fda-454c-bb4a-4581b2ff24b3")
 	)
 	(wire
 		(pts
@@ -1707,7 +2621,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dbd41a44-b796-4556-8f0d-5468fc6b9112")
+		(uuid "15f278c6-24b0-44b2-9df8-292c06cae204")
 	)
 	(wire
 		(pts
@@ -1718,7 +2632,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e16ce968-3f6e-4171-b3ea-66b5d5df36e7")
+		(uuid "6509a73e-45f4-4b74-b50d-3677051700b8")
 	)
 	(wire
 		(pts
@@ -1729,7 +2643,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "102b14af-3a98-4243-91b7-e54ec71df753")
+		(uuid "1834ee8b-fe26-4c7b-98d9-d47cf6d3729c")
 	)
 	(wire
 		(pts
@@ -1740,7 +2654,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "09789916-e447-4e86-97db-be1063569938")
+		(uuid "a6d71c29-ad4f-4fd1-b99a-ea5dbd82d828")
 	)
 	(wire
 		(pts
@@ -1751,7 +2665,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "75edf706-a262-49a4-974a-3299ad9ad38f")
+		(uuid "a00016ab-7a25-4290-a8b0-c216553cd784")
 	)
 	(wire
 		(pts
@@ -1762,7 +2676,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b29e301a-3cc9-4077-9ed7-4d6e9b8c016a")
+		(uuid "142e2c25-81f2-4ed9-a230-f44b782ea004")
 	)
 	(wire
 		(pts
@@ -1773,7 +2687,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d3c24969-cbe3-4270-87fb-d888661a772b")
+		(uuid "46cb7cfd-5bc6-45ea-8251-57e0ee8f6a8a")
 	)
 	(wire
 		(pts
@@ -1784,7 +2698,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5f3491f4-37fd-47da-b684-ec022f1066fc")
+		(uuid "1974a801-1817-46dd-aa03-7cedc943c08c")
 	)
 	(wire
 		(pts
@@ -1795,7 +2709,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "10acddd9-0988-4f1c-871b-33da70e5437d")
+		(uuid "66ef9c2a-271e-4928-a61e-8e47a105838f")
 	)
 	(wire
 		(pts
@@ -1806,7 +2720,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b7731ae3-56c0-493b-9472-3f4512db11ed")
+		(uuid "76235f05-0d69-4186-aa9a-a81eabe39d06")
 	)
 	(wire
 		(pts
@@ -1817,7 +2731,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a0292be5-4241-4e41-bc12-a709f7527ba6")
+		(uuid "0d72e58e-4054-4be3-9250-92282b1e2b22")
 	)
 	(wire
 		(pts
@@ -1828,7 +2742,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5497a64f-3191-45e9-b7fc-2f47a44e99b9")
+		(uuid "1a0be18e-0b48-4af4-888f-43d155a35b16")
 	)
 	(wire
 		(pts
@@ -1839,7 +2753,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e7245f8c-5157-4241-9a28-c2e4dddd4e57")
+		(uuid "430cca6e-ac64-4f86-984b-2a45fe78c0d9")
 	)
 	(wire
 		(pts
@@ -1850,7 +2764,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cebb0613-9759-4023-a0a4-b9947433169b")
+		(uuid "e8878c53-83ba-4a67-9c1f-f7fdfae86c2f")
 	)
 	(wire
 		(pts
@@ -1861,7 +2775,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7bede346-975c-4b2c-8450-cdcf3b460627")
+		(uuid "dfd21e3a-c419-4de3-bcf0-2bac1b23c922")
 	)
 	(wire
 		(pts
@@ -1872,7 +2786,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bbbb84b8-e1da-4c86-ab08-6807743565d5")
+		(uuid "d9ef212b-b384-4958-ace7-66545c25092f")
 	)
 	(wire
 		(pts
@@ -1883,7 +2797,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7fdd5620-f9b0-4b9b-84e1-eb2b703487eb")
+		(uuid "f4f5967c-5998-4c20-b24d-a4057311eb28")
 	)
 	(wire
 		(pts
@@ -1894,7 +2808,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "950bac11-c8b6-49d4-a816-da21952c78d8")
+		(uuid "3c8cd87f-4024-4773-becc-85539c26a0a1")
 	)
 	(wire
 		(pts
@@ -1905,7 +2819,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "82b528a2-06b2-4825-ab1d-6514abbecf75")
+		(uuid "22149b1d-a8e9-4f08-8ae5-670fa00208f0")
 	)
 	(wire
 		(pts
@@ -1916,7 +2830,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5beccc94-04b3-4e46-b687-c90916468538")
+		(uuid "c5ebe33c-aed7-4752-9f96-532d9be3983c")
 	)
 	(wire
 		(pts
@@ -1927,7 +2841,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4cec2576-6cc8-46fb-b386-ac078935187d")
+		(uuid "5c560021-c3cf-4a0b-be85-2cebd239eaf1")
 	)
 	(wire
 		(pts
@@ -1938,7 +2852,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cd0d9267-1392-4900-975c-886a6a65dfe9")
+		(uuid "c1220c59-5d80-4635-9691-35b06f7e46e3")
 	)
 	(wire
 		(pts
@@ -1949,7 +2863,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e8770bc7-d364-419f-9f98-01b4aaf28ed0")
+		(uuid "0dc9792b-3dfb-4fc6-a4d8-cd285b077eda")
 	)
 	(wire
 		(pts
@@ -1960,7 +2874,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d303d0e2-dd06-4bd5-8137-9f04331ed4b2")
+		(uuid "6e3c4ad9-e213-4817-94dc-166d6b2c2edb")
 	)
 	(wire
 		(pts
@@ -1971,7 +2885,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f79347d3-8edb-4a80-ad4c-6e66c40a90a1")
+		(uuid "b303ffed-05bd-4d73-87b4-6514d4a0068b")
 	)
 	(wire
 		(pts
@@ -1982,7 +2896,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "67c34a84-1c1a-42ae-b04f-1a667d35d3e3")
+		(uuid "9cada619-2195-4af6-94df-5aa00fe362fd")
 	)
 	(wire
 		(pts
@@ -1993,7 +2907,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "01d8b64b-6eb7-4ee8-89c0-afd53c348fc6")
+		(uuid "afd817c3-57d6-4797-a2d3-4563f580d0b5")
 	)
 	(wire
 		(pts
@@ -2004,7 +2918,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e885055f-c8ae-4473-bda2-0c743995df7b")
+		(uuid "16a94410-6b4e-452c-8b34-eb17c32eacf5")
 	)
 	(wire
 		(pts
@@ -2015,7 +2929,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "966d25b2-8f48-43a1-b2ea-6c0336c5a426")
+		(uuid "5c49de56-1337-4853-9a48-bdd13422218b")
 	)
 	(wire
 		(pts
@@ -2026,7 +2940,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e94ae365-c122-40f6-80fa-994ba5657b23")
+		(uuid "5503d75e-599a-460d-8ed3-0147be2276d9")
 	)
 	(wire
 		(pts
@@ -2037,7 +2951,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8992ce34-8dee-4bc7-8ee2-c289e80d0a55")
+		(uuid "0dabf8ab-3dd1-4e48-9bfb-571dbc9d3d1e")
 	)
 	(wire
 		(pts
@@ -2048,7 +2962,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "684ed5b3-f31a-4370-bf5a-920dd04ba025")
+		(uuid "569b3b65-4fd5-4cfb-aeea-7394a0a0bae8")
 	)
 	(wire
 		(pts
@@ -2059,7 +2973,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "28107337-88b3-406b-bbaa-4b20eb8cb66f")
+		(uuid "e5b8ddd0-cef3-450d-8061-42d001018231")
 	)
 	(wire
 		(pts
@@ -2070,7 +2984,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4b16c197-0eac-4288-a067-505ee59d80c2")
+		(uuid "06973b0a-a86a-44c2-975f-2081227de4e0")
 	)
 	(wire
 		(pts
@@ -2081,7 +2995,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d9f6bb9d-1276-4c6e-ae8c-bf828762a9af")
+		(uuid "5a496e3a-e354-4632-bbe7-2e1ff3503d46")
 	)
 	(wire
 		(pts
@@ -2092,7 +3006,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "783de7a8-5d4f-4a13-aec2-e4aa410adf00")
+		(uuid "8208baea-4414-484d-b129-86701713bcb2")
 	)
 	(wire
 		(pts
@@ -2103,139 +3017,700 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "33442975-cd96-45c2-b0ea-ecd721f98630")
+		(uuid "88cbe324-7c06-48e0-b000-4ee2b2fe1910")
 	)
 	(wire
 		(pts
-			(xy 175.26 144.78)
-			(xy 184.15 144.78)
+			(xy 62.23 144.78)
+			(xy 62.23 137.16)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "55f8c339-56ed-4a8f-9f01-a4398c5d3db8")
+		(uuid "9d6676a8-4638-4b22-b45c-81be548f96d4")
 	)
 	(wire
 		(pts
-			(xy 191.77 144.78)
-			(xy 200.66 144.78)
+			(xy 189.23 142.24)
+			(xy 201.93 142.24)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4aaa2587-1c37-466f-95a9-08af983801af")
+		(uuid "324bad36-0dc6-472e-a33d-18a7269ecac4")
 	)
 	(wire
 		(pts
-			(xy 208.28 144.78)
-			(xy 224.79 144.78)
+			(xy 171.45 142.24)
+			(xy 181.61 142.24)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f2f54d52-bd9d-4988-8997-aae78a6231c4")
+		(uuid "bc913d87-c9c0-42f9-b7fa-06b1a075dd25")
 	)
 	(wire
 		(pts
-			(xy 224.79 139.7)
-			(xy 224.79 144.78)
+			(xy 189.23 144.78)
+			(xy 201.93 144.78)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "16a90a11-b198-4e09-9108-e325eeaba259")
+		(uuid "5ed22711-6463-469d-8027-0dd5ac1da8ec")
 	)
 	(wire
 		(pts
-			(xy 224.79 132.08)
-			(xy 224.79 129.54)
+			(xy 171.45 144.78)
+			(xy 181.61 144.78)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "47b6bb7d-0e8b-453b-bc5d-d3ec89dba06f")
+		(uuid "1fe13735-dcad-47ae-a85d-399e1f2f604e")
 	)
 	(wire
 		(pts
-			(xy 224.79 149.86)
-			(xy 224.79 144.78)
+			(xy 201.93 147.32)
+			(xy 198.12 147.32)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8175e1f8-05a8-44bd-8984-9c0290a2ad96")
+		(uuid "83991228-8e09-4cfa-9b93-499026fa2663")
 	)
 	(wire
 		(pts
-			(xy 224.79 157.48)
-			(xy 224.79 160.02)
+			(xy 198.12 147.32)
+			(xy 198.12 157.48)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "abd24294-6ef9-40df-9024-cfe06e892162")
+		(uuid "586fde48-2b8c-46b0-9a0e-957e9d298d1e")
 	)
 	(wire
 		(pts
-			(xy 224.79 144.78)
-			(xy 241.3 144.78)
+			(xy 214.63 133.35)
+			(xy 214.63 129.54)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "346ba463-105f-478b-a0c5-da0bd9b29288")
+		(uuid "fba2a0d0-1235-47c7-b5bc-a07859e3bca6")
 	)
 	(wire
 		(pts
-			(xy 248.92 144.78)
-			(xy 265.43 144.78)
+			(xy 214.63 156.21)
+			(xy 214.63 158.75)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cb964525-e43d-4a37-bc20-8df54b792191")
+		(uuid "16f9ee3f-94ef-4941-a0d9-7822db099ae3")
 	)
 	(wire
 		(pts
-			(xy 265.43 149.86)
-			(xy 265.43 144.78)
+			(xy 227.33 144.78)
+			(xy 231.14 144.78)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bfff6e39-8402-4812-b834-96ba82e6eac9")
+		(uuid "28d25c36-8738-426e-bd00-1fc6e39170cd")
 	)
 	(wire
 		(pts
-			(xy 265.43 157.48)
-			(xy 265.43 160.02)
+			(xy 238.76 144.78)
+			(xy 250.19 144.78)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e3682ac6-04ce-46c2-8d77-2dc8d406a2fa")
+		(uuid "982dd558-4822-411e-9c33-638e1f79a530")
 	)
 	(wire
 		(pts
-			(xy 265.43 144.78)
+			(xy 250.19 139.7)
+			(xy 250.19 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "facfc31f-4b4b-4541-a4d2-acde9e1b6dad")
+	)
+	(wire
+		(pts
+			(xy 250.19 132.08)
+			(xy 250.19 129.54)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "44e93482-8c1e-4ddd-8947-0cb8792bccf6")
+	)
+	(wire
+		(pts
+			(xy 250.19 149.86)
+			(xy 250.19 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "0b277358-d74d-4fff-8894-60be1e0a8bf1")
+	)
+	(wire
+		(pts
+			(xy 250.19 157.48)
+			(xy 250.19 160.02)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "7e4b949f-df5e-4a88-8e2d-ede45afe6027")
+	)
+	(wire
+		(pts
+			(xy 250.19 144.78)
+			(xy 264.16 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "cf6f51c9-3abf-4db1-bf98-7ecdc3d0a00a")
+	)
+	(wire
+		(pts
+			(xy 271.78 144.78)
 			(xy 284.48 144.78)
 		)
 		(stroke
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "aa0ca21a-cd3c-45fb-a70c-e96c7a55098d")
+		(uuid "8976a0fb-7798-485b-a314-8012e015daee")
+	)
+	(wire
+		(pts
+			(xy 284.48 149.86)
+			(xy 284.48 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "6afb194b-97f8-47de-b3e4-b7eef9a92413")
+	)
+	(wire
+		(pts
+			(xy 284.48 157.48)
+			(xy 284.48 160.02)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "18529b51-df5c-4a74-821c-755eb3fcb9b1")
+	)
+	(wire
+		(pts
+			(xy 284.48 144.78)
+			(xy 299.72 144.78)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "be368fdf-947c-4c11-a662-010461c59585")
+	)
+	(wire
+		(pts
+			(xy 27.94 217.17)
+			(xy 27.94 219.71)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "ddf2dd8e-e38a-4741-a6cc-ed386f5ad11a")
+	)
+	(wire
+		(pts
+			(xy 27.94 209.55)
+			(xy 27.94 207.01)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "cd5eeba5-cdb4-43c4-97ab-04e95fe311b3")
+	)
+	(wire
+		(pts
+			(xy 20.32 219.71)
+			(xy 27.94 219.71)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "b35d1035-9cb5-4b7e-9b7c-12a004c9b3bf")
+	)
+	(wire
+		(pts
+			(xy 20.32 227.33)
+			(xy 20.32 229.87)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "c82e09d8-3418-43d0-bb0c-23132f630e81")
+	)
+	(wire
+		(pts
+			(xy 27.94 237.49)
+			(xy 27.94 240.03)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "f4a3c868-a10a-4ec5-932a-8cbb35da1f22")
+	)
+	(wire
+		(pts
+			(xy 38.1 228.6)
+			(xy 39.37 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "17c04815-7830-4515-b74c-93e1194c588b")
+	)
+	(wire
+		(pts
+			(xy 39.37 228.6)
+			(xy 39.37 231.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "5c2f8372-bba9-4ba2-a61a-9674ceacf6f9")
+	)
+	(wire
+		(pts
+			(xy 39.37 238.76)
+			(xy 39.37 241.3)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "23fdf467-8fa3-4d8c-8354-7a124dff0e33")
+	)
+	(wire
+		(pts
+			(xy 39.37 228.6)
+			(xy 44.45 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "d799d6a5-7064-4dc1-a858-38fef9770bdf")
+	)
+	(wire
+		(pts
+			(xy 52.07 228.6)
+			(xy 68.58 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "4e37cc43-59fa-456d-be6d-c7e20fb7663e")
+	)
+	(wire
+		(pts
+			(xy 68.58 228.6)
+			(xy 77.47 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "3bac82bd-29f8-4468-9047-c1eafafc5b68")
+	)
+	(wire
+		(pts
+			(xy 68.58 227.33)
+			(xy 68.58 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "c8823ed1-fd85-4e1f-8a15-273df784e3db")
+	)
+	(wire
+		(pts
+			(xy 68.58 219.71)
+			(xy 68.58 215.9)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "d71f9662-c009-4477-ac3d-f1ffa41d3730")
+	)
+	(wire
+		(pts
+			(xy 82.55 223.52)
+			(xy 82.55 220.98)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "f9152e25-80aa-459e-a3b3-94bdd959391e")
+	)
+	(wire
+		(pts
+			(xy 82.55 238.76)
+			(xy 82.55 241.3)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "e2c4070f-0d81-4be2-b4af-a193e7e1e64d")
+	)
+	(wire
+		(pts
+			(xy 77.47 233.68)
+			(xy 72.39 233.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "662f13d7-6c50-47f4-92fb-7680cfe54d1d")
+	)
+	(wire
+		(pts
+			(xy 72.39 233.68)
+			(xy 72.39 246.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "7f4ae400-02d0-457d-ab83-12b7ea5ff4dc")
+	)
+	(wire
+		(pts
+			(xy 63.5 233.68)
+			(xy 72.39 233.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "83dd592d-57b4-4b85-98ab-93d139eec53d")
+	)
+	(wire
+		(pts
+			(xy 55.88 233.68)
+			(xy 49.53 233.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "cc12d792-c3d7-4c14-9995-e2c91c83c836")
+	)
+	(wire
+		(pts
+			(xy 49.53 233.68)
+			(xy 49.53 236.22)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "db8a515f-535b-4543-a7bb-69840789f649")
+	)
+	(wire
+		(pts
+			(xy 49.53 243.84)
+			(xy 49.53 246.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "db4f7963-de01-4924-bf61-5871d2dac318")
+	)
+	(wire
+		(pts
+			(xy 72.39 246.38)
+			(xy 77.47 246.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "bd5d03d1-dc55-4576-8bdd-bc449eefd479")
+	)
+	(wire
+		(pts
+			(xy 85.09 246.38)
+			(xy 100.33 246.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "2aed6647-2030-4615-a40d-5113e610b5cc")
+	)
+	(wire
+		(pts
+			(xy 100.33 246.38)
+			(xy 100.33 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "3137cf62-e4f2-4631-ab50-679801f7af8c")
+	)
+	(wire
+		(pts
+			(xy 100.33 228.6)
+			(xy 92.71 231.14)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "6eabe1c2-e909-4165-b1c3-82b420797fc6")
+	)
+	(wire
+		(pts
+			(xy 100.33 228.6)
+			(xy 105.41 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "c53c0c4e-0618-47e6-95b6-8c9251922432")
+	)
+	(wire
+		(pts
+			(xy 105.41 228.6)
+			(xy 105.41 222.25)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "df44207b-78b4-45d3-bcab-132335aa7fe8")
+	)
+	(wire
+		(pts
+			(xy 105.41 228.6)
+			(xy 110.49 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "5957db46-4278-4955-8d04-1cd582d5d454")
+	)
+	(wire
+		(pts
+			(xy 118.11 228.6)
+			(xy 121.92 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "d0ec9074-cac5-47ef-b1b2-c986d8e90570")
+	)
+	(wire
+		(pts
+			(xy 129.54 228.6)
+			(xy 135.89 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "d4772bf1-a6bd-44b9-a282-3ceea6e2e91c")
+	)
+	(wire
+		(pts
+			(xy 135.89 228.6)
+			(xy 135.89 233.68)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "7926e86c-17c4-4ecf-8312-b9d5c3eca539")
+	)
+	(wire
+		(pts
+			(xy 135.89 228.6)
+			(xy 139.7 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "47c010f6-addd-4b57-9d33-2babff1516dd")
+	)
+	(wire
+		(pts
+			(xy 147.32 228.6)
+			(xy 156.21 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "6064f1ee-10d8-4c62-b0f8-e9e9c00cf8f0")
+	)
+	(wire
+		(pts
+			(xy 128.27 238.76)
+			(xy 121.92 238.76)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "0327581f-9cee-4741-b20f-c090e67dd5d3")
+	)
+	(wire
+		(pts
+			(xy 135.89 243.84)
+			(xy 135.89 246.38)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "cce58801-9aaf-4193-8839-73aeaf3e8ef7")
+	)
+	(wire
+		(pts
+			(xy 330.2 214.63)
+			(xy 330.2 212.09)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "181815da-ac37-4911-bcaf-a36e73330c10")
+	)
+	(wire
+		(pts
+			(xy 330.2 222.25)
+			(xy 330.2 226.06)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "2c0fbf9e-e07a-4597-8e66-0cdafedccad4")
+	)
+	(wire
+		(pts
+			(xy 330.2 226.06)
+			(xy 330.2 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "9d3ac897-3838-4ce2-bb51-c2db9ca867b6")
+	)
+	(wire
+		(pts
+			(xy 330.2 236.22)
+			(xy 330.2 238.76)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "5fc2c063-6fa0-4c65-ab9f-d437e21ddebf")
+	)
+	(wire
+		(pts
+			(xy 330.2 226.06)
+			(xy 340.36 226.06)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "c82893c2-0f3b-4f35-aa57-ab84e5ce0fdf")
+	)
+	(wire
+		(pts
+			(xy 340.36 226.06)
+			(xy 340.36 228.6)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "59a3bbe7-f584-46d1-967e-2c1dc1bce024")
+	)
+	(wire
+		(pts
+			(xy 340.36 236.22)
+			(xy 340.36 238.76)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "d9fe0d82-5c90-456c-956c-c40c5bef84e6")
+	)
+	(wire
+		(pts
+			(xy 320.04 226.06)
+			(xy 330.2 226.06)
+		)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(uuid "c572441e-53bf-4c41-85f9-7b041bd7eaef")
 	)
 	(label "AMP_IN"
 		(at 119.38 62.23 0)
@@ -2245,7 +3720,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8d15464f-60cf-4ec0-9879-2a3227968e00")
+		(uuid "6b9a6cc5-155b-49a3-8514-cf958ae86d18")
 	)
 	(label "AMP_IN"
 		(at 191.77 63.5 180)
@@ -2255,7 +3730,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5fd56057-fc2e-4409-89cf-fa83740c1ab6")
+		(uuid "21fd94cb-a11c-4079-bcd5-451cd66c96c8")
 	)
 	(label "AMP_BYP"
 		(at 203.2 60.96 180)
@@ -2265,7 +3740,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "cd0dd5d2-049f-41f7-b8ec-aa1c7e814715")
+		(uuid "2b52069b-b9b8-481c-98d4-994064339ed0")
 	)
 	(label "AMP_BYP"
 		(at 177.8 77.47 90)
@@ -2275,7 +3750,67 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e4df482e-5e3c-4e7e-a6de-b55f0d8ebedb")
+		(uuid "a5e00379-838c-454e-81f0-d9f289cf157b")
+	)
+	(label "MIC_TX"
+		(at 62.23 137.16 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7261aede-cc25-4f45-8877-ee7cdd2280ad")
+	)
+	(label "MIC_AMP"
+		(at 171.45 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d8d69a66-cb38-4d58-943c-96ad6dc5ff89")
+	)
+	(label "MIC_VMID"
+		(at 68.58 215.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2b254810-1a09-45df-90bf-a9b107e22144")
+	)
+	(label "MIC_AMP"
+		(at 105.41 222.25 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f2b73812-e8b7-4156-99d4-f8d490d832e3")
+	)
+	(label "MIC_TX"
+		(at 156.21 228.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f35f353-0359-44ca-941a-e9e7cc9f1f07")
+	)
+	(label "MIC_VMID"
+		(at 320.04 226.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3a0611f-c0f7-479c-889d-ae00064955ea")
 	)
 	(global_label "RADIO_AF"
 		(shape passive)
@@ -2286,7 +3821,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4559c890-8f6a-41ac-b019-b008a2ab7bad")
+		(uuid "58742bfb-5f90-4f9c-a1f8-2d3eda0d2344")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.91 59.69 180)
 			(hide yes)
@@ -2306,7 +3841,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "4fcfb21e-52aa-4748-bb33-5d4c23586c59")
+		(uuid "8b9e699f-3755-4f0b-8597-b18cd5056120")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.91 62.23 180)
 			(hide yes)
@@ -2326,7 +3861,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "dd324104-47e5-4e5c-b88a-b060cf587a95")
+		(uuid "4119e370-4c38-4dab-9fe9-a05f2276b8be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.91 64.77 180)
 			(hide yes)
@@ -2346,7 +3881,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "66b25afb-bf22-4787-9daa-0346109bee68")
+		(uuid "0454d001-58f1-45b4-bbae-250ef72fb554")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 220.98 41.91 90)
 			(hide yes)
@@ -2366,7 +3901,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c4c9e881-c98d-4178-abed-5eb2a61f0df3")
+		(uuid "99bb086d-3757-4878-a241-64762363d49f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 30.48 144.78 180)
 			(hide yes)
@@ -2386,7 +3921,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "590abf03-a0ec-49db-a53d-d927ecb95918")
+		(uuid "93f95e9b-9cb0-48a1-b92f-10c2223390cd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.33 144.78 0)
 			(hide yes)
@@ -2399,16 +3934,36 @@
 	)
 	(global_label "RADIO_AF"
 		(shape passive)
-		(at 175.26 144.78 180)
+		(at 171.45 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "090938dd-df95-4973-8c05-9d625b1f2440")
+		(uuid "ad472543-51b3-4019-abb8-e106e9fc4d49")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 175.26 144.78 180)
+			(at 171.45 142.24 180)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "ADC_SEL"
+		(shape passive)
+		(at 198.12 157.48 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "719dfd51-dbd5-4fb4-bdce-eb9c2de99153")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 157.48 270)
 			(hide yes)
 			(effects
 				(font
@@ -2419,16 +3974,36 @@
 	)
 	(global_label "ADC_AUDIO"
 		(shape passive)
-		(at 284.48 144.78 0)
+		(at 299.72 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "340cf9b4-cdb2-40d2-a867-e8127ee3227e")
+		(uuid "263a398f-35d1-4ddc-9d14-a631f4ae69e7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.48 144.78 0)
+			(at 299.72 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "MIC_MUTE"
+		(shape passive)
+		(at 121.92 238.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fad92028-b0c0-4923-b31e-20c3d08ba930")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 121.92 238.76 180)
 			(hide yes)
 			(effects
 				(font
@@ -2445,7 +4020,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0b1e5fed-7ee1-44dc-9169-51760a3e4fa8")
+		(uuid "dabb10b7-dd83-47c5-9ec7-fa2043a41e16")
 		(property "Reference" "U501"
 			(at 64.516 49.6 0)
 			(effects
@@ -2499,26 +4074,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "46aa1467-7ad5-4c9b-9948-ff8972942033")
+			(uuid "fe1b1da5-b7e2-454e-8cf2-142a5112b7bb")
 		)
 		(pin "3"
-			(uuid "52964780-5189-4b9f-8ac7-0c05575e8162")
+			(uuid "c02ce0de-9633-4438-976d-802690ef443e")
 		)
 		(pin "6"
-			(uuid "fa99e225-b0c9-4e09-84f0-b7da0e6b11d4")
+			(uuid "d693e741-a58c-41ef-89ed-2b94682dbfd8")
 		)
 		(pin "4"
-			(uuid "62642475-2605-475e-aa28-0ecac965dd91")
+			(uuid "cd25cf43-096e-49af-9001-bbd5be4c298a")
 		)
 		(pin "5"
-			(uuid "1fe35d7e-7b33-421d-82d5-f7fe28bee3a1")
+			(uuid "42078938-c03e-4a56-8ac7-41da160d7d61")
 		)
 		(pin "2"
-			(uuid "07ccbac8-e558-4412-9c7e-4c54efc005b6")
+			(uuid "955ed25e-c3ea-4f20-8154-5e5dd9296d1b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "U501")
 					(unit 1)
 				)
@@ -2533,7 +4108,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "db33ee92-d287-428b-9142-c0e0cca42c96")
+		(uuid "85587e75-7bc9-41c1-ada8-4c3b1324c436")
 		(property "Reference" "R512"
 			(at 55.88 56.79 90)
 			(effects
@@ -2587,14 +4162,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3f9433e-7e73-43dc-8e9d-28f54948796a")
+			(uuid "260b56df-f519-465b-bf0b-5e2c727b2a14")
 		)
 		(pin "2"
-			(uuid "b6aa4f58-78c4-4058-8f08-a15e031e6eed")
+			(uuid "71045d90-bd3d-4eec-8383-c9066a3e44b6")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R512")
 					(unit 1)
 				)
@@ -2609,7 +4184,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3649591d-ae5c-4ef8-9673-ac0760f73770")
+		(uuid "d7d035c2-eabc-4c14-9265-b1da3314e0a4")
 		(property "Reference" "R501"
 			(at 48.26 59.33 90)
 			(effects
@@ -2663,14 +4238,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "8ea46486-4bca-4c2e-95b7-8190b8f4c413")
+			(uuid "9c861210-aad6-4971-9cc7-b17ff2657d23")
 		)
 		(pin "2"
-			(uuid "018908ac-59b4-45a0-ba06-091669268b85")
+			(uuid "0e4bf92d-b1c0-4318-8043-937d4b1e0176")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R501")
 					(unit 1)
 				)
@@ -2685,7 +4260,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "51b73cf4-2dff-469f-aae6-aa8f5cbd6635")
+		(uuid "2ca4ea56-fb1d-4dfa-b397-027cf48752bc")
 		(property "Reference" "#PWR168"
 			(at 74.93 46.99 0)
 			(hide yes)
@@ -2731,11 +4306,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "27bac8d9-f1be-4a43-a707-9cebecc8cd76")
+			(uuid "b872cc52-7a2f-475c-9a7b-29244f19d4b7")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR168")
 					(unit 1)
 				)
@@ -2750,7 +4325,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a4647548-a43d-40fa-9c74-ad6a6fb2d992")
+		(uuid "51417814-d2bd-422a-93b2-0873c65313a7")
 		(property "Reference" "#PWR169"
 			(at 74.93 76.2 0)
 			(hide yes)
@@ -2797,11 +4372,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3718c2be-e94b-4dd3-96ec-22681320ac9d")
+			(uuid "28739326-d5a9-45fd-b8d1-eeaf23538b54")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR169")
 					(unit 1)
 				)
@@ -2816,7 +4391,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e5daf9bd-3238-4def-8f5b-8073ac65620e")
+		(uuid "2b823ec3-1195-4bcb-a5dd-7ee004291950")
 		(property "Reference" "C501"
 			(at 95.25 59.198 90)
 			(effects
@@ -2870,14 +4445,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "035b33a2-ed0f-4222-a654-1b22aef104c7")
+			(uuid "1b358a11-f032-4220-a0ff-3c64f74045dc")
 		)
 		(pin "2"
-			(uuid "a9ee9673-782f-44df-9706-fc821aa3a452")
+			(uuid "a07fe383-fc99-442d-8e4a-c07829004bc0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C501")
 					(unit 1)
 				)
@@ -2892,7 +4467,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3565d3ac-aa7c-4a83-af45-63a204146530")
+		(uuid "fe8dd5fe-01b2-480f-95d5-2dc222ee4bec")
 		(property "Reference" "C502"
 			(at 136.998 38.37 0)
 			(effects
@@ -2946,14 +4521,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "68ec2b51-17fc-4002-a5ab-1c970d836c56")
+			(uuid "24fc5e2c-85c8-4660-a1ef-87b62e65090d")
 		)
 		(pin "2"
-			(uuid "5086796b-335e-4c20-869e-1e6f1480c891")
+			(uuid "f72003d4-f7e2-421f-92ec-6df1312169b7")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C502")
 					(unit 1)
 				)
@@ -2968,7 +4543,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7d605431-779b-4133-81ee-45de6d00e6fd")
+		(uuid "ba6b4768-174c-4970-8c62-4337384c3bc3")
 		(property "Reference" "#PWR170"
 			(at 132.08 33.02 0)
 			(hide yes)
@@ -3014,11 +4589,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4034da1b-c0f0-4403-9a93-b02bbcc93078")
+			(uuid "1b68fa6b-a55d-48cc-85b9-018eb47f4d78")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR170")
 					(unit 1)
 				)
@@ -3033,7 +4608,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d2ea8f69-76b6-46f1-a7be-e2db0fb3b969")
+		(uuid "1a281187-f743-42b5-be7d-048792d7207a")
 		(property "Reference" "#PWR171"
 			(at 132.08 45.72 0)
 			(hide yes)
@@ -3080,11 +4655,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c5ccad8-a3ec-4910-918a-74ec41c1d8bd")
+			(uuid "89253d95-523b-414a-89de-3d90db27bd4c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR171")
 					(unit 1)
 				)
@@ -3099,7 +4674,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a01fe795-e07e-48a7-b713-aed9ad53784c")
+		(uuid "766e084c-2df9-46be-b693-026a3e37ce25")
 		(property "Reference" "U502"
 			(at 228.346 48.33 0)
 			(effects
@@ -3153,32 +4728,32 @@
 			)
 		)
 		(pin "1"
-			(uuid "d43aca20-2f3f-4c42-acc8-24994eaa072a")
+			(uuid "71c1ea2d-2787-44dc-bfd4-34df61a06e26")
 		)
 		(pin "2"
-			(uuid "15bf2a63-9371-41df-ae49-3ed1d89e0924")
+			(uuid "843d5cbd-2138-4759-8be5-eba4f5a1d3ea")
 		)
 		(pin "3"
-			(uuid "68a1055a-000b-4f15-b267-1266a3e48f59")
+			(uuid "14a67453-5100-4391-a659-5e499d4e7f60")
 		)
 		(pin "4"
-			(uuid "7dbb24c4-1414-474e-9a60-b72764409b54")
+			(uuid "5d3fb9e2-e41b-44ef-a209-cc7a3036cb9e")
 		)
 		(pin "8"
-			(uuid "98d37bf9-5d4d-415c-87f2-90cc50e0a961")
+			(uuid "40e168eb-a47b-441c-a2be-0506c5e9631c")
 		)
 		(pin "5"
-			(uuid "d187f564-5202-4e39-8a31-00df6f2bbfe7")
+			(uuid "af04963d-f2c8-4eca-9200-d04b767ffc75")
 		)
 		(pin "6"
-			(uuid "675ec8a4-7d51-4806-8142-fe47334093e1")
+			(uuid "5bfba07d-c0a4-4484-bf5c-f7205bb5f28e")
 		)
 		(pin "7"
-			(uuid "b7a1e954-d3ff-45ae-95be-7aa44b717a70")
+			(uuid "9bc06161-5768-4cd9-b6d6-7285ce717a9f")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "U502")
 					(unit 1)
 				)
@@ -3193,7 +4768,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2f381f57-1a1e-43be-b8bd-071fe9029fbe")
+		(uuid "60d9c1c2-88de-4a53-ab48-e57dca6bbfbb")
 		(property "Reference" "R502"
 			(at 205.74 61.484 90)
 			(effects
@@ -3247,14 +4822,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e2d47f5d-d026-4fef-8e74-f5a942d36990")
+			(uuid "bbf51612-1a66-448d-914b-795ca0b4fae3")
 		)
 		(pin "2"
-			(uuid "fafe0da8-64ec-4da0-b925-8dc5fdc7d821")
+			(uuid "4eb918ba-a55d-4e50-a570-a71caccf8d05")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R502")
 					(unit 1)
 				)
@@ -3269,7 +4844,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "71263322-01a3-4fe8-a075-f66fce33c1db")
+		(uuid "08cc6878-ef58-4cde-a3a3-aeba46242a05")
 		(property "Reference" "R503"
 			(at 214.63 71.644 90)
 			(effects
@@ -3323,14 +4898,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "36a86afe-3da1-4352-b2ef-155ce116fce0")
+			(uuid "14e845e8-1085-41a1-b5c1-08b2ed1e421c")
 		)
 		(pin "2"
-			(uuid "99e43bf3-5bff-4d6e-afb2-b144a301a3f1")
+			(uuid "d96c5b38-89f1-4da2-a14b-a550ef6b91f2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R503")
 					(unit 1)
 				)
@@ -3345,7 +4920,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2273cb48-0041-4dcf-b358-61f60954eca8")
+		(uuid "5b864064-b7d7-4c57-895e-466adf1bd43f")
 		(property "Reference" "C503"
 			(at 201.93 70.628 90)
 			(effects
@@ -3399,14 +4974,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac2e567f-5695-4ec6-9c97-fb1f4964d3ef")
+			(uuid "33eb2a66-2c52-409e-a4e9-d6861a40502e")
 		)
 		(pin "2"
-			(uuid "b264a249-38dc-4213-95e4-ce9fc9fe1396")
+			(uuid "6b7c3215-223c-46e7-a7d1-5d156cacbc44")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C503")
 					(unit 1)
 				)
@@ -3421,7 +4996,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ef546e27-e48a-49e9-8bd7-0ff185fb0a87")
+		(uuid "d9b7a84a-7747-4699-9b6f-0f3a7ab0695c")
 		(property "Reference" "#PWR172"
 			(at 195.58 73.66 90)
 			(hide yes)
@@ -3468,11 +5043,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "cbccec14-187d-4bc2-9dcb-a4ed493ebc5c")
+			(uuid "c05ea378-69db-4e17-a1f5-c5f4a84d10b4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR172")
 					(unit 1)
 				)
@@ -3487,7 +5062,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "188131f6-2434-489a-8892-6c8f271b8359")
+		(uuid "41f5256b-f27c-440f-b98a-b195bcd2478c")
 		(property "Reference" "C504"
 			(at 182.718 82.82 0)
 			(effects
@@ -3541,14 +5116,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d9827918-b607-4c33-b94b-68e8bc59957b")
+			(uuid "71da28dc-47ab-4082-965d-33ecd68f9f0e")
 		)
 		(pin "2"
-			(uuid "e0f03032-74d1-4bfe-889a-e103e1eaab5d")
+			(uuid "ad778783-187f-42cf-bc46-74a33a2f839f")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C504")
 					(unit 1)
 				)
@@ -3563,7 +5138,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2c8feb93-f6a5-4162-9ecc-66187cfb1ebf")
+		(uuid "9f257795-c64f-41bf-b848-db18608fb85b")
 		(property "Reference" "#PWR173"
 			(at 177.8 90.17 0)
 			(hide yes)
@@ -3610,11 +5185,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4140f641-9de7-44aa-83f7-cece3bddd73a")
+			(uuid "a5d120a8-2113-4f43-afb9-f33e4cd170c1")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR173")
 					(unit 1)
 				)
@@ -3629,7 +5204,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "653ebb27-ab62-4461-9c38-74d89c4b9d9a")
+		(uuid "f1b3df5e-0559-4baf-a358-1b9e4df6d00f")
 		(property "Reference" "R511"
 			(at 217.174 50.62 0)
 			(effects
@@ -3683,14 +5258,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d71fd204-ce29-4154-acad-b29a13578228")
+			(uuid "decc358a-acd0-4fff-920b-a73c8e5df1f2")
 		)
 		(pin "2"
-			(uuid "5f70dad2-a554-4167-8c09-6772c16d3090")
+			(uuid "05dc3031-6066-4141-a109-7258fcf5af2d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R511")
 					(unit 1)
 				)
@@ -3705,7 +5280,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d54b81bf-e00c-45dd-a6f9-308728f8947b")
+		(uuid "918c87c6-b93b-46c6-b572-70b9f550e795")
 		(property "Reference" "R504"
 			(at 213.06 55.52 90)
 			(effects
@@ -3759,14 +5334,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "08575517-ce0d-4fd7-b8bd-22c51644caa5")
+			(uuid "353ad858-7d61-491a-a5da-898e6d2d884b")
 		)
 		(pin "2"
-			(uuid "5b1ff7ae-4e83-40e1-92b0-0797cd46228e")
+			(uuid "a243d2cb-6f34-45ca-b729-61463609b459")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R504")
 					(unit 1)
 				)
@@ -3781,7 +5356,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fc3465cc-e06e-45c3-bf68-fca00ca48d19")
+		(uuid "706486d8-261b-4359-9af2-46abe5a53f4a")
 		(property "Reference" "#PWR174"
 			(at 207.01 58.42 90)
 			(hide yes)
@@ -3828,11 +5403,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "58ed14fe-27b9-4fff-9b99-e32b3e9e13fc")
+			(uuid "eadb2804-eb66-4169-b08e-70a1735dee91")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR174")
 					(unit 1)
 				)
@@ -3847,7 +5422,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "901283af-ff82-4662-82c4-5da586cb6f7d")
+		(uuid "5b2df19a-255d-4214-b333-b94a562084cd")
 		(property "Reference" "#PWR175"
 			(at 240.03 45.72 0)
 			(hide yes)
@@ -3893,11 +5468,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "cdbad455-5e55-44d9-aa70-d3f6fff0dc38")
+			(uuid "46c26789-c9db-4af9-9467-1489e325d936")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR175")
 					(unit 1)
 				)
@@ -3912,7 +5487,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fbbdb4ee-0fb8-4fd2-b71b-03e4c48783a5")
+		(uuid "816d0cfa-36a1-4522-8283-06191c807f33")
 		(property "Reference" "#PWR176"
 			(at 240.03 77.47 0)
 			(hide yes)
@@ -3959,11 +5534,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "775202fb-0066-490d-87cb-d1946e22b06c")
+			(uuid "30e9da17-52f2-4f77-884f-e730bbdd30c8")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR176")
 					(unit 1)
 				)
@@ -3978,7 +5553,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "83325f2c-8262-4f96-b0b2-6e2bb239e9e1")
+		(uuid "001b944f-0f37-4577-9d04-7880f3548dc2")
 		(property "Reference" "LS501"
 			(at 287.3375 55.95 0)
 			(effects
@@ -4032,14 +5607,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "33b413fc-fbaf-4ffa-881d-e3eb4b71c71d")
+			(uuid "889f1510-69c2-47a7-bfe9-4fb036afec99")
 		)
 		(pin "2"
-			(uuid "317a3bfc-eebd-4b33-9d53-33bbfc95b03d")
+			(uuid "f9afd72b-82c9-4bb1-876d-e7bc6df5ab4e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "LS501")
 					(unit 1)
 				)
@@ -4054,7 +5629,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a4a3313a-54ab-4451-8825-24c39f70da9f")
+		(uuid "7e7d74e1-3000-4070-8456-622bfa7d401b")
 		(property "Reference" "C505"
 			(at 327.752 43.45 0)
 			(effects
@@ -4108,14 +5683,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b86f6e6b-beb5-47ac-993e-0fa9b68f9ffc")
+			(uuid "18a37ee6-ddd5-492d-a073-5b27ea004117")
 		)
 		(pin "2"
-			(uuid "9881d520-3d0f-48be-8a4c-78c2c4d0eb24")
+			(uuid "36aac1ac-856e-42be-9e08-0ee823f6fe4e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C505")
 					(unit 1)
 				)
@@ -4130,7 +5705,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "47672117-64de-412c-881a-fbc54d518863")
+		(uuid "56fba2ba-a5b1-4a7b-8b1a-a0c16d09def2")
 		(property "Reference" "#PWR177"
 			(at 322.58 38.1 0)
 			(hide yes)
@@ -4176,11 +5751,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5036af03-d232-43b1-8598-431877dd95e0")
+			(uuid "32db2afd-faf2-4759-be5a-f3bdc32d223a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR177")
 					(unit 1)
 				)
@@ -4195,7 +5770,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1353eeb6-8183-4ce5-86c2-b18233f889e3")
+		(uuid "8aa4cb90-b6a8-4280-b543-e7e4da19f9df")
 		(property "Reference" "#PWR178"
 			(at 322.58 50.8 0)
 			(hide yes)
@@ -4242,11 +5817,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "179d57fd-9b30-4a25-9740-887281d08b34")
+			(uuid "67ca4fdc-752b-42cb-a565-5ef11aa3a04c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR178")
 					(unit 1)
 				)
@@ -4261,7 +5836,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "77adcb73-8a29-4825-a91e-466df9e9aa88")
+		(uuid "2d898217-08ed-4d0f-af42-1de0d3a53a5a")
 		(property "Reference" "C506"
 			(at 340.198 43.45 0)
 			(effects
@@ -4315,14 +5890,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b200cea-46a0-4713-a49c-10c270c4d724")
+			(uuid "882a5f29-22ca-4769-ba56-dcfde1e98478")
 		)
 		(pin "2"
-			(uuid "42b0fe0f-00b8-4eb3-8522-a2eb3e7bcfac")
+			(uuid "c6861c5f-9019-431a-939c-d87812eae23d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C506")
 					(unit 1)
 				)
@@ -4337,7 +5912,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "05ff6291-2893-42b1-90a3-7d6e94e049a6")
+		(uuid "af051514-7876-401b-ac78-dbce5f30ff3a")
 		(property "Reference" "#PWR179"
 			(at 335.28 38.1 0)
 			(hide yes)
@@ -4383,11 +5958,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "53dcfd5d-7768-4aa2-8ba2-c96853ec4a91")
+			(uuid "dddc18e0-0fce-4c50-bad6-3dbd528b1641")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR179")
 					(unit 1)
 				)
@@ -4402,7 +5977,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f0cddffd-5dc3-45b8-ab01-5a65700c3f76")
+		(uuid "22811f40-be21-412a-bee8-24bcd2d179a3")
 		(property "Reference" "#PWR180"
 			(at 335.28 50.8 0)
 			(hide yes)
@@ -4449,11 +6024,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "214c5cd6-3a3d-479c-92fe-2064a8d594b1")
+			(uuid "c16ec345-b4e4-4107-a7db-1c6176f63314")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR180")
 					(unit 1)
 				)
@@ -4468,7 +6043,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c839267d-d342-4095-94fa-a3954371cfd0")
+		(uuid "cddfe345-8211-4c1f-a6b4-b4eee9489de0")
 		(property "Reference" "C507"
 			(at 352.898 43.45 0)
 			(effects
@@ -4522,14 +6097,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c12b1653-7812-488f-b30d-0544dcc0d931")
+			(uuid "0e195855-925a-4512-95c5-75bd85d98a9e")
 		)
 		(pin "2"
-			(uuid "280dc694-4157-4d61-ba63-5af583af351d")
+			(uuid "bb40dfeb-ef0e-4d2f-8d33-df81d69e0302")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C507")
 					(unit 1)
 				)
@@ -4544,7 +6119,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1b5558ed-6b7a-4c30-9e1a-e1a8f7475909")
+		(uuid "b71659d2-bf7d-4fc0-b230-2279ac28caee")
 		(property "Reference" "#PWR181"
 			(at 347.98 38.1 0)
 			(hide yes)
@@ -4590,11 +6165,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "17516117-6f1a-45ab-b397-dab89b684fd5")
+			(uuid "97073259-3580-44d5-9ddd-c0a278fd0408")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR181")
 					(unit 1)
 				)
@@ -4609,7 +6184,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c7afb225-70b6-4e35-9d5a-e65cced0bdf9")
+		(uuid "f31df4b1-b4ad-461e-b33a-1fe156615242")
 		(property "Reference" "#PWR182"
 			(at 347.98 50.8 0)
 			(hide yes)
@@ -4656,11 +6231,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0d76252-ffa7-40a8-84fe-5327bb3eb700")
+			(uuid "f86a97f4-875f-4375-88eb-2f16972f23bb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR182")
 					(unit 1)
 				)
@@ -4675,7 +6250,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5938243f-f118-4c75-bee2-fdd572f7317d")
+		(uuid "05292e6a-7169-4a17-ac49-693928b8627c")
 		(property "Reference" "R505"
 			(at 44.45 142.764 90)
 			(effects
@@ -4729,14 +6304,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6920307a-69de-4561-a991-5c36f9250662")
+			(uuid "4a683308-68c7-4224-8a65-3bf28ee05e2c")
 		)
 		(pin "2"
-			(uuid "901fe214-a43c-4a40-acb5-48ec0e85eeb8")
+			(uuid "db7d0f83-bd05-4bbc-a4e6-61eb5c9a8de5")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R505")
 					(unit 1)
 				)
@@ -4751,7 +6326,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "52d1c05f-c213-4391-b1f1-5ea52e44d8fd")
+		(uuid "f82c71af-4a23-4b25-bd72-23c41c2ff292")
 		(property "Reference" "R506"
 			(at 66.132 151.4 0)
 			(effects
@@ -4805,14 +6380,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf66466c-08fb-4a7c-ae89-a620b56b9611")
+			(uuid "4d4ab179-d474-40c0-a72a-e629d323b876")
 		)
 		(pin "2"
-			(uuid "3b66979d-8a1b-4e93-9ffe-ab71326a853c")
+			(uuid "8252c3f2-dc7b-4e8c-b28c-ce582544004a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R506")
 					(unit 1)
 				)
@@ -4827,7 +6402,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b6c4d36b-7913-47ea-a7bc-670171078ce1")
+		(uuid "d5adf37b-39b0-474c-8155-1882f33ed0df")
 		(property "Reference" "#PWR183"
 			(at 62.23 158.75 0)
 			(hide yes)
@@ -4874,11 +6449,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ccdbae37-351c-4ded-9f30-7e00a8df0458")
+			(uuid "73403672-b964-4f6a-883b-7210590e531d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR183")
 					(unit 1)
 				)
@@ -4893,7 +6468,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "73b5195b-1e39-4de0-9a5e-ec873e21c9d4")
+		(uuid "fc501999-3025-4f14-8c2a-bc4a5e15008d")
 		(property "Reference" "C508"
 			(at 77.47 141.748 90)
 			(effects
@@ -4947,14 +6522,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "419842c9-ad81-4a0c-b0fd-5cc91ca2f31f")
+			(uuid "76ea70b7-710d-465c-b60c-191524bcc3b8")
 		)
 		(pin "2"
-			(uuid "3e78e30d-92a9-4131-a526-13e24106b440")
+			(uuid "4b89e914-07b4-4d52-9755-9d7b6e48c274")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "C508")
 					(unit 1)
 				)
@@ -4962,16 +6537,104 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 187.96 144.78 90)
+		(lib_id "LazerGamebox:TS5A3159")
+		(at 214.63 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "aa8098e6-7d7f-47f6-86ad-25ebc2302890")
+		(uuid "c31c2104-7295-4dd1-bcca-d9fdac404ebd")
+		(property "Reference" "U503"
+			(at 204.216 132.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TS5A3159"
+			(at 206.502 157.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 214.63 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ts5a3159.pdf"
+			(at 214.63 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TI TS5A3159 1 ohm SPDT analog switch, SC-70-6"
+			(at 214.63 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C46388"
+			(at 214.63 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2182b25-a684-4044-9ba5-bfb4c3d56d64")
+		)
+		(pin "3"
+			(uuid "21614e92-cde3-4058-9b2f-81fc28629a9c")
+		)
+		(pin "6"
+			(uuid "7800f3da-3724-4f39-a2df-0fa185288518")
+		)
+		(pin "4"
+			(uuid "822a3b00-3eab-4cf4-9812-d8bfd1ba1128")
+		)
+		(pin "5"
+			(uuid "81772059-8e19-4e63-b1e8-cb68112ed29a")
+		)
+		(pin "2"
+			(uuid "0e03bd33-1abd-4af6-be9a-73e98ca6eca6")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "U503")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 185.42 142.24 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07bd81a2-8868-4e3c-8b6c-0a6428d09a54")
 		(property "Reference" "R507"
-			(at 187.96 142.764 90)
+			(at 185.42 139.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4979,7 +6642,7 @@
 			)
 		)
 		(property "Value" "47k"
-			(at 187.96 146.996 90)
+			(at 185.42 141.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,7 +6650,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 187.96 144.78 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -4996,7 +6659,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 187.96 144.78 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -5005,7 +6668,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 187.96 144.78 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -5014,7 +6677,7 @@
 			)
 		)
 		(property "LCSC" "C25819"
-			(at 187.96 144.78 0)
+			(at 185.42 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -5023,14 +6686,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "93b38a22-3e85-4459-b22d-56cade97623f")
+			(uuid "c179269e-bbc2-4e61-b7ff-25bec2d07c74")
 		)
 		(pin "2"
-			(uuid "3ac194ef-d36a-45b6-ae2a-0d42f653ff76")
+			(uuid "a7b6a131-5984-42d7-b970-bfd6529149d9")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "R507")
 					(unit 1)
 				)
@@ -5038,100 +6701,24 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 204.47 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2a73a17b-b994-486d-b82f-58818762f966")
-		(property "Reference" "C509"
-			(at 204.47 141.748 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uF"
-			(at 204.47 148.012 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 204.47 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 204.47 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C15849"
-			(at 204.47 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f20664c5-4647-4feb-8043-5e30df143139")
-		)
-		(pin "2"
-			(uuid "bcc90f77-6b9f-4942-89b1-40202fca656b")
-		)
-		(instances
-			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
-					(reference "C509")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 224.79 135.89 0)
+		(at 185.42 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e2e9ebe0-1dd6-44cb-8a9b-c2c029ac1dc9")
-		(property "Reference" "R508"
-			(at 228.692 134.89 0)
+		(uuid "14a9fca3-1072-429f-b8de-58022cead255")
+		(property "Reference" "R515"
+			(at 185.42 145.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 228.692 136.89 0)
+		(property "Value" "22k"
+			(at 185.42 147.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5139,7 +6726,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 135.89 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5148,7 +6735,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 135.89 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5157,7 +6744,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 224.79 135.89 0)
+			(at 185.42 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5165,8 +6752,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C25803"
-			(at 224.79 135.89 0)
+		(property "LCSC" "C31850"
+			(at 185.42 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5175,15 +6762,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "705f1edf-87e1-498d-8d4c-8de14c6e966c")
+			(uuid "72de00f9-4846-4f5a-8517-dc121cd8ecd9")
 		)
 		(pin "2"
-			(uuid "b08cd51a-c0d6-48fc-8e8e-37e3caf682da")
+			(uuid "6a827232-c67c-494f-aae5-001b1fca229c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
-					(reference "R508")
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R515")
 					(unit 1)
 				)
 			)
@@ -5191,15 +6778,15 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 224.79 129.54 0)
+		(at 214.63 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "09e03e12-4040-4775-a503-8f06abb83b7a")
+		(uuid "f35f17b0-0486-450f-985c-706b282a0fc0")
 		(property "Reference" "#PWR184"
-			(at 224.79 129.54 0)
+			(at 214.63 129.54 0)
 			(hide yes)
 			(effects
 				(font
@@ -5208,7 +6795,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 224.79 126 0)
+			(at 214.63 126 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5216,7 +6803,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 129.54 0)
+			(at 214.63 129.54 0)
 			(hide yes)
 			(effects
 				(font
@@ -5225,7 +6812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 129.54 0)
+			(at 214.63 129.54 0)
 			(hide yes)
 			(effects
 				(font
@@ -5234,7 +6821,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 224.79 129.54 0)
+			(at 214.63 129.54 0)
 			(hide yes)
 			(effects
 				(font
@@ -5243,11 +6830,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f233b1c-aae0-4f84-ab16-8b1474586d31")
+			(uuid "7dcdeee3-fc2c-48a0-8a1a-02e916d8bf27")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR184")
 					(unit 1)
 				)
@@ -5255,92 +6842,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 224.79 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b35bd9ef-e552-494b-9219-dc8b5aa74e1c")
-		(property "Reference" "R509"
-			(at 228.692 152.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 228.692 154.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 224.79 153.67 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 153.67 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 224.79 153.67 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25803"
-			(at 224.79 153.67 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "62ee9332-aedd-43b7-9ccd-fccc829e4315")
-		)
-		(pin "2"
-			(uuid "4b3d2847-7275-464a-a385-e709d016975e")
-		)
-		(instances
-			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
-					(reference "R509")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 224.79 160.02 0)
+		(at 214.63 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8ba09866-6656-49aa-9069-f8aa9cfdc39b")
+		(uuid "ed4b7a60-5d98-4d9c-8697-486fdfe9722c")
 		(property "Reference" "#PWR185"
-			(at 224.79 160.02 0)
+			(at 214.63 158.75 0)
 			(hide yes)
 			(effects
 				(font
@@ -5349,7 +6860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 224.79 163.76 0)
+			(at 214.63 162.49 0)
 			(hide yes)
 			(effects
 				(font
@@ -5358,7 +6869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 160.02 0)
+			(at 214.63 158.75 0)
 			(hide yes)
 			(effects
 				(font
@@ -5367,7 +6878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 160.02 0)
+			(at 214.63 158.75 0)
 			(hide yes)
 			(effects
 				(font
@@ -5376,7 +6887,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 224.79 160.02 0)
+			(at 214.63 158.75 0)
 			(hide yes)
 			(effects
 				(font
@@ -5385,11 +6896,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8d822eb-fb1a-49a3-b584-7a22eb431196")
+			(uuid "d3443f7d-bbad-4ea4-a1ee-8d7201a04dc0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR185")
 					(unit 1)
 				)
@@ -5397,100 +6908,24 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 245.11 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3b6432ad-43d6-4a24-8ddd-2587a2765474")
-		(property "Reference" "R510"
-			(at 245.11 142.764 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 245.11 146.996 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 245.11 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 245.11 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 245.11 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C25804"
-			(at 245.11 144.78 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3804248-b09c-4516-a9e9-91ee46107399")
-		)
-		(pin "2"
-			(uuid "00c05aad-416c-4c4d-864e-77720f72d155")
-		)
-		(instances
-			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
-					(reference "R510")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 265.43 153.67 0)
+		(at 234.95 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "dd5f490e-06c4-47cc-b7b5-fc0760193c38")
-		(property "Reference" "C510"
-			(at 270.348 152.67 0)
+		(uuid "b78edf51-d0f2-4228-a9f3-68b0fe179fe9")
+		(property "Reference" "C509"
+			(at 234.95 141.748 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1nF"
-			(at 269.7765 154.67 0)
+		(property "Value" "1uF"
+			(at 234.95 148.012 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5498,7 +6933,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 265.43 153.67 0)
+			(at 234.95 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5507,7 +6942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 153.67 0)
+			(at 234.95 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5516,7 +6951,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 265.43 153.67 0)
+			(at 234.95 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5524,8 +6959,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C1588"
-			(at 265.43 153.67 0)
+		(property "LCSC" "C15849"
+			(at 234.95 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -5534,49 +6969,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d14b8b8-5635-409e-b077-fcc94106fb82")
+			(uuid "d90e2252-9507-41b6-bdc2-f44e56bf6959")
 		)
 		(pin "2"
-			(uuid "ec03ba2b-b4ea-4e37-ab8c-eac9e8b08791")
+			(uuid "b57db1ff-f224-4537-aeff-0e752a323565")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
-					(reference "C510")
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C509")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 265.43 160.02 0)
+		(lib_id "Device:R")
+		(at 250.19 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d214375e-a15e-4a8a-8179-48cad52f0779")
-		(property "Reference" "#PWR186"
-			(at 265.43 160.02 0)
-			(hide yes)
+		(uuid "e3d7762b-899d-4446-aec0-198e4e06f5cf")
+		(property "Reference" "R508"
+			(at 254.092 134.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 265.43 163.76 0)
-			(hide yes)
+		(property "Value" "100k"
+			(at 254.092 136.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 265.43 160.02 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 250.19 135.89 0)
 			(hide yes)
 			(effects
 				(font
@@ -5585,7 +7018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 160.02 0)
+			(at 250.19 135.89 0)
 			(hide yes)
 			(effects
 				(font
@@ -5593,8 +7026,17 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 265.43 160.02 0)
+		(property "Description" "Resistor"
+			(at 250.19 135.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 250.19 135.89 0)
 			(hide yes)
 			(effects
 				(font
@@ -5603,12 +7045,2473 @@
 			)
 		)
 		(pin "1"
-			(uuid "98525158-3680-42a7-9b90-c56b2735d711")
+			(uuid "0da5132b-3bcd-43a1-89ee-d7531ec5437c")
+		)
+		(pin "2"
+			(uuid "34446794-d683-4273-8c0c-d97b1a9b436c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 250.19 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce591beb-160b-4125-a846-51a3aca258d5")
+		(property "Reference" "#PWR186"
+			(at 250.19 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 250.19 126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 250.19 129.54 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a52e7ec-14e3-4e7a-83fb-845112ca9ff6")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
 					(reference "#PWR186")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 250.19 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b034d49e-b905-49dd-b7d0-fa9e27573bf9")
+		(property "Reference" "R509"
+			(at 254.092 152.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 254.092 154.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 250.19 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 250.19 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 250.19 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fbcb3b15-7ded-4e79-b8bc-a12ee1ed7b6b")
+		)
+		(pin "2"
+			(uuid "6370a21f-74e2-408e-9a08-8c9dbe3af992")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R509")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 250.19 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2bd9183-c2ec-4e2b-b3d2-ebdeefec3819")
+		(property "Reference" "#PWR187"
+			(at 250.19 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 250.19 163.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 250.19 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45daa28f-3967-4e43-95a6-4634f661fe74")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR187")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 267.97 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d44ab77-03d3-4af9-a62c-3a3f0959f3e2")
+		(property "Reference" "R510"
+			(at 267.97 142.764 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 267.97 146.996 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 267.97 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 267.97 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 267.97 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dfd786dc-189d-44e0-b11d-42792248297c")
+		)
+		(pin "2"
+			(uuid "24cfbb62-d349-4e3b-913b-cdd449b69199")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 284.48 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abeb6df4-aa74-4204-b3cb-24de72e5c9db")
+		(property "Reference" "C510"
+			(at 289.398 152.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1nF"
+			(at 288.8265 154.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 284.48 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 284.48 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1588"
+			(at 284.48 153.67 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92245cfb-07ba-4b93-8c01-bb9d0d6879fc")
+		)
+		(pin "2"
+			(uuid "43a62a75-d77f-4257-a2af-e93cd9369322")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C510")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 284.48 160.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51446b1a-861f-4a1d-ad04-a631446e8f81")
+		(property "Reference" "#PWR188"
+			(at 284.48 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 284.48 163.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 284.48 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 284.48 160.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ebbd75c-8d03-4400-8faa-443713909a09")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR188")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LazerGamebox:MIC_MEMS_ANALOG")
+		(at 27.94 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f33102e-904c-4ec5-9337-8929a0f732cd")
+		(property "Reference" "MK501"
+			(at 33.5 224.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MSM421ACT006"
+			(at 21 243.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LazerGamebox_lcsc:MIC-SMD_4P-L2.8-W1.9-P1.01-TL"
+			(at 27.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/C51928207.pdf"
+			(at 27.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MEMSensing MSM421ACT006 analog top-port MEMS microphone, -42 dBV/Pa, 1.5 to 3.6 V, LGA-4"
+			(at 27.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C51928207"
+			(at 27.94 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73262ddb-1cf6-4892-bf67-7139e2ca707a")
+		)
+		(pin "4"
+			(uuid "361b58cd-7f41-48b1-b910-1ee1416b5fdd")
+		)
+		(pin "2"
+			(uuid "20d4c9c8-5af5-4073-88f9-d6d037cb460c")
+		)
+		(pin "3"
+			(uuid "c24fafe7-1350-4ea2-8819-fab021cdbab1")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "MK501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 27.94 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1507c126-6226-4d36-96f1-37e0d210cffe")
+		(property "Reference" "R516"
+			(at 31.842 212.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 30.699 214.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 27.94 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C21190"
+			(at 27.94 213.36 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7803c2c9-30bd-4004-97d8-a031b98bf72b")
+		)
+		(pin "2"
+			(uuid "6e61981e-d90e-4230-b9f7-97fe006e4712")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LazerGamebox:LCD_3V3")
+		(at 27.94 207.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e9048b5-002b-4833-8e01-7c754b308741")
+		(property "Reference" "#PWR189"
+			(at 27.94 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LCD_3V3"
+			(at 27.94 203.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"LCD_3V3\""
+			(at 27.94 207.01 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "76fa727d-5e62-4567-b1b1-1e113af78734")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR189")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 20.32 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1130613d-a957-426e-85a5-9c03fe818ab8")
+		(property "Reference" "C512"
+			(at 16.514 222.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 15.9425 224.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 20.32 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 20.32 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 20.32 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a5f79b12-6d00-44bc-a622-0a71301d1eb8")
+		)
+		(pin "2"
+			(uuid "80def1b9-86fc-459c-806a-7f12474244d1")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C512")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 20.32 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "753e338f-375d-4802-b68f-07b37430d86f")
+		(property "Reference" "#PWR190"
+			(at 20.32 229.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.32 233.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 229.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 229.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 20.32 229.87 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58fca8bf-5971-42a2-b809-09003fb53d61")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR190")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 27.94 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc6c0659-ac55-4a14-870e-eb28f2ec8cee")
+		(property "Reference" "#PWR191"
+			(at 27.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 243.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "991b59ef-7eb1-4757-9e51-dc59a2b12ac1")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR191")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 39.37 234.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ccc61d98-647a-4a30-8452-ec53631f0183")
+		(property "Reference" "C516"
+			(at 44.288 233.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100pF"
+			(at 44.8595 235.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 39.37 234.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 234.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 39.37 234.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C14858"
+			(at 39.37 234.95 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd5566d0-4797-4586-9648-4772235c6d56")
+		)
+		(pin "2"
+			(uuid "59449fe3-7150-4c00-ab17-5fcc582c3e48")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C516")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93959e16-e012-406b-a142-8710e1d40db8")
+		(property "Reference" "#PWR192"
+			(at 39.37 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 245.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0c26134-4ef0-4061-a9de-d252607a0904")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR192")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 48.26 228.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d43b019-8348-4c20-a62a-647381b89fa3")
+		(property "Reference" "C513"
+			(at 48.26 225.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 48.26 231.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 48.26 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 48.26 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 48.26 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b74662bd-649b-48af-a712-7fdca2b42305")
+		)
+		(pin "2"
+			(uuid "76f7a1c3-19d3-4d3a-bb68-de49ac08c0b9")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LMV321")
+		(at 85.09 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c6bac8c-b89b-429b-b1ca-adabd76f4494")
+		(property "Reference" "U504"
+			(at 79.756 222.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV321"
+			(at 80.899 239.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 85.09 231.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
+			(at 85.09 231.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "TI LMV321 rail-to-rail op amp, 1 MHz GBW, SOT-23-5"
+			(at 85.09 231.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7972"
+			(at 85.09 231.14 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d58af102-8a51-4856-b37b-bc1d4bdbcaba")
+		)
+		(pin "5"
+			(uuid "7c11b276-1d42-4a34-947c-897e25bf1bda")
+		)
+		(pin "1"
+			(uuid "81c47f16-e072-4d83-88de-43bc6f6e65e9")
+		)
+		(pin "3"
+			(uuid "959c5f05-bb26-484a-9103-e0bf13cb3eac")
+		)
+		(pin "4"
+			(uuid "ed82787c-1725-4610-abfb-11c82c3347ed")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "U504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 68.58 223.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da8f8e84-d297-46b9-a1ec-6709544239a7")
+		(property "Reference" "R517"
+			(at 72.482 222.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 72.482 224.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 68.58 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 68.58 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 68.58 223.52 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "201971a0-b2a3-4c6f-b7af-6e90dc049140")
+		)
+		(pin "2"
+			(uuid "a4f06e18-4431-47be-a310-eb7eb54d6811")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LazerGamebox:LCD_3V3")
+		(at 82.55 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f97b58af-6272-433a-bde3-13fcd51519c2")
+		(property "Reference" "#PWR193"
+			(at 82.55 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LCD_3V3"
+			(at 82.55 217.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"LCD_3V3\""
+			(at 82.55 220.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ff1e8f9-3f0b-4ba5-83d4-3036c037afab")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR193")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 82.55 241.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "169ca5e7-ee16-4ae0-b284-72fc0401090a")
+		(property "Reference" "#PWR194"
+			(at 82.55 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 82.55 245.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 82.55 241.3 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0951f1bc-9a5d-4ac3-b943-8db5695972fa")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR194")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 59.69 233.68 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bddfda66-2fd5-48d9-ba03-afb94c22311e")
+		(property "Reference" "R521"
+			(at 59.69 231.664 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 59.69 235.896 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 59.69 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 59.69 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 59.69 233.68 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84641106-ecff-448a-9a38-52e16a2d4da5")
+		)
+		(pin "2"
+			(uuid "6f52f332-3118-42db-9740-31ef6c51f997")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R521")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 49.53 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7395c396-31d1-47d7-855a-07cb22bbb79d")
+		(property "Reference" "C517"
+			(at 54.448 239.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 53.8765 241.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 49.53 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 49.53 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 49.53 240.03 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b89ab235-069c-49e4-8c02-b95ce66a9dd4")
+		)
+		(pin "2"
+			(uuid "713be8f8-4f57-4c1a-b908-54122a2872bf")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C517")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "445bffc4-e8af-4174-83a3-24347a9a55b9")
+		(property "Reference" "#PWR195"
+			(at 49.53 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 250.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66e87056-d928-4069-8607-e52c2d21eb50")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR195")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 81.28 246.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "964d3cdb-4884-434e-bd7d-ad92739b52aa")
+		(property "Reference" "R520"
+			(at 81 247.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470k"
+			(at 81 249 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.28 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 81.28 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23164"
+			(at 81.28 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d09fcb8f-f3e6-4942-a36f-046a193afb1d")
+		)
+		(pin "2"
+			(uuid "98118d9d-4828-43e7-b463-f32be43739f9")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R520")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 114.3 228.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3b9c12d-fcc7-4316-96dc-f670f9482081")
+		(property "Reference" "C511"
+			(at 114.3 225.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 114.3 231.832 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 114.3 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 114.3 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 114.3 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e1bf4069-262d-43a2-9f40-445e00a61fd6")
+		)
+		(pin "2"
+			(uuid "a386e376-e2a5-48bf-84a9-d9f40f4fb405")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C511")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 133.35 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66611ab3-c633-4f93-a019-98f8f5a8ad3d")
+		(property "Reference" "Q501"
+			(at 130.556 232.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 131.699 245.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 133.35 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 133.35 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2N7002 N-MOSFET, mic mute"
+			(at 133.35 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C8545"
+			(at 133.35 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "632923e3-d3b4-4e90-86a0-ab3149a906c5")
+		)
+		(pin "2"
+			(uuid "6c383092-2144-43b2-9229-4df090f63083")
+		)
+		(pin "3"
+			(uuid "e9235670-0a9d-4e3d-8f53-3d65ee91aab3")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "Q501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 228.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ea5be9b-12fe-4812-b5e4-70b53e7a491b")
+		(property "Reference" "R513"
+			(at 125.73 226.584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 125.73 230.816 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 125.73 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 125.73 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "398dfc09-1e54-4e46-8253-82824158d565")
+		)
+		(pin "2"
+			(uuid "a3fe0e20-f1b8-4db9-b8ec-8264d457777d")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R513")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 143.51 228.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d3014cca-6d31-4dd0-ab75-711fbe7c3542")
+		(property "Reference" "R514"
+			(at 143.51 226.584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 143.51 230.816 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 143.51 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23162"
+			(at 143.51 228.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94f4153f-3ece-42b2-af4e-4a21f01370cd")
+		)
+		(pin "2"
+			(uuid "d7391f38-48d1-40f6-b705-908daa641384")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R514")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 135.89 246.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "061a16c2-d364-42ee-97b5-82b3bfc13786")
+		(property "Reference" "#PWR196"
+			(at 135.89 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 250.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 246.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c6b2c261-df25-4b63-8a95-69b531d72022")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR196")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 330.2 218.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7cc8c2b6-5324-48d7-a300-82e71ca8996a")
+		(property "Reference" "R518"
+			(at 334.102 217.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 334.102 219.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 330.2 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 330.2 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 330.2 218.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5bad660-f13a-4b9d-81c4-4566678d79c5")
+		)
+		(pin "2"
+			(uuid "649cac75-ef66-4e55-b40e-0b985014ca3d")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R518")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LazerGamebox:LCD_3V3")
+		(at 330.2 212.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "836e903d-ddde-4534-bd02-01ab728297c4")
+		(property "Reference" "#PWR197"
+			(at 330.2 212.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LCD_3V3"
+			(at 330.2 208.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 212.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 212.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"LCD_3V3\""
+			(at 330.2 212.09 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02a3f723-83ff-4343-92cd-1888bc7d7ab2")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 330.2 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7d93e97-6a3d-45c4-aca8-cd44483b7893")
+		(property "Reference" "R519"
+			(at 334.102 231.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 334.102 233.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 330.2 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 330.2 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25803"
+			(at 330.2 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "867080ee-42ed-4fe0-ba49-3e31be2995ff")
+		)
+		(pin "2"
+			(uuid "a2a3502a-7fa3-4d5b-a771-963e32b75765")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "R519")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 330.2 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a50b61c2-f3f4-4ae3-b747-5838c1eea17b")
+		(property "Reference" "#PWR198"
+			(at 330.2 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 330.2 242.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 330.2 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 330.2 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fecabb4a-2a1c-465e-b8e6-c1a95bf5d3c9")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR198")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 340.36 232.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff314bd1-c8dd-4b80-bfe0-4015dfe1993c")
+		(property "Reference" "C514"
+			(at 345.278 231.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 344.7065 233.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 340.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 340.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 340.36 232.41 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54781826-9a2b-43c3-b3d8-37b6546af301")
+		)
+		(pin "2"
+			(uuid "7cfb0ba9-39cb-4c3c-8159-ad851c17064d")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "C514")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 340.36 238.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8431fafc-3371-4d5f-a720-ef9dd4432339")
+		(property "Reference" "#PWR199"
+			(at 340.36 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 340.36 242.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 340.36 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 340.36 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 340.36 238.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fee1499f-ff43-4ca9-9c87-1f462ddef319")
+		)
+		(instances
+			(project "LazerGamebox"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222"
+					(reference "#PWR199")
 					(unit 1)
 				)
 			)

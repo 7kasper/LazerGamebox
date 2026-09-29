@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-29T14:32:01",
+    "date": "2026-09-29T15:03:34",
     "ignored_checks": [
         {
             "description": "Four connection points are joined together",
@@ -17,37 +17,37 @@
     "sheets": [
         {
             "path": "/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8",
             "violations": []
         },
         {
             "path": "/power/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/61326d87-b1ec-4540-96e4-9b930d917a1e",
             "violations": []
         },
         {
             "path": "/mcu/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/b4f46307-7ea8-4df6-a845-68e5299f57bd",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7ae2ae56-2258-488a-b593-1dc9f6a5d6eb",
             "violations": []
         },
         {
             "path": "/radio/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/7fcef4a8-d286-4a11-92f7-ee9dfa447fa7",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/129a9e3d-e860-4bad-94f7-704ffc3919a4",
             "violations": []
         },
         {
             "path": "/lora_gps/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/bcfd1480-088e-4d2a-be97-e0e0ffb0f0ba",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/0ebcc8ee-ce41-4162-9e30-ceb5195ce915",
             "violations": []
         },
         {
             "path": "/audio/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/98207d13-870a-4701-8852-b709325aa2af",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/7b00361f-2e51-481d-ada6-141b2cd24222",
             "violations": []
         },
         {
             "path": "/io/",
-            "uuid_path": "/336127ae-e2c7-4639-9703-e6168b17e9e0/a71aa9eb-8e56-4b23-a70a-79031edcb0c7",
+            "uuid_path": "/0b94d600-f9b6-446e-b3f1-434f222b83a8/6ac89187-7a7b-40ba-8257-0eedc259ad55",
             "violations": []
         }
     ],

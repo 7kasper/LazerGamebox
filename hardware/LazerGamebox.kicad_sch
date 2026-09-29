@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "lazergamebox_gen")
 	(generator_version "10.0")
-	(uuid "336127ae-e2c7-4639-9703-e6168b17e9e0")
+	(uuid "0b94d600-f9b6-446e-b3f1-434f222b83a8")
 	(paper "A3")
 	(title_block
 		(title "LazerGamebox")
@@ -216,7 +216,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "2942f660-c892-4c7f-aae8-9f851a17a18a")
+		(uuid "97767092-02c5-4862-bf50-bec41e73b050")
 	)
 	(text "LazerGamebox: outdoor game box, ESP32 + UHF radio + LoRa + GNSS"
 		(exclude_from_sim no)
@@ -228,7 +228,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "e6cf3816-245f-40e9-a15d-b39b10711142")
+		(uuid "218ae535-8ffa-4389-b214-d92ba265b718")
 	)
 	(text "2-layer 70 x 100 mm, JLCPCB assembled. Hierarchical sheets below; nets cross sheets as global labels, rails as power symbols."
 		(exclude_from_sim no)
@@ -239,7 +239,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "1f251667-ddb5-4b37-ad09-5e41d6432623")
+		(uuid "c3accd16-f2a9-4bbb-8921-e18864f22c7c")
 	)
 	(text "USB-C, TP4056 charger, DW01A/FS8205A protection,\nload sharing, TPS62A02 3V3 buck, TPS61023 radio\nboost, P-FET load switches, VBAT sense"
 		(exclude_from_sim no)
@@ -250,7 +250,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "554dae36-0dc4-4b83-98db-c8d4bfc6452e")
+		(uuid "d1a5f9c3-b3cc-48d1-8042-21c40b90ca6a")
 	)
 	(text "ESP32-WROOM-32E-N16, CH340C USB serial with\nauto-reset, LIS3DHTR accelerometer,\nTCA9555 I2C GPIO expander"
 		(exclude_from_sim no)
@@ -261,7 +261,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "8f6ccc39-e81b-4e42-828e-10ffd465e673")
+		(uuid "18d2f1ed-e5a0-4081-9d8a-3c77b107bdfe")
 	)
 	(text "SA818S-U 1 W UHF module, PTT driver,\nPD divider, H/L jumper, pi pads, SMA"
 		(exclude_from_sim no)
@@ -272,7 +272,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "c87029f8-8864-49fd-90ba-fb37bb0324d1")
+		(uuid "f3963ad9-e5b5-45ec-ae64-e9f7418040f4")
 	)
 	(text "Ra-01SH LoRa 868 MHz, ATGM336H GNSS + patch,\nSIM7080G cellular option (DNP) with SIM and\n1.8 V level shifters"
 		(exclude_from_sim no)
@@ -283,9 +283,9 @@
 			)
 			(justify left top)
 		)
-		(uuid "afa9f5d0-7c2a-43ab-b111-17a7071caf7e")
+		(uuid "fee85e10-f13c-4e3d-9c60-5aa39d42c8c7")
 	)
-	(text "TS5A3159 source mux, NS4150B class-D + speaker,\nDAC to radio mic divider, radio AF to ADC bias"
+	(text "TS5A3159 source mux, NS4150B class-D + speaker,\nDAC to radio mic divider, MEMS mic + LMV321,\nradio AF or mic to ADC via mux"
 		(exclude_from_sim no)
 		(at 152 114 0)
 		(effects
@@ -294,7 +294,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "746c04a2-5075-464b-a7e1-f1aa49c63709")
+		(uuid "0d1420d8-4f8f-4c7a-abfa-8817b8943370")
 	)
 	(text "2.0in ST7789 display on 12p ZIF + backlight,\n10k pot, 3 buttons, 3x WS2812B-2020,\nIR receiver + high-power IR emitter"
 		(exclude_from_sim no)
@@ -305,7 +305,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "496444a8-0221-48dc-820f-ae83f311dd51")
+		(uuid "92cf2141-7ec9-4142-84a5-50944b9e06f3")
 	)
 	(text "MECHANICAL: 4x M2.5 mounting holes, 3 fiducials"
 		(exclude_from_sim no)
@@ -317,7 +317,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "2e1918c2-70cf-4887-970a-f378f6a2d91c")
+		(uuid "4dfa61b6-faa1-4683-b27a-a47d9e0149b5")
 	)
 	(text "Cross-sheet signal list: see docs/pinmap.md. Power rails: VBUS, VBAT, VSYS, +3V3, RADIO_4V5, VBAT_SW, GPS_3V3, LCD_3V3, GND."
 		(exclude_from_sim no)
@@ -328,7 +328,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "d3756e15-6472-47b4-9b9d-e14737bc87c4")
+		(uuid "c81ab90e-1fc9-4596-ba7c-80d440ddf215")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -338,7 +338,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "fba6dcf4-a791-47d3-b415-ad98d37f3cee")
+		(uuid "b0305ea1-4a89-4145-9ee8-d91cf84e3045")
 		(property "Reference" "H1"
 			(at 39.37 212.36 0)
 			(effects
@@ -384,7 +384,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "H1")
 					(unit 1)
 				)
@@ -399,7 +399,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "9a481021-c74b-49c6-a12f-2be5ba4d2def")
+		(uuid "4a829810-60cd-4eca-8a78-fabd9d7f6552")
 		(property "Reference" "H2"
 			(at 64.77 212.36 0)
 			(effects
@@ -445,7 +445,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "H2")
 					(unit 1)
 				)
@@ -460,7 +460,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "febb18d7-25cc-4937-8f42-988dfb03687c")
+		(uuid "be58ce63-4b4a-448b-b969-f11000b9c84a")
 		(property "Reference" "H3"
 			(at 93.183 213.63 0)
 			(effects
@@ -506,7 +506,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "H3")
 					(unit 1)
 				)
@@ -521,7 +521,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "b5aab723-6e47-47ad-8a41-f02a6cd0fed7")
+		(uuid "fb22199b-97a1-45dc-b9a6-9ff09dc77f88")
 		(property "Reference" "H4"
 			(at 115.57 212.36 0)
 			(effects
@@ -567,7 +567,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "H4")
 					(unit 1)
 				)
@@ -582,7 +582,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "8da53adf-a964-4e62-943b-c0c3e7985c2d")
+		(uuid "a8ec54e4-a54f-4b5e-8f5c-00cc80d42547")
 		(property "Reference" "FID1"
 			(at 174.336 213.63 0)
 			(effects
@@ -628,7 +628,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "FID1")
 					(unit 1)
 				)
@@ -643,7 +643,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "cc977358-6b18-41c0-91ef-73417b8dcf2b")
+		(uuid "c49ba2f1-e9ac-4518-a6ff-4f7417cc642f")
 		(property "Reference" "FID2"
 			(at 199.736 213.63 0)
 			(effects
@@ -689,7 +689,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "FID2")
 					(unit 1)
 				)
@@ -704,7 +704,7 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "2f780957-1c55-4f60-9621-3c46aa7f4dbf")
+		(uuid "0c9b7011-72af-440a-97a8-804e2146f546")
 		(property "Reference" "FID3"
 			(at 223.866 213.63 0)
 			(effects
@@ -750,7 +750,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(reference "FID3")
 					(unit 1)
 				)
@@ -772,7 +772,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "19b1e656-4400-4d72-aa7e-1be839063b6a")
+		(uuid "61326d87-b1ec-4540-96e4-9b930d917a1e")
 		(property "Sheetname" "power"
 			(at 15 29.2 0)
 			(effects
@@ -793,7 +793,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "2")
 				)
 			)
@@ -814,7 +814,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "b4f46307-7ea8-4df6-a845-68e5299f57bd")
+		(uuid "7ae2ae56-2258-488a-b593-1dc9f6a5d6eb")
 		(property "Sheetname" "mcu"
 			(at 150 29.2 0)
 			(effects
@@ -835,7 +835,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "3")
 				)
 			)
@@ -856,7 +856,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "7fcef4a8-d286-4a11-92f7-ee9dfa447fa7")
+		(uuid "129a9e3d-e860-4bad-94f7-704ffc3919a4")
 		(property "Sheetname" "radio"
 			(at 285 29.2 0)
 			(effects
@@ -877,7 +877,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "4")
 				)
 			)
@@ -898,7 +898,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "bcfd1480-088e-4d2a-be97-e0e0ffb0f0ba")
+		(uuid "0ebcc8ee-ce41-4162-9e30-ceb5195ce915")
 		(property "Sheetname" "lora_gps"
 			(at 15 109.2 0)
 			(effects
@@ -919,7 +919,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "5")
 				)
 			)
@@ -940,7 +940,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "98207d13-870a-4701-8852-b709325aa2af")
+		(uuid "7b00361f-2e51-481d-ada6-141b2cd24222")
 		(property "Sheetname" "audio"
 			(at 150 109.2 0)
 			(effects
@@ -961,7 +961,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "6")
 				)
 			)
@@ -982,7 +982,7 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "a71aa9eb-8e56-4b23-a70a-79031edcb0c7")
+		(uuid "6ac89187-7a7b-40ba-8257-0eedc259ad55")
 		(property "Sheetname" "io"
 			(at 285 109.2 0)
 			(effects
@@ -1003,7 +1003,7 @@
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0"
+				(path "/0b94d600-f9b6-446e-b3f1-434f222b83a8"
 					(page "7")
 				)
 			)

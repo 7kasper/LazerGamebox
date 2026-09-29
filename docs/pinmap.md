@@ -88,6 +88,8 @@ Unconnected (NC) pins are omitted.
 | 14 | P11 | /io/EXP9 |
 | 15 | P12 | /io/DRV1 |
 | 16 | P13 | /io/DRV2 |
+| 17 | P14 | ADC_SEL |
+| 18 | P15 | MIC_MUTE |
 | 21 | A0 | +3V3 |
 | 22 | SCL | SCL |
 | 23 | SDA | SDA |

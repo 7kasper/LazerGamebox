@@ -49,6 +49,10 @@ switches, red LEDs. TP4056 C16581 is "Preferred" (no fee).
 | HanElectricity 2541WV-2x10P header (J602) | C5383109 | 4 758 | Extended, THT; any 2.54 mm 2x10 male header fits |
 | AOS AO3400A (Q603, Q604) | C20917 | 1 013 098 | Basic |
 | second TCA9555PWR (U602) | C465732 | 39 178 | Extended, already on the BOM |
+| MEMSensing MSM421ACT006 mic (MK501) | C51928207 | 4 373 | Extended, LGA-4 top port; datasheet https://datasheet.lcsc.com/lcsc/C51928207.pdf (1.5 to 3.6 V, abs max 4.0 V, pins 1 OUT, 2/3 GND, 4 VDD) |
+| TI LMV321IDBVR (U504) | C7972 | 239 666 | Extended preferred (no loading fee), SOT-23-5 |
+| TI TS5A3159DCKR (U503, second) | C46388 | 40 675 | Extended, already on the BOM |
+| 2N7002 (Q501), 100 pF (C516) | C8545, C14858 | Basic | mute FET, RF bypass |
 
 ## Library provenance (symbols, footprints, STEP)
 
@@ -58,6 +62,7 @@ switches, red LEDs. TP4056 C16581 is "Preferred" (no fee).
 - `hardware/lib/LazerGamebox_lcsc.*`: imported with easyeda2kicad from the LCSC/EasyEDA library (the same footprints JLC
   uses in its own tooling): SA818S-U, Ra-01SH, ATGM336H, SIM7080G, 18650 holder, FS-3013 speaker, 05A20H12P ZIF,
   868 spring, GPS patch, GSM spring, nano-SIM socket, VSMY2940G. STEP files in `LazerGamebox_lcsc.3dshapes`.
+  MSM421ACT006 microphone added 2026-09-29 (EasyEDA footprint MIC-SMD_4P-L2.8-W1.9-P1.01-TL, no port hole: top port).
   The ZIF has no EasyEDA model, so a same-size Hirose FH12-12S STEP from KiCad is attached.
 - Before ordering, CPL rotations of the LCSC-imported footprints must be checked against JLCPCB's DFM preview
   (their rotation database is keyed by footprint name); this is a layout-stage task.

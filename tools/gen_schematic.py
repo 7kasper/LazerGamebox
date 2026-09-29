@@ -534,7 +534,7 @@ def gen_lora_gps(sh):
 # AUDIO
 # ======================================================================================
 def gen_audio(sh):
-    title(sh, "AUDIO: DAC or radio audio -> class-D amp -> speaker; DAC -> radio mic; radio audio -> ADC for DTMF",
+    title(sh, "AUDIO: DAC or radio audio -> class-D amp -> speaker; DAC and mic -> radio mic; radio audio or mic -> ADC",
           "NS4150B gain = 2 x 240k / 220k = 2.2. MUX_SEL low = ESP32 DAC to the speaker, high = radio receive audio to the speaker.")
     sh.box(12, 20, 150, 105, "SOURCE SELECT (TS5A3159)")
     u = sh.symbol("LazerGamebox:TS5A3159", "U501", "TS5A3159", (75, 62), lcsc="C46388")
@@ -613,31 +613,129 @@ def gen_audio(sh):
     sh.wire((62, 145), c.pin("1"))
     sh.wire(c.pin("2"), (100, 145))
     sh.glabel("RADIO_MIC", (100, 145), 0, "passive")
-    sh.text("3.3 Vpp DAC -> 33 mVpp at MIC_IN, AC coupled.\nUsed for DTMF / tone signalling over the radio.", (14, 177), size=1.27)
+    sh.wire((62, 145), (62, 137))
+    sh.label("MIC_TX", (62, 137), 90)                                 # microphone path from the box below
+    sh.text("3.3 Vpp DAC -> 33 mVpp at MIC_IN, AC coupled; MIC_TX adds the\nmicrophone (about 9 mVrms speech). DTMF, tones and voice over the radio.", (14, 177), size=1.27)
 
-    sh.box(158, 113, 405, 190, "RADIO AF_OUT -> ADC1 (software Goertzel DTMF decoder)")
+    sh.box(158, 113, 405, 190, "ADC INPUT MUX (TS5A3159): RADIO AF_OUT or MIC -> ADC1 (software Goertzel DTMF decoder)")
     y = 145
-    sh.glabel("RADIO_AF", (175, y), 180, "passive")
-    r1 = R(sh, "R507", "47k", (188, y), rot=90)
-    sh.wire((175, y), r1.pin("1"))
-    c1 = C(sh, "C509", "1uF", (204, y), rot=90)
-    sh.wire(r1.pin("2"), c1.pin("1"))
-    sh.wire(c1.pin("2"), (225, y))
-    ru = R(sh, "R508", "100k", (225, y - 9))
-    sh.wire(ru.pin("2"), (225, y))
+    m = sh.symbol("LazerGamebox:TS5A3159", "U503", "TS5A3159", (215, y), lcsc="C46388")
+    no, ncp = m.pin("NO"), m.pin("NC")                               # NO (IN high, expander default) = radio, NC = mic
+    r1 = R(sh, "R507", "47k", (185, no[1]), rot=90)
+    r1.ref_pos = (r1.x, r1.y - 2.9, None); r1.val_pos = (r1.x, r1.y - 1.2, None)
+    sh.wire(r1.pin("2"), no)
+    sh.wire((172, no[1]), r1.pin("1"))
+    sh.glabel("RADIO_AF", (172, no[1]), 180, "passive")
+    r15 = R(sh, "R515", "22k", (185, ncp[1]), rot=90)
+    r15.ref_pos = (r15.x, r15.y + 1.2, None); r15.val_pos = (r15.x, r15.y + 2.9, None)
+    sh.wire(r15.pin("2"), ncp)
+    sh.wire((172, ncp[1]), r15.pin("1"))
+    sh.label("MIC_AMP", (172, ncp[1]), 180)
+    sel = m.pin("IN")
+    sh.wire(sel, (198, sel[1]), (198, sel[1] + 10))
+    sh.glabel("ADC_SEL", (198, sel[1] + 10), 270, "passive")
+    sh.pin_power(m, "V+", "+3V3", length=3.81)
+    sh.pin_power(m, "GND", G, length=2.54)
+    com = m.pin("COM")
+    c1 = C(sh, "C509", "1uF", (com[0] + 8, y), rot=90)
+    sh.wire(com, c1.pin("1"))
+    sh.wire(c1.pin("2"), (250, y))
+    ru = R(sh, "R508", "100k", (250, y - 9))
+    sh.wire(ru.pin("2"), (250, y))
     sh.pin_power(ru, "1", "+3V3", length=2.54)
-    rd = R(sh, "R509", "100k", (225, y + 9))
-    sh.wire(rd.pin("1"), (225, y))
+    rd = R(sh, "R509", "100k", (250, y + 9))
+    sh.wire(rd.pin("1"), (250, y))
     sh.pin_power(rd, "2", G, length=2.54)
-    r2 = R(sh, "R510", "10k", (245, y), rot=90)
-    sh.wire((225, y), r2.pin("1"))
-    sh.wire(r2.pin("2"), (265, y))
-    c2 = C(sh, "C510", "1nF", (265, y + 9))
-    sh.wire(c2.pin("1"), (265, y))
+    r2 = R(sh, "R510", "10k", (268, y), rot=90)
+    sh.wire((250, y), r2.pin("1"))
+    sh.wire(r2.pin("2"), (285, y))
+    c2 = C(sh, "C510", "1nF", (285, y + 9))
+    sh.wire(c2.pin("1"), (285, y))
     sh.pin_power(c2, "2", G, length=2.54)
-    sh.wire((265, y), (285, y))
-    sh.glabel("ADC_AUDIO", (285, y), 0, "passive")
-    sh.text("AF_OUT is 700 mV / 200 ohm: R507 with the 50k bias gives about 0.35 Vrms swing around 1.65 V at GPIO36.\nR510/C510 = 16 kHz anti-alias for a 40 kHz ADC sample rate.", (160, 177), size=1.27)
+    sh.wire((285, y), (300, y))
+    sh.glabel("ADC_AUDIO", (300, y), 0, "passive")
+    sh.text("AF_OUT is 700 mV / 200 ohm: R507 with the 50k bias gives about 0.35 Vrms swing around 1.65 V at GPIO36; R515 passes 0.7 of MIC_AMP.\n"
+            "ADC_SEL high (expander default) = radio, low = microphone. R510/C510 = 16 kHz anti-alias for a 40 kHz ADC sample rate.",
+            (160, 177), size=1.27)
+
+    # ---- microphone: MEMS capsule -> LMV321 x48 -> radio MIC_IN (muted by default) and the ADC mux ----
+    sh.box(12, 198, 405, 252, "MICROPHONE: MEMS mic -> LMV321 x48 -> radio MIC_IN (muted by default) and ADC mux")
+    ym = 229
+    mk = sh.symbol("LazerGamebox:MIC_MEMS_ANALOG", "MK501", "MSM421ACT006", (28, ym), lcsc="C51928207")
+    mk.ref_pos = (33.5, 224.2, None); mk.val_pos = (21, 243.8, None)
+    vdd = mk.pin("VDD")
+    r16 = R(sh, "R516", "1k", (28, 213))
+    sh.wire(r16.pin("2"), vdd)
+    sh.pin_power(r16, "1", "LCD_3V3", length=2.54, lib="LazerGamebox")
+    c12 = C(sh, "C512", "4.7uF", (20, 224))
+    c12.ref_pos = (18.8, 222.2, "right"); c12.val_pos = (18.8, 224.2, "right")
+    sh.wire(c12.pin("1"), (28, c12.pin("1")[1]))
+    sh.pin_power(c12, "2", G, length=2.54)
+    sh.pin_power(mk, "2", G, length=2.54)
+    out = mk.pin("OUT")
+    sh.wire(out, (40, ym))
+    c16 = C(sh, "C516", "100pF", (40, 235))                         # kills UHF pickup at the capsule
+    sh.wire((40, ym), c16.pin("1"))
+    sh.pin_power(c16, "2", G, length=2.54)
+    c13 = C(sh, "C513", "1uF", (48, ym), rot=90)
+    sh.wire((40, ym), c13.pin("1"))
+    op = sh.symbol("Amplifier_Operational:LMV321", "U504", "LMV321", (85, ym + 2.54), footprint="Package_TO_SOT_SMD:SOT-23-5",
+                   lcsc="C7972", description="TI LMV321 rail-to-rail op amp, 1 MHz GBW, SOT-23-5")
+    inp, inn, oute = op.pin("+"), op.pin("-"), op.pin("4")
+    sh.wire(c13.pin("2"), inp)
+    r17 = R(sh, "R517", "100k", (68, 224))
+    sh.wire(r17.pin("2"), (68, ym))
+    sh.wire(r17.pin("1"), (68, 216))
+    sh.label("MIC_VMID", (68, 216), 90)
+    sh.pin_power(op, "V+", "LCD_3V3", length=2.54, lib="LazerGamebox")
+    sh.pin_power(op, "V-", G, length=2.54)
+    # gain: 1 + R520 / R521 = 48; C517 sets the DC gain to 1 so the output sits at MIC_VMID
+    sh.wire(inn, (72, inn[1]), (72, 246))
+    r21 = R(sh, "R521", "10k", (60, inn[1]), rot=90)
+    sh.wire(r21.pin("2"), (72, inn[1]))
+    c17 = C(sh, "C517", "1uF", (50, 240))
+    sh.wire(r21.pin("1"), (50, inn[1]), c17.pin("1"))
+    sh.pin_power(c17, "2", G, length=2.54)
+    r20 = R(sh, "R520", "470k", (81, 246), rot=90)
+    r20.ref_pos = (81, 247.3, None); r20.val_pos = (81, 249.0, None)
+    sh.wire((72, 246), r20.pin("1"))
+    sh.wire(r20.pin("2"), (100, 246), (100, ym), oute)
+    # outputs: MIC_AMP to the ADC mux, C511/R513/R514 into the DAC 1k node, Q501 mute
+    sh.wire((100, ym), (106, ym), (106, 222))
+    sh.label("MIC_AMP", (106, 222), 90)
+    c11 = C(sh, "C511", "1uF", (114, ym), rot=90)
+    sh.wire((106, ym), c11.pin("1"))
+    q = sh.symbol("Transistor_FET:2N7002", "Q501", "2N7002", (133.46, 239), footprint="Package_TO_SOT_SMD:SOT-23", lcsc="C8545",
+                  description="2N7002 N-MOSFET, mic mute")
+    d, g = q.pin("D"), q.pin("G")
+    xn = d[0]
+    r13 = R(sh, "R513", "4.7k", (xn - 10, ym), rot=90)
+    sh.wire(c11.pin("2"), r13.pin("1"))
+    sh.wire(r13.pin("2"), (xn, ym), d)
+    r14 = R(sh, "R514", "4.7k", (xn + 8, ym), rot=90)
+    sh.wire((xn, ym), r14.pin("1"))
+    sh.wire(r14.pin("2"), (xn + 20, ym))
+    sh.label("MIC_TX", (xn + 20, ym), 0)
+    sh.wire(g, (122, g[1]))
+    sh.glabel("MIC_MUTE", (122, g[1]), 180, "passive")
+    sh.pin_power(q, "S", G, length=2.54)
+    # mid-rail reference for the preamp
+    r18 = R(sh, "R518", "100k", (330, 218))
+    sh.pin_power(r18, "1", "LCD_3V3", length=2.54, lib="LazerGamebox")
+    r19 = R(sh, "R519", "100k", (330, 232))
+    sh.wire(r18.pin("2"), (330, 226), r19.pin("1"))
+    sh.pin_power(r19, "2", G, length=2.54)
+    c14 = C(sh, "C514", "1uF", (340, 232))
+    sh.wire((330, 226), (340, 226), c14.pin("1"))
+    sh.pin_power(c14, "2", G, length=2.54)
+    sh.wire((320, 226), (330, 226))
+    sh.label("MIC_VMID", (320, 226), 180)
+    sh.text("MSM421ACT006: -42 dBV/Pa, 170 ohm output, 1.5 to 3.6 V, top port (hole in the enclosure above it). Runs on LCD_3V3 through R516/C512.\n"
+            "U504 gain 1 + R520/R521 = 48 (34 dB), bandwidth about 20 kHz from the 1 MHz GBW, output biased at LCD_3V3 / 2 (MIC_VMID).\n"
+            "Speech at 20 cm gives about 100 mVrms at MIC_AMP; R513/R514 into the 1k DAC node give about 9 mVrms at MIC_IN (rated deviation).\n"
+            "Q501 shorts the radio path unless MIC_MUTE is low (expander default high = muted). ADC path: R515 into U503 with ADC_SEL low.\n"
+            "Off in sleep with LCD_3V3 (about 0.3 mA when on). Firmware mutes the speaker while the mic is live or the radio transmits.",
+            (165, 206), size=1.1)
 
 
 # ======================================================================================
@@ -729,7 +827,9 @@ def gen_io(sh):
         sh.pin_label(x2, f"P0{i}" if i < 8 else f"P1{i - 8}", f"EXP{i}", length=5.08, kind="local")
     sh.pin_label(x2, "P12", "DRV1", length=5.08, kind="local")
     sh.pin_label(x2, "P13", "DRV2", length=5.08, kind="local")
-    for n in ("P14", "P15", "P16", "P17"):
+    sh.pin_label(x2, "P14", "ADC_SEL", length=5.08, kind="global", shape="passive")    # audio sheet: high = radio, low = mic
+    sh.pin_label(x2, "P15", "MIC_MUTE", length=5.08, kind="global", shape="passive")   # audio sheet: high (default) = mic muted
+    for n in ("P16", "P17"):
         sh.pin_nc(x2, n)                                    # spare, internal 100k pull-ups keep them defined
     sh.pin_label(x2, "SCL", "SCL", length=2.54, kind="global", shape="passive")
     sh.pin_label(x2, "SDA", "SDA", length=2.54, kind="global", shape="passive")
@@ -828,7 +928,7 @@ def gen_root(root, sheets):
         "mcu": "ESP32-WROOM-32E-N16, CH340C USB serial with\nauto-reset, LIS3DHTR accelerometer,\nTCA9555 I2C GPIO expander",
         "radio": "SA818S-U 1 W UHF module, PTT driver,\nPD divider, H/L jumper, pi pads, SMA",
         "lora_gps": "Ra-01SH LoRa 868 MHz, ATGM336H GNSS + patch,\nSIM7080G cellular option (DNP) with SIM and\n1.8 V level shifters",
-        "audio": "TS5A3159 source mux, NS4150B class-D + speaker,\nDAC to radio mic divider, radio AF to ADC bias",
+        "audio": "TS5A3159 source mux, NS4150B class-D + speaker,\nDAC to radio mic divider, MEMS mic + LMV321,\nradio AF or mic to ADC via mux",
         "io": "2.0in ST7789 display on 12p ZIF + backlight,\n10k pot, 3 buttons, 3x WS2812B-2020,\nIR receiver + high-power IR emitter",
     }
     pos = {"power": (15, 30), "mcu": (150, 30), "radio": (285, 30), "lora_gps": (15, 110), "audio": (150, 110), "io": (285, 110)}

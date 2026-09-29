@@ -275,6 +275,13 @@ def build():
         bottom=[(4, "GND", "power_in")], stacked_gnd=(0, [9]),
         footprint="LazerGamebox_lcsc:TDFN-8_L2.0-W2.0-P0.50-BL-EP1.2", datasheet="https://www.analog.com/media/en/technical-documentation/data-sheets/MAX17048-MAX17049.pdf",
         description="Maxim MAX17048 ModelGauge 1S fuel gauge, I2C 0x36, TDFN-8 2x2", width=17.78))
+    # ---- MSM421ACT006 analog MEMS microphone ----
+    syms.append(box_symbol(
+        "MIC_MEMS_ANALOG", ref="MK",
+        right=[(1, "OUT", "output")], top=[(4, "VDD", "passive")],          # VDD fed through a filter resistor
+        bottom=[(2, "GND", "power_in")], stacked_gnd=(0, [3]),
+        footprint="LazerGamebox_lcsc:MIC-SMD_4P-L2.8-W1.9-P1.01-TL", datasheet="https://datasheet.lcsc.com/lcsc/C51928207.pdf",
+        description="MEMSensing MSM421ACT006 analog top-port MEMS microphone, -42 dBV/Pa, 1.5 to 3.6 V, LGA-4", width=10.16))
     # ---- power symbols ----
     for n in ("VBAT", "VSYS", "RADIO_4V5", "VBAT_SW", "GPS_3V3", "LCD_3V3"):
         syms.append(power_symbol(n))

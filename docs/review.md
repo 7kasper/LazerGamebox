@@ -85,6 +85,21 @@ Datasheet-driven choices:
 - MAX17048: VDD and CELL on VBAT with 100 nF, CTG, QSTRT and pad to GND, ALRT wire-ORed with
   the charger interrupt on PWR_INT (GPIO39). I2C pins are rated independent of VDD, so no level shifting.
 
+## Microphone block (2026-09-29)
+
+Drawn from the MSM421ACT006 datasheet (operation 1.5 to 3.6 V, absolute maximum 4.0 V, so the capsule
+runs on LCD_3V3 and never on VBAT_SW; pins 1 OUT, 2 and 3 GND, 4 VDD; 170 ohm output, -42 dBV/Pa, load
+above 2 k; top port, no PCB hole) and the LMV321 datasheet (2.7 to 5.5 V, input common mode to V+ - 0.8 V,
+so the 1.65 V bias is inside the range at 3.3 V; 1 MHz GBW gives about 20 kHz at gain 48; rail-to-rail
+output). Level chain: 1 Pa gives 7.9 mVrms at the capsule; speech at 20 cm (about 75 dB SPL) gives
+about 2 mVrms, times 48 is 100 mVrms at MIC_AMP, which the 4.7 k + 4.7 k into the 1 k node divides to
+about 9 mVrms at MIC_IN (the SA818S-U rated deviation point), and the 22 k into the 50 k ADC bias
+leaves 0.7 of it at GPIO36 (about 200 mVpp, shouting reaches full scale). The 2N7002 shunt at the
+midpoint gives more than 55 dB of mute; the expander's power-up pull-up keeps it muted until firmware
+says otherwise. C516 100 pF at the capsule output is the usual guard against the 1 W UHF transmitter.
+R516 1 k drops 0.18 V at 175 uA (3.1 V at the capsule). The second TS5A3159 sees only in-rail signals
+(0 to 3.3 V from the preamp, 0.7 V from the radio) with 47 k and 22 k in series.
+
 ## Firmware rules the hardware depends on
 
 0. Charger and gauge: after any boot or PWR_INT, read the HUSB238 (PD_STATUS1 5V_CURRENT or
@@ -113,6 +128,10 @@ Datasheet-driven choices:
 8. Dim the WS2812B below a 3.4 V cell (VDD spec 3.3 V minimum).
 9. `setDio2AsRfSwitch(true)` on the SX1262; the Ra-01SH is a crystal module, no TCXO.
 10. Ignore the ATGM336H "ANTENNA OPEN" text sentence with a passive antenna.
+11. Microphone: LCD_EN on before use (the mic and preamp ride on LCD_3V3, allow 50 ms for the bias to
+    settle); MIC_MUTE low only while a talk button is held, together with PTT; AMP_SD low whenever the
+    mic is live or the radio transmits (feedback through the speaker); ADC_SEL low to sample the mic,
+    high for radio DTMF; keep the DAC idle at mid-scale while talking so it adds no tone.
 
 ## Layout notes carried forward
 
