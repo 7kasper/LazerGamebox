@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "LazerGamebox_lcsc")(type "KiCad")(uri "${KIPRJMOD}/lib/LazerGamebox_lcsc.pretty")(options "")(descr "EasyEDA/JLC footprints"))
+  (lib (name "LazerGamebox")(type "KiCad")(uri "${KIPRJMOD}/lib/LazerGamebox.pretty")(options "")(descr "KiCad footprints with LCSC STEP models"))
+)

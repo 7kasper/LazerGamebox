@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LazerGamebox")(type "KiCad")(uri "${KIPRJMOD}/LazerGamebox.kicad_sym")(options "")(descr "Project symbols"))
+  (lib (name "LazerGamebox_lcsc")(type "KiCad")(uri "${KIPRJMOD}/lib/LazerGamebox_lcsc.kicad_sym")(options "")(descr "EasyEDA imports"))
+)

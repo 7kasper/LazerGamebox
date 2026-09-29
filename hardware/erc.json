@@ -1,0 +1,55 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-29T14:04:09",
+    "ignored_checks": [
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.3",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d",
+            "violations": []
+        },
+        {
+            "path": "/power/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8",
+            "violations": []
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/c057e821-8fd9-49a3-99f2-d5aa1d2bc391",
+            "violations": []
+        },
+        {
+            "path": "/radio/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/cc15c345-0406-47ff-8387-8d8e71984e00",
+            "violations": []
+        },
+        {
+            "path": "/lora_gps/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/fb40de43-80cd-4887-96ca-9fbee95440ee",
+            "violations": []
+        },
+        {
+            "path": "/audio/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/f14d28a1-a690-4c6e-a836-ad339132bbf3",
+            "violations": []
+        },
+        {
+            "path": "/io/",
+            "uuid_path": "/d3191818-98c1-4acb-a19c-9433d83eba7d/1777951f-fd85-41af-ac9a-92a8b1d67281",
+            "violations": []
+        }
+    ],
+    "source": "LazerGamebox.kicad_sch"
+}

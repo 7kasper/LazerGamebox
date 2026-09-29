@@ -1,0 +1,27 @@
+ERC report (2026-09-29T11:57:00, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[footprint_link_issues]: Assigned footprint (sim-smd_nano-sim-xg6p-h1.35) doesn't match footprint filters (*SIM*Card*Holder*)
+    ; warning
+    @(14750 mils, 7500 mils): Symbol J401 [SIM_Card]
+[footprint_link_issues]: Assigned footprint (sot-23) doesn't match footprint filters (SOT?23?3*)
+    ; warning
+    @(8150 mils, 1250 mils): Symbol U202 [XC6206PxxxMR]
+
+***** Sheet /power/
+
+***** Sheet /lora_gps/
+
+***** Sheet /mcu/
+
+***** Sheet /audio/
+
+***** Sheet /radio/
+
+***** Sheet /io/
+
+ ** ERC messages: 2  Errors 0  Warnings 2
+
+ ** Ignored checks:
+    - Four connection points are joined together
