@@ -68,6 +68,56 @@ Unconnected (NC) pins are omitted.
 | 23 | SDA | SDA |
 | 24 | VCC | +3V3 |
 
+## U602 TCA9555 #2, expansion (address 0x21, INT shared on GPIO32)
+
+| Pin | Port | Net |
+|---|---|---|
+| 1 | ~{INT} | EXP_INT |
+| 2 | A1 | GND |
+| 3 | A2 | GND |
+| 4 | P00 | /io/EXP0 |
+| 5 | P01 | /io/EXP1 |
+| 6 | P02 | /io/EXP2 |
+| 7 | P03 | /io/EXP3 |
+| 8 | P04 | /io/EXP4 |
+| 9 | P05 | /io/EXP5 |
+| 10 | P06 | /io/EXP6 |
+| 11 | P07 | /io/EXP7 |
+| 12 | GND | GND |
+| 13 | P10 | /io/EXP8 |
+| 14 | P11 | /io/EXP9 |
+| 15 | P12 | /io/DRV1 |
+| 16 | P13 | /io/DRV2 |
+| 21 | A0 | +3V3 |
+| 22 | SCL | SCL |
+| 23 | SDA | SDA |
+| 24 | VCC | +3V3 |
+
+## J602 expansion header 2x10 (odd pins left, even pins right)
+
+| Pin | Name | Net |
+|---|---|---|
+| 1 | Pin_1 | GND |
+| 2 | Pin_2 | +3V3 |
+| 3 | Pin_3 | VBAT_SW |
+| 4 | Pin_4 | VSYS |
+| 5 | Pin_5 | SDA |
+| 6 | Pin_6 | SCL |
+| 7 | Pin_7 | /io/EXP0 |
+| 8 | Pin_8 | /io/EXP1 |
+| 9 | Pin_9 | /io/EXP2 |
+| 10 | Pin_10 | /io/EXP3 |
+| 11 | Pin_11 | /io/EXP4 |
+| 12 | Pin_12 | /io/EXP5 |
+| 13 | Pin_13 | /io/EXP6 |
+| 14 | Pin_14 | /io/EXP7 |
+| 15 | Pin_15 | /io/EXP8 |
+| 16 | Pin_16 | /io/EXP9 |
+| 17 | Pin_17 | /io/OUT1 |
+| 18 | Pin_18 | /io/OUT2 |
+| 19 | Pin_19 | GND |
+| 20 | Pin_20 | GND |
+
 ## U301 SA818S-U radio module
 
 | Pin | Name | Net |
@@ -136,6 +186,6 @@ Unconnected (NC) pins are omitted.
 ## Strapping and analog notes
 
 - GPIO0 boot button, GPIO2 pulled down 10k (LCD_BL), GPIO12 has no pull-up, GPIO5 and GPIO15 keep internal pull-ups.
-- All ADC inputs on ADC1: GPIO34 pot, GPIO36 radio audio, GPIO39 VBAT/2. GPIO35 is the IR receiver (digital).
+- ADC1 inputs: GPIO34 pot, GPIO36 radio audio. GPIO35 is the IR receiver, GPIO39 the charger/gauge interrupt (both digital, input only).
 - UART0 (GPIO1/3) is the CH340C programming port only. UART1 = GPS (shared with the DNP cellular module), UART2 = radio.
-- Wake sources from deep sleep: GPIO32 (expander INT: buttons, motion, squelch, PPS) and GPIO33 (LoRa DIO1).
+- Wake sources from deep sleep: GPIO32 (expander INT: buttons, motion, squelch, PPS, expansion lines), GPIO33 (LoRa DIO1), GPIO39 (USB plug, charger events, low battery).

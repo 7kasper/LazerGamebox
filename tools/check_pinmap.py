@@ -27,15 +27,17 @@ out = ["# Pin map", "",
        "Unconnected (NC) pins are omitted.", ""]
 out += table("U201", "U201 ESP32-WROOM-32E-N16", ("Module pin", "GPIO"))
 out += table("U205", "U205 TCA9555 I2C GPIO expander (address 0x20, INT on GPIO32)", ("Pin", "Port"))
+out += table("U602", "U602 TCA9555 #2, expansion (address 0x21, INT shared on GPIO32)", ("Pin", "Port"))
+out += table("J602", "J602 expansion header 2x10 (odd pins left, even pins right)", ("Pin", "Name"))
 out += table("U301", "U301 SA818S-U radio module", ("Pin", "Name"))
 out += table("U401", "U401 Ra-01SH LoRa module", ("Pin", "Name"))
 out += table("U402", "U402 ATGM336H-5N31 GNSS module", ("Pin", "Name"))
 out += table("J601", "J601 display ZIF (HS20HS072RX pinout)", ("Pin", "Name"))
 out += ["## Strapping and analog notes", "",
         "- GPIO0 boot button, GPIO2 pulled down 10k (LCD_BL), GPIO12 has no pull-up, GPIO5 and GPIO15 keep internal pull-ups.",
-        "- All ADC inputs on ADC1: GPIO34 pot, GPIO36 radio audio, GPIO39 VBAT/2. GPIO35 is the IR receiver (digital).",
+        "- ADC1 inputs: GPIO34 pot, GPIO36 radio audio. GPIO35 is the IR receiver, GPIO39 the charger/gauge interrupt (both digital, input only).",
         "- UART0 (GPIO1/3) is the CH340C programming port only. UART1 = GPS (shared with the DNP cellular module), UART2 = radio.",
-        "- Wake sources from deep sleep: GPIO32 (expander INT: buttons, motion, squelch, PPS) and GPIO33 (LoRa DIO1).", ""]
+        "- Wake sources from deep sleep: GPIO32 (expander INT: buttons, motion, squelch, PPS, expansion lines), GPIO33 (LoRa DIO1), GPIO39 (USB plug, charger events, low battery).", ""]
 p = os.path.join(HERE, "..", "docs", "pinmap.md")
 open(p, "w", encoding="utf-8", newline="\n").write("\n".join(out))
 print("wrote", os.path.normpath(p), len(pins), "pins")

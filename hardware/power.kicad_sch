@@ -2,7 +2,7 @@
 	(version 20260306)
 	(generator "lazergamebox_gen")
 	(generator_version "10.0")
-	(uuid "e842766e-431f-4b62-b8e3-f9c85d1f1701")
+	(uuid "0a94c1fe-6fb3-4303-bc8f-d3322dcbe5f5")
 	(paper "A3")
 	(title_block
 		(title "power")
@@ -6211,7 +6211,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "7feaa574-20f7-4b5f-bbc7-50ff3e89ab84")
+		(uuid "f060ee90-8985-431c-9b0a-aa4eaff16bfc")
 	)
 	(rectangle
 		(start 130 20)
@@ -6223,7 +6223,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "f2b4ebbd-3beb-4289-9b9d-c6b603f49109")
+		(uuid "a726e1bb-f043-4fff-a10a-b48c5c3d1dba")
 	)
 	(rectangle
 		(start 12 118)
@@ -6235,7 +6235,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "619aef7a-004a-4af5-90b5-4988409fa34c")
+		(uuid "b127cce7-bb43-431b-b822-0058eda32257")
 	)
 	(rectangle
 		(start 130 188)
@@ -6247,7 +6247,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "6fe3ad58-aab6-4034-96f8-929e4ec516e5")
+		(uuid "978cb205-3419-42fe-9c16-8e63801a4445")
 	)
 	(rectangle
 		(start 240 20)
@@ -6259,7 +6259,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "95c821be-cd7c-442c-8902-8c9f453b858e")
+		(uuid "f3957572-6317-43e8-b97a-af1a76803321")
 	)
 	(rectangle
 		(start 240 106)
@@ -6271,7 +6271,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "eda53185-89c8-4d40-b3a5-a617970e749c")
+		(uuid "b95aec24-849f-429d-8c73-f872f22968b6")
 	)
 	(rectangle
 		(start 240 188)
@@ -6283,7 +6283,7 @@
 		(fill
 			(type none)
 		)
-		(uuid "151a2eab-4217-4d39-a170-4ed76b5805d9")
+		(uuid "54a21942-bfd1-4bac-8d41-13edd2d84d59")
 	)
 	(text "POWER: USB-C PD sink, BQ25601 charger with power path, 2x 18650, fuel gauge, 3V3 buck, radio boost, load switches"
 		(exclude_from_sim no)
@@ -6295,7 +6295,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "5830d756-d1a7-4138-ab4f-c1be09e62f2d")
+		(uuid "7266df0f-73fe-48fa-88e1-6bf37cbcddd1")
 	)
 	(text "All switched rails default OFF at power-up (gate pull-downs); firmware enables them through the TCA9555 expander."
 		(exclude_from_sim no)
@@ -6306,7 +6306,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "d857df99-874b-4b0b-adbb-1460219c16bc")
+		(uuid "db76b42d-1ed3-40e2-9a0c-a4d1667eb4e1")
 	)
 	(text "USB-C INPUT"
 		(exclude_from_sim no)
@@ -6318,7 +6318,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "cd3c5eae-7776-498c-9e43-bcfdb6a11a7a")
+		(uuid "f95fe5c3-c9f4-4dc1-bf1e-a11e5b3d6d3a")
 	)
 	(text "CC1/CC2 go to the HUSB238 PD sink (Rd inside it). D+/D- both rows joined (reversible plug).\nVBUS: 5 V only, up to 3 A negotiated; USBLC6 clamps VBUS and the data lines."
 		(exclude_from_sim no)
@@ -6329,7 +6329,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "acdff562-e21d-4b0e-8ba3-dd1a3a30cec2")
+		(uuid "41cc187b-9660-4c86-88d5-8d4834fece9b")
 	)
 	(text "CHARGER + POWER PATH (BQ25601, 2 A, I2C 0x6B)"
 		(exclude_from_sim no)
@@ -6341,7 +6341,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "f6cc2742-c275-4dc2-b5a3-365757c6ce3a")
+		(uuid "ca0182c4-7b48-4951-aadb-46c883afa5f5")
 	)
 	(text "NVDC power path: VSYS runs from USB or the cells; BATFET ship mode = true off.\nPlug-in defaults: 500 mA input (PSEL high), 2 A charge, 4.208 V. Firmware raises\nIINDPM after reading the HUSB238, clears EN_HIZ after a QON wake, feeds or\ndisables the 40 s watchdog."
 		(exclude_from_sim no)
@@ -6352,7 +6352,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "338be849-c401-4011-a7bd-0ebf12805c7b")
+		(uuid "e4a45089-091d-4be3-966d-b257905cd1f5")
 	)
 	(text "2x 18650 IN PARALLEL + PROTECTION (DW01A + FS8205A)"
 		(exclude_from_sim no)
@@ -6364,7 +6364,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "f68bfa49-956e-44cc-960d-20d3881c3c7f")
+		(uuid "31454fce-58f7-4ab2-b53e-1de80cb7f18b")
 	)
 	(text "Two cells of the same type and age, fitted together (parallel pair, no balancing needed).\nCell negative reaches system GND through the dual MOSFET (BAT- net).\nDW01A: 2.5 V under-voltage, 4.3 V over-voltage,\n150 mV over-current sense (2 to 4 A with the FS8205A)."
 		(exclude_from_sim no)
@@ -6375,7 +6375,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "a65e5ba9-b104-4efc-aafc-d237b90b5b9b")
+		(uuid "80da2206-095f-4416-9de3-de4e5ef444a1")
 	)
 	(text "PD SINK (HUSB238 0x08) + GAUGE (MAX17048 0x36)"
 		(exclude_from_sim no)
@@ -6387,7 +6387,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "75d0df72-1974-40fd-976e-5ffe297dcd58")
+		(uuid "296ee515-5e2c-4d2b-88fe-64fa1cbb5ea5")
 	)
 	(text "HUSB238 runs from VBUS only; firmware reads its 5 V current capability and sets IINDPM.\nGauge on the cell pair; ALRT and /INT share PWR_INT (P17), firmware clears both."
 		(exclude_from_sim no)
@@ -6398,7 +6398,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "790ec2dd-6dbf-4976-9776-e48aa9de1f33")
+		(uuid "aaf7eb12-6adc-47b2-8610-e248b6a2fedc")
 	)
 	(text "3V3 BUCK, ALWAYS ON (TPS62A02, 2 A, Iq 23 uA)"
 		(exclude_from_sim no)
@@ -6410,7 +6410,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "54788981-4498-425a-894c-62b3c985a58d")
+		(uuid "50311cc0-1aaa-44fb-85a0-ed6978aed3d6")
 	)
 	(text "VOUT = 0.6 V x (1 + 100k/22k) = 3.33 V. L = 1 uH (SWPA4030S1R0, 5.7 A sat). fsw 2.4 MHz.\nEN tied to VIN: rail is always on; deep-sleep current is set by the ESP32 and the buck Iq."
 		(exclude_from_sim no)
@@ -6421,7 +6421,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "b31ab0ba-35a2-4e54-a307-c721b3e85f9f")
+		(uuid "beb750a6-340f-401c-a9f5-42f348070d2d")
 	)
 	(text "RADIO SUPPLY: 4.6 V BOOST WITH TRUE DISCONNECT (TPS61023)"
 		(exclude_from_sim no)
@@ -6433,7 +6433,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "65c7d80e-cb02-4cb4-b639-c3f72e035820")
+		(uuid "b026304e-3fd3-41f6-af96-ca6a170a28d8")
 	)
 	(text "VOUT = 0.6 V x (1 + 220k/33k) = 4.6 V. Pass-through when the cell is above 4.6 V.\nEN low = output disconnected (< 1 uA): no separate load switch for the radio. 470 uF bulk sits at the module (radio sheet)."
 		(exclude_from_sim no)
@@ -6444,7 +6444,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "bb19baf5-8f5a-46ff-946e-d977c2919d45")
+		(uuid "a5cb1fa8-62eb-4364-a0cc-89ae362e604b")
 	)
 	(text "LOAD SWITCHES (P-FET high side, N-FET level shift, default OFF)"
 		(exclude_from_sim no)
@@ -6456,7 +6456,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "cd984576-b196-4a50-aa7f-5bf51bbb5145")
+		(uuid "09622e83-925e-4717-ba10-4ef3f30f7d63")
 	)
 	(text "GPS_3V3: GNSS module.  LCD_3V3: display, pot, IR receiver.\nVBAT_SW: audio amp (470 uF bulk, hence the soft start), RGB LEDs, IR LED, backlight."
 		(exclude_from_sim no)
@@ -6467,7 +6467,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "8891be3a-cd65-4262-892a-aaf77c4aa693")
+		(uuid "1fa034ec-1a52-4a28-b4d1-85ad6212bf61")
 	)
 	(text "PWR_FLAG on GND (ERC only)."
 		(exclude_from_sim no)
@@ -6478,315 +6478,315 @@
 			)
 			(justify left top)
 		)
-		(uuid "5f99d14f-6202-41b4-95c5-b07e43d2732c")
+		(uuid "35b026f4-67d2-41a2-87cf-2da89d407c6a")
 	)
 	(junction
 		(at 54.61 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a33bf3b7-fd77-4952-bb32-ed294f4f0f17")
+		(uuid "4250bf43-e410-41a6-ae7e-d0814744c26b")
 	)
 	(junction
 		(at 69.85 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "aed03b2e-6a6b-490d-8090-92ba9f40f3dc")
+		(uuid "350da09e-4d39-4d2e-907b-4c614dfe2c3b")
 	)
 	(junction
 		(at 58.42 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8b496a7-f815-4f32-8bc9-01fe51fcb1f2")
+		(uuid "ee262778-b5d2-4589-ba10-bc1628e763f6")
 	)
 	(junction
 		(at 62.23 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9f4182f9-20d4-4f5b-80a6-9b80e3722f3c")
+		(uuid "fbdecfcb-c4ee-4877-a300-b5dbae1892dd")
 	)
 	(junction
 		(at 39.37 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "867e01a1-0ac0-42ca-97b0-8d06e54330d4")
+		(uuid "3e303887-eb77-4542-b422-9e14ee7aa959")
 	)
 	(junction
 		(at 158.75 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0eca172-726b-4984-aa96-29452296855b")
+		(uuid "81b38a7c-0330-493b-ba7b-4b27dd217f26")
 	)
 	(junction
 		(at 154.94 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d88d26f2-ca31-441a-beb6-17c30d95a21f")
+		(uuid "ee055f97-25b2-4411-aad4-e3488eacd034")
 	)
 	(junction
 		(at 199.39 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "09d7d656-79bd-4155-a23b-53a30b486b10")
+		(uuid "c055976d-f8fb-4a50-834a-d6131db1b807")
 	)
 	(junction
 		(at 199.39 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2c31e7fd-0093-4669-926a-49d592e78e18")
+		(uuid "f8267d3f-96e4-4e30-ad09-0fcd4a2ac0ef")
 	)
 	(junction
 		(at 180.34 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c0214168-cbd5-4dfd-86e6-2bffe0e43765")
+		(uuid "e8077f9c-f856-46ef-a9b1-da81ee7d5f01")
 	)
 	(junction
 		(at 139.7 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "86e0147a-99cd-4c28-81a9-ea87814ce503")
+		(uuid "6a1007ec-57f8-42dd-9852-7654f7852f1e")
 	)
 	(junction
 		(at 153.67 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f2d54dca-c586-4ef5-93a9-328950bbf245")
+		(uuid "61f464b0-bed4-4308-935b-09247dd3cc6a")
 	)
 	(junction
 		(at 209.55 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "744b3598-c81f-430c-be59-f629c3d7cd86")
+		(uuid "d0fa69b3-8f40-40b0-b64d-a969201385a6")
 	)
 	(junction
 		(at 27.94 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6eebd4e6-9877-4f5d-af34-6e896bf94ed7")
+		(uuid "99584391-9aa9-4b3c-919f-d16225dd76eb")
 	)
 	(junction
 		(at 27.94 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ea498577-187e-4955-b5c4-a6ab8731b334")
+		(uuid "8e202186-53d1-43eb-b2fa-12efefd2a21a")
 	)
 	(junction
 		(at 44.45 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "58447d1e-955d-45f5-8793-4415461709c9")
+		(uuid "ce3a9acd-9c69-48cf-8dec-2ce37caba43f")
 	)
 	(junction
 		(at 58.42 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8073a41-62a6-4c25-adec-f3b0443542ff")
+		(uuid "88c66662-a8d3-4a85-9ce7-d4c0e5fed8e4")
 	)
 	(junction
 		(at 49.53 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bbf11d85-7452-400d-85d1-e27e99ff58df")
+		(uuid "a8337a37-4812-4d29-bc46-4501ecf37a66")
 	)
 	(junction
 		(at 140.97 213.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ce55ab9f-b6cb-4b0b-880e-aa4e1c0b0ccc")
+		(uuid "5c77f6cc-f600-4b50-8ce6-a4a892e00396")
 	)
 	(junction
 		(at 175.26 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "de5cc03a-f76d-4ee4-86da-da804ac4cb18")
+		(uuid "0dd281e9-c0ed-4079-862e-6dc90f6968a3")
 	)
 	(junction
 		(at 163.83 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "97858af2-d45b-4046-a112-e54e3c7cf69f")
+		(uuid "f65913bd-8ae9-44c3-a39d-7924972d6828")
 	)
 	(junction
 		(at 156.21 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "857bf77e-f92d-4975-bd9f-afa64ad60239")
+		(uuid "4a33570e-13e8-47b6-a817-ed6c6d353585")
 	)
 	(junction
 		(at 180.34 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c6e9bb61-ae4d-4aa6-8446-41ce0ea9fd63")
+		(uuid "3bc8e338-022a-4b29-9378-e5b3b417261f")
 	)
 	(junction
 		(at 285.75 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "39729495-bc9e-4d4e-97ed-445c74b1c3aa")
+		(uuid "cd8bcf5c-7f07-4e1c-bf19-eb36151fee4c")
 	)
 	(junction
 		(at 337.82 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "85a0844c-cf97-4913-8b27-bb4e47e74e86")
+		(uuid "1a40f999-6ddd-4d23-94af-79058cc7bb4a")
 	)
 	(junction
 		(at 351.79 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "42a893f6-daab-4aaf-ac09-19b1fbd1733d")
+		(uuid "2cfa2d7c-c4d2-4278-b851-46cde69a4367")
 	)
 	(junction
 		(at 337.82 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8b4a9935-4b96-4e2a-ba04-64cc7a62a753")
+		(uuid "8202486d-9aaf-4c1c-8329-67514b7bafcc")
 	)
 	(junction
 		(at 270.51 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a3d67ef2-0d75-440c-83cb-dbcddd56a3d0")
+		(uuid "972c7f0d-95a9-4530-a91c-3a20988920c4")
 	)
 	(junction
 		(at 275.59 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "35f86757-a2b2-4b6c-bf0a-3e7b1f01ba33")
+		(uuid "8b893ba0-4484-40cc-bcea-23bc51c32daf")
 	)
 	(junction
 		(at 335.28 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "93a702f2-ca02-4d00-88e4-4ce0c71f9ab1")
+		(uuid "e698ea9d-5042-4144-b0fa-5abc5413953e")
 	)
 	(junction
 		(at 345.44 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2f428e84-df63-4eb2-800a-17add543169d")
+		(uuid "027870bc-0461-46c1-a2a7-0bf2da8f4873")
 	)
 	(junction
 		(at 335.28 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2ba39836-b6d1-46b9-8237-046732b09f53")
+		(uuid "dcc57fa7-1a4a-486b-8c13-a6faceacdf93")
 	)
 	(junction
 		(at 256.54 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "df705491-af71-4220-96e1-f5c63c460168")
+		(uuid "1d81d479-40fe-4214-9b57-465ab7c04531")
 	)
 	(junction
 		(at 285.75 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b70ed188-4293-41f3-b228-71f729b2aa36")
+		(uuid "b3725d02-84bb-48f7-a607-376adb9ba2e5")
 	)
 	(junction
 		(at 270.51 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "61e51ce3-3883-495d-b998-6084acc0e074")
+		(uuid "996b5dd9-696c-434c-959f-9bd1518e78e1")
 	)
 	(junction
 		(at 256.54 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d60f458b-50ed-4027-8aef-553ff2f9ab4c")
+		(uuid "1118d4e3-cede-4227-ac1e-80b0a40d09d2")
 	)
 	(junction
 		(at 308.61 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "816f43df-6ddf-420b-9520-41cb63f63362")
+		(uuid "94df1c90-ce6b-4b08-937c-d837f0a9a2ff")
 	)
 	(junction
 		(at 337.82 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1802d3b3-9908-43ee-b5f3-cecd97fe3703")
+		(uuid "079146fc-89e7-444f-a8e4-e3ed9cf2e82c")
 	)
 	(junction
 		(at 322.58 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d61c48e8-6b2f-4cb7-a602-ed053aba2954")
+		(uuid "749b9b8d-c964-454d-acef-9cb540291471")
 	)
 	(junction
 		(at 308.61 223.52)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8bac0d4f-f982-4778-8b45-b940f3d8ade7")
+		(uuid "8a9b7ad9-9d18-4540-a8b3-f3d4e3f1a266")
 	)
 	(junction
 		(at 359.41 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73109ff8-dede-4641-9e1f-7dac15655c08")
+		(uuid "9766acf4-b587-4e87-be21-94421e26e104")
 	)
 	(junction
 		(at 355.6 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a8c10ee4-5268-477f-b6e1-7016a977a5f3")
+		(uuid "857f16c2-77f1-4da9-8824-071ab7136454")
 	)
 	(junction
 		(at 389.89 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4c6aad6c-3f52-440c-80bc-46cbf13d16c7")
+		(uuid "f652c0d7-6efb-40ac-8a64-1f1bf4b93458")
 	)
 	(junction
 		(at 361.95 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7d9637b7-57f6-4137-8a1c-a47ddba68d31")
+		(uuid "467f4be4-c337-495d-bbb6-1adfe82f0561")
 	)
 	(junction
 		(at 373.38 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b6077680-681c-4a09-897b-fffb85772aaa")
+		(uuid "3df273d8-8ab0-4b88-845a-2f486c3f4e33")
 	)
 	(junction
 		(at 359.41 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8a354248-0e69-4d0e-ad52-c1771073f2f8")
+		(uuid "cf841602-1363-41d3-a672-a57e4b8baf22")
 	)
 	(no_connect
 		(at 54.61 74.93)
-		(uuid "8354a774-8518-4967-bcc5-94ba1a765779")
+		(uuid "0850eb78-1fd6-443a-a821-899f1d146709")
 	)
 	(no_connect
 		(at 54.61 77.47)
-		(uuid "00933f94-be0c-4a31-9d68-57aa4edc0c94")
+		(uuid "c242dec0-75b0-40c2-bfd5-0170b0395ae0")
 	)
 	(no_connect
 		(at 196.85 64.77)
-		(uuid "877ecd9f-0e7a-492a-af0d-6cb8cff6dbce")
+		(uuid "371f1bbf-9652-48c4-ae70-0210dc52256f")
 	)
 	(no_connect
 		(at 87.63 196.85)
-		(uuid "abb85247-2cac-4175-944e-973fa1091154")
+		(uuid "f5512d2e-b2d3-4ebd-b4f9-6cddbc8601dd")
 	)
 	(no_connect
 		(at 143.51 215.9)
-		(uuid "bf17bd68-e158-484f-ba02-d3f9835acd27")
+		(uuid "fad57840-0ce2-419d-8b92-e36dab047de0")
 	)
 	(no_connect
 		(at 143.51 218.44)
-		(uuid "04dae83a-4776-4d8e-81ad-b73dc83b912d")
+		(uuid "5c02bcf1-ebe2-4f48-ba3e-72ae2fba34f4")
 	)
 	(no_connect
 		(at 171.45 223.52)
-		(uuid "e2dc9ed6-3453-43ce-ae3e-22b4c6bad99d")
+		(uuid "de4eb9bb-f8bb-4975-bcd2-12f3e15907d3")
 	)
 	(no_connect
 		(at 307.34 50.8)
-		(uuid "5c2ce49b-3c9a-480f-87a9-2578619e2365")
+		(uuid "0b9cf746-8b4e-4cc2-8a2f-4ad4f93e2024")
 	)
 	(wire
 		(pts
@@ -6797,7 +6797,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "85e782d1-f3eb-4390-9c82-dacca6ebdcb5")
+		(uuid "aacb30c3-aa21-43bd-982e-7cb105254032")
 	)
 	(wire
 		(pts
@@ -6808,7 +6808,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "803c45fc-c07d-40ae-9816-91a358d247dd")
+		(uuid "e599c382-f7d2-478b-9f89-5a2458c07b10")
 	)
 	(wire
 		(pts
@@ -6819,7 +6819,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9669294e-4f8d-4fa8-8034-c20aadf2b8f1")
+		(uuid "bd866dda-9fc0-4af4-aa02-dd7d6de2d50a")
 	)
 	(wire
 		(pts
@@ -6830,7 +6830,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "53cb4106-c89f-42e0-8d41-baa59964c245")
+		(uuid "b563d080-c8e5-445b-a667-a3e028ee9a5d")
 	)
 	(wire
 		(pts
@@ -6841,7 +6841,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "441b1183-2315-4e0b-a22a-560e31a5e30c")
+		(uuid "c59ab867-09e4-451d-9482-58c47e508520")
 	)
 	(wire
 		(pts
@@ -6852,7 +6852,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ca998db1-6785-4b49-b229-9be2a370e719")
+		(uuid "fc2435b0-c765-4fca-9b78-a9a0d58455a5")
 	)
 	(wire
 		(pts
@@ -6863,7 +6863,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d9f91f88-cb88-4a36-9d86-e3aa95e99341")
+		(uuid "e4a45d86-ed39-4ca3-ab3e-23755a085b49")
 	)
 	(wire
 		(pts
@@ -6874,7 +6874,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9eaee4b7-261b-4bbe-b4d2-3a898faf6eb8")
+		(uuid "84741e23-075b-47aa-9cfb-672260e4689e")
 	)
 	(wire
 		(pts
@@ -6885,7 +6885,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "441d7601-38db-4fdb-bbed-7be927d2228a")
+		(uuid "e217caaa-cfe2-4c07-9a47-8844bfcbc70e")
 	)
 	(wire
 		(pts
@@ -6896,7 +6896,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "53ca67cc-83be-47f4-ace2-df465b842b0a")
+		(uuid "3cf194d0-dd4a-4439-8af9-0e3981baf0cd")
 	)
 	(wire
 		(pts
@@ -6907,7 +6907,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cfc4e1a7-3266-4b4e-ae43-769a884fb007")
+		(uuid "9f8c31e9-eb73-4fed-afca-a429d8404854")
 	)
 	(wire
 		(pts
@@ -6918,7 +6918,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3121af90-665e-42d3-9ba9-9c2bd365d171")
+		(uuid "6dde356a-1cc9-485a-bd5b-4f79eb3fc900")
 	)
 	(wire
 		(pts
@@ -6929,7 +6929,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0647577f-4c76-45c8-804d-8398a1232c1b")
+		(uuid "365d648a-0fec-4b69-bc7a-2864d4764158")
 	)
 	(wire
 		(pts
@@ -6940,7 +6940,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "06b494fd-44c1-426f-826d-d2f8785b8d85")
+		(uuid "bfd87c91-1e51-4242-96e0-24ad00bc6e64")
 	)
 	(wire
 		(pts
@@ -6951,7 +6951,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6ffb2664-5e3e-4fc1-bb72-adec3f16f4c0")
+		(uuid "57ed6c13-4c65-4955-9c85-2a83e8b136a0")
 	)
 	(wire
 		(pts
@@ -6962,7 +6962,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4998938f-c252-4e53-a24c-80de4d4b3d74")
+		(uuid "ec296b90-b70b-4e46-bd7e-6b5999b2426b")
 	)
 	(wire
 		(pts
@@ -6973,7 +6973,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "33a05c56-f0a3-439f-884a-858d57829c65")
+		(uuid "05dcbe2a-b346-4106-a83b-b6e0b50b86c0")
 	)
 	(wire
 		(pts
@@ -6984,7 +6984,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "79f2b5f0-bc64-45b3-87a5-de0b3c412330")
+		(uuid "5cd072af-535b-4f2e-ae17-8d7c18d17e6a")
 	)
 	(wire
 		(pts
@@ -6995,7 +6995,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7a652ba4-7e67-4584-8d18-44618b29c0e3")
+		(uuid "f107ffc7-2911-4fe3-abd2-30147408d332")
 	)
 	(wire
 		(pts
@@ -7006,7 +7006,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2d358737-dda7-4b25-962d-a22e63406122")
+		(uuid "19c6b8d8-d62f-44a5-9a22-ba6f08296c2a")
 	)
 	(wire
 		(pts
@@ -7017,7 +7017,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "88c9cf5d-16d5-47ba-9bdd-735e8f472524")
+		(uuid "fb449e7f-ae8e-48a3-bd03-4b9a0ec77a2f")
 	)
 	(wire
 		(pts
@@ -7028,7 +7028,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "18756df8-d128-4991-9d0d-3b1c00e96eae")
+		(uuid "a829712c-0753-42ef-8a91-a532083400d5")
 	)
 	(wire
 		(pts
@@ -7039,7 +7039,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f594435b-2cab-4dab-92d7-2857bb422ba4")
+		(uuid "159ee03f-59f6-44ca-b409-fd02b898f67d")
 	)
 	(wire
 		(pts
@@ -7050,7 +7050,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "58b4fb99-ba92-4552-91e1-878948638c33")
+		(uuid "90b5206c-5b36-49e8-a6ab-a656c732cab2")
 	)
 	(wire
 		(pts
@@ -7061,7 +7061,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b7044672-3447-46af-975e-b654db1359dc")
+		(uuid "f88bc898-377a-4402-bdc6-9d44242b27f2")
 	)
 	(wire
 		(pts
@@ -7072,7 +7072,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "78e669bf-5a2f-4ab5-a67e-f53cc821bc91")
+		(uuid "f85955b0-b33c-4bd7-9847-d569d0acf746")
 	)
 	(wire
 		(pts
@@ -7083,7 +7083,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cf2d708b-22a3-404d-a192-bc917a6a1f2a")
+		(uuid "28c04163-1793-4919-9847-03df31af4811")
 	)
 	(wire
 		(pts
@@ -7094,7 +7094,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9d9ddc19-97ae-485d-9864-5686d7cc57ef")
+		(uuid "4973248d-caa3-4721-b683-d48361dfa77b")
 	)
 	(wire
 		(pts
@@ -7105,7 +7105,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "64cab6ca-d476-4bbf-b2c9-7221cb6c1891")
+		(uuid "9d787b2e-9bc4-4582-973f-38bf32d0632a")
 	)
 	(wire
 		(pts
@@ -7116,7 +7116,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "fe0ee9ef-69ae-4932-88bf-f772c23ecbaa")
+		(uuid "29b85c05-9935-47fe-b552-33c9ad33dbce")
 	)
 	(wire
 		(pts
@@ -7127,7 +7127,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3d15776b-445f-48be-a62f-7b74c08627a3")
+		(uuid "70ab2df0-7405-4896-abcf-8bd96372e0fe")
 	)
 	(wire
 		(pts
@@ -7138,7 +7138,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ee9265f1-a489-45e3-889d-ee241a5297f6")
+		(uuid "3c2d05e8-8aa4-428e-820c-b438833cae8d")
 	)
 	(wire
 		(pts
@@ -7149,7 +7149,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "00cc8481-8d2a-49e5-a182-8fe12f4d1ceb")
+		(uuid "5638a6df-44c5-4fc8-8752-c484126b742e")
 	)
 	(wire
 		(pts
@@ -7160,7 +7160,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f7d3e25f-27ec-4720-bd1f-a918dc9c70ae")
+		(uuid "e1c6aadb-e38a-4fa6-bac7-30cf4fd26619")
 	)
 	(wire
 		(pts
@@ -7171,7 +7171,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7780ec16-4c6f-4708-b591-adaf70205c8b")
+		(uuid "63047c9c-0e97-4bda-8ca0-7f5e363fbc41")
 	)
 	(wire
 		(pts
@@ -7182,7 +7182,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3ee570bc-9ea4-4c1a-a51d-cf71d3c42b93")
+		(uuid "60eff440-23e7-4afe-9c66-b7d047e02aab")
 	)
 	(wire
 		(pts
@@ -7193,7 +7193,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "affcbfb5-5f43-45b4-96ab-12c88d8211ce")
+		(uuid "4070f7d9-61a8-401a-933b-f7d442ac5a91")
 	)
 	(wire
 		(pts
@@ -7204,7 +7204,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f8637ee7-51ec-486b-a319-595f206b711a")
+		(uuid "6b2086d8-a611-40f2-a392-a584c0e36777")
 	)
 	(wire
 		(pts
@@ -7215,7 +7215,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3016e584-9e11-4fc5-8f78-7ee541bc529c")
+		(uuid "794df76e-2f51-4ba3-bbb0-261bc31de62f")
 	)
 	(wire
 		(pts
@@ -7226,7 +7226,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "535b38a3-0d03-4b47-af66-3a27b50b422b")
+		(uuid "b163d261-7603-4fcd-9337-dab1ddb27c43")
 	)
 	(wire
 		(pts
@@ -7237,7 +7237,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c7f7f028-3965-45e6-ab5b-afeade3ad9d1")
+		(uuid "c20219a9-c25c-495f-8d20-b6eaac04715d")
 	)
 	(wire
 		(pts
@@ -7248,7 +7248,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5b45df3c-2d43-4d08-a4f6-a2a2799ce16e")
+		(uuid "4310a606-4e98-4ef2-b5e6-d2e7be5d13cd")
 	)
 	(wire
 		(pts
@@ -7259,7 +7259,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "826650ab-377e-4641-848e-2088e9a72d14")
+		(uuid "eec69dc8-577a-4d8e-a0b8-92fc6f86d7dd")
 	)
 	(wire
 		(pts
@@ -7270,7 +7270,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d7981eeb-dc06-43ff-ac53-320510f82f96")
+		(uuid "015d5392-c8d8-4292-8bb3-9373849cd746")
 	)
 	(wire
 		(pts
@@ -7281,7 +7281,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "62d3ae5d-13c9-4070-8dc8-a4c64de6d9b4")
+		(uuid "323445f8-0cb5-45a3-9019-5455fd3254f4")
 	)
 	(wire
 		(pts
@@ -7292,7 +7292,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "89091de1-0144-45b8-90dd-0829c171bb47")
+		(uuid "72042fcf-e76e-4c12-8744-6220c674aef5")
 	)
 	(wire
 		(pts
@@ -7303,7 +7303,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "995a61b3-4f15-4fcd-aec2-dc0678c8fc0b")
+		(uuid "8e893d71-eefd-48da-8451-443a5112a1c4")
 	)
 	(wire
 		(pts
@@ -7314,7 +7314,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4c7a207d-fc73-49df-9db6-a0927b2c683d")
+		(uuid "f1c22107-c3d6-45d8-a2ee-df787a3ef11d")
 	)
 	(wire
 		(pts
@@ -7325,7 +7325,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4a4b74b6-04ff-4583-b9f5-b11118416cb9")
+		(uuid "0e17d463-03b6-4d9b-8442-2c1e80f54789")
 	)
 	(wire
 		(pts
@@ -7336,7 +7336,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2baa80ce-59a6-491d-8be9-f18bf16fcb92")
+		(uuid "8ccff8b0-ecb7-4706-9495-8a3475546d94")
 	)
 	(wire
 		(pts
@@ -7347,7 +7347,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "492405b5-9f25-4a38-bc86-bb324b0a50b1")
+		(uuid "5cc3600e-3c32-4141-a0fe-8d5bdfeee6fb")
 	)
 	(wire
 		(pts
@@ -7358,7 +7358,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a2ddf206-13f7-4a30-b4ce-f6eaed164072")
+		(uuid "83e169b6-4395-4fc3-894f-4359e69d9ffc")
 	)
 	(wire
 		(pts
@@ -7369,7 +7369,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ca9e1840-608c-4726-862b-929de370e4d9")
+		(uuid "62c60702-8082-4e34-a209-2af02472432c")
 	)
 	(wire
 		(pts
@@ -7380,7 +7380,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "43d66106-9e78-4a9f-8421-139363946a87")
+		(uuid "fe10b03e-3edf-41a6-8258-65e8c69b36a8")
 	)
 	(wire
 		(pts
@@ -7391,7 +7391,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4d3436f9-083d-4640-992f-5a781a2882c1")
+		(uuid "86a729ac-ec89-4d9d-99b2-bc8b069bf787")
 	)
 	(wire
 		(pts
@@ -7402,7 +7402,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f5a3bb12-c821-48ad-be9b-33608a3fbc55")
+		(uuid "1077d7dd-a7b4-40fd-b569-b45b9cfc7e87")
 	)
 	(wire
 		(pts
@@ -7413,7 +7413,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d468bb01-a573-40f7-97b0-7b440491bba2")
+		(uuid "906bc6df-08c0-45de-830c-6ebd7b7c1177")
 	)
 	(wire
 		(pts
@@ -7424,7 +7424,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4f569b11-d979-4a67-b133-82c0ff2c362f")
+		(uuid "899771c1-b2d2-466a-bf5f-70d31ae054f6")
 	)
 	(wire
 		(pts
@@ -7435,7 +7435,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3c68e6ce-4c94-4c18-bb7b-3ccfa5ba43ac")
+		(uuid "e6a1737f-d6db-48b3-87a4-06d0e5a2fece")
 	)
 	(wire
 		(pts
@@ -7446,7 +7446,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0de5a683-953a-4db1-9303-616ee0cf26f0")
+		(uuid "ff4335a4-8eb1-424b-8f90-9050cef6a3fa")
 	)
 	(wire
 		(pts
@@ -7457,7 +7457,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dab17052-c996-4721-8fba-cbcedad4af7d")
+		(uuid "eef289e2-5257-4662-ac32-9e0fc7887756")
 	)
 	(wire
 		(pts
@@ -7468,7 +7468,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "036d8123-7705-4f9a-92ff-16ac21aa80e1")
+		(uuid "5f8a65a2-4203-4e13-895d-1544f63e9a48")
 	)
 	(wire
 		(pts
@@ -7479,7 +7479,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "238731f9-1812-4d3b-9b86-ac4a011e6dce")
+		(uuid "daa061cc-9c71-43ca-bb9b-a6242f1f06d0")
 	)
 	(wire
 		(pts
@@ -7490,7 +7490,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "938f5cdb-cc5f-4ce1-a85e-5f4a51e0811e")
+		(uuid "d982cbdd-8ca5-48d4-a859-e2286edb6343")
 	)
 	(wire
 		(pts
@@ -7501,7 +7501,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cc06ba9c-52e4-4adc-8f04-21ed611c17f9")
+		(uuid "7db1fc32-6f07-4ac4-8d9f-5fdefea04157")
 	)
 	(wire
 		(pts
@@ -7512,7 +7512,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "013bb813-1c8b-4c74-a4d2-1f979dca3fe2")
+		(uuid "64c98d7f-72fe-400b-9f9f-1b5d215eee82")
 	)
 	(wire
 		(pts
@@ -7523,7 +7523,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "29ff5016-bea1-4cec-bb4d-fb1ac49b94e3")
+		(uuid "ec6c391a-2191-4941-a647-14275bc0f781")
 	)
 	(wire
 		(pts
@@ -7534,7 +7534,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0f7cef9e-d260-48f9-a410-1e11d05fee81")
+		(uuid "532bb86b-6141-4e89-883a-b00c659a6db1")
 	)
 	(wire
 		(pts
@@ -7545,7 +7545,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7388627b-6dcd-4ec3-b0d2-3c76877b1050")
+		(uuid "8b3f9388-d540-4f39-b62d-e75ed944052b")
 	)
 	(wire
 		(pts
@@ -7556,7 +7556,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "29204dc4-7c7f-49de-ba8c-2abe395e6731")
+		(uuid "f2e35007-2312-41c5-ac74-853af8a90630")
 	)
 	(wire
 		(pts
@@ -7567,7 +7567,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7726d707-8987-44ef-9505-0ba0d87fc001")
+		(uuid "3cea67f0-4b9b-45ae-9fb9-8cfcff511969")
 	)
 	(wire
 		(pts
@@ -7578,7 +7578,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f0ec5d7a-dba2-40f6-81fb-5811eab4e2d3")
+		(uuid "cec3b371-24d7-42d8-9d64-dfeeb1d37825")
 	)
 	(wire
 		(pts
@@ -7589,7 +7589,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b940d78e-5d96-45bc-81db-7516cc6c279b")
+		(uuid "9054a20e-5474-4519-aa8e-8663e8b807c4")
 	)
 	(wire
 		(pts
@@ -7600,7 +7600,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0a01d5cd-8faf-4b14-9199-e1c702ea5a4b")
+		(uuid "028c90d8-6324-421c-80ce-32d21f81c460")
 	)
 	(wire
 		(pts
@@ -7611,7 +7611,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "82d76ef5-b3b4-4165-a917-12f600f8f2b0")
+		(uuid "e9b535f0-8642-4f15-b3b3-c408e40cb4b0")
 	)
 	(wire
 		(pts
@@ -7622,7 +7622,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cd3886b1-f9d9-4c55-972e-e8defd7edfde")
+		(uuid "e61904a7-b883-403f-b41e-07fb657f4953")
 	)
 	(wire
 		(pts
@@ -7633,7 +7633,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3fc5deda-7bfb-4c9d-a98b-492b53da78b9")
+		(uuid "1c9be1ac-ebc3-49ac-9724-c9d02010dad3")
 	)
 	(wire
 		(pts
@@ -7644,7 +7644,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c4890dd2-51b8-4b3e-80fc-71c98255b99d")
+		(uuid "42cc5e4f-b3eb-4ec9-bc9f-a9d2959a0e14")
 	)
 	(wire
 		(pts
@@ -7655,7 +7655,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a4463a4b-d9b9-4231-847a-01b06a031081")
+		(uuid "26c96a07-4bed-4132-ae53-82b35385fcc8")
 	)
 	(wire
 		(pts
@@ -7666,7 +7666,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3bcf6d88-9b6e-46a2-8e5e-f9ff10871b52")
+		(uuid "2770bd93-554a-4a80-a157-231d6cc940a9")
 	)
 	(wire
 		(pts
@@ -7677,7 +7677,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6843f187-cef8-4a68-8950-bf1d9a97c0b9")
+		(uuid "9fc6ee94-263e-4fed-ac8d-030b8e6af040")
 	)
 	(wire
 		(pts
@@ -7688,7 +7688,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2c2da4d1-bce7-4f3e-936a-5b2d4500f5c8")
+		(uuid "b2db1338-74ae-43b6-8723-f89eed499db3")
 	)
 	(wire
 		(pts
@@ -7699,7 +7699,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7f071835-0267-4176-a74e-020f152b8191")
+		(uuid "65f92d73-d1c1-43ff-b2ea-7b762115064f")
 	)
 	(wire
 		(pts
@@ -7710,7 +7710,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e98ee861-9e31-4a05-ab94-02fc8d5d67a4")
+		(uuid "d41441cc-8ac4-4794-82b1-0fcdbb2fb98e")
 	)
 	(wire
 		(pts
@@ -7721,7 +7721,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "66fdfd44-b5ec-420e-a99c-718be00f2276")
+		(uuid "bb7c26e9-847b-4841-ac4b-6d71fcc1c537")
 	)
 	(wire
 		(pts
@@ -7732,7 +7732,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e2476bad-a28c-47cd-ab0e-3332051faaa4")
+		(uuid "18ca9c80-9e2c-441d-8cc6-b49230fac814")
 	)
 	(wire
 		(pts
@@ -7743,7 +7743,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1fd0034e-fdac-4ae3-a41e-aeeb9698f7e6")
+		(uuid "792b8460-d6f6-4762-aea3-4b660a543400")
 	)
 	(wire
 		(pts
@@ -7754,7 +7754,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2687d359-aa1a-4539-a622-50d80aacaa43")
+		(uuid "bc8e99d8-93eb-4a6f-a4d8-dfd053ef4cb4")
 	)
 	(wire
 		(pts
@@ -7765,7 +7765,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0da77fb3-514b-4792-9722-4ed0f9d39e61")
+		(uuid "cbc9d61f-8922-4aee-8897-0088767dd177")
 	)
 	(wire
 		(pts
@@ -7776,7 +7776,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9b3cd342-df4a-4cc9-8fe9-0c0c1e3e716e")
+		(uuid "6acfa04f-234b-4338-8d1b-c643aebebfa8")
 	)
 	(wire
 		(pts
@@ -7787,7 +7787,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "16f3d85d-48e2-4e62-a365-b0445462ad0d")
+		(uuid "63ae168e-e66c-48fc-b96b-cf806acffcdb")
 	)
 	(wire
 		(pts
@@ -7798,7 +7798,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ce8422f5-6173-4a33-9021-7bc7d1a1843c")
+		(uuid "f51007b3-6662-41a3-b6c2-58305acf84d7")
 	)
 	(wire
 		(pts
@@ -7809,7 +7809,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4d232212-90bb-4242-b1c9-1051cf9bd6ba")
+		(uuid "a1f17a7f-4da1-41d9-94e9-da328c15ac91")
 	)
 	(wire
 		(pts
@@ -7820,7 +7820,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "39fb8ad9-9490-4fde-bfb1-32e11f09ce8f")
+		(uuid "92e491d0-173c-4343-90bd-3ffb94950324")
 	)
 	(wire
 		(pts
@@ -7831,7 +7831,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ad72a227-f959-45f7-b0b3-98c613430c92")
+		(uuid "25fe96f1-c672-456e-914d-ed14d7830fbe")
 	)
 	(wire
 		(pts
@@ -7842,7 +7842,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "728816bb-0dad-4d46-b002-ba83be0c9374")
+		(uuid "01268b20-7846-43e7-b17a-6ed616c59066")
 	)
 	(wire
 		(pts
@@ -7853,7 +7853,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b7a3c52d-4af7-4217-b21f-c4dd6e21c513")
+		(uuid "553952ec-3d90-4bbe-8dc0-4b8732423d85")
 	)
 	(wire
 		(pts
@@ -7864,7 +7864,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6b851e08-06d1-44f4-9fd1-ce019266dce3")
+		(uuid "5a2f5414-4a90-4e2a-8a09-8d05bfa6bd21")
 	)
 	(wire
 		(pts
@@ -7875,7 +7875,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2662ba12-e0be-4003-bd58-e97ec255015e")
+		(uuid "96fbf4f5-9266-4b99-bc9f-576a424938f4")
 	)
 	(wire
 		(pts
@@ -7886,7 +7886,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d3ec3946-6135-4cca-938e-9dd7e583c1bb")
+		(uuid "c985c710-0da4-4643-8462-75bb1fe39406")
 	)
 	(wire
 		(pts
@@ -7897,7 +7897,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "10e8a8bd-0662-4c2e-b077-17d5b4b579da")
+		(uuid "599bb136-6066-4610-a1d7-a564e20ef8f0")
 	)
 	(wire
 		(pts
@@ -7908,7 +7908,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5ab03dfb-78dc-4094-9dd6-87c3b5c47c46")
+		(uuid "4b9e3a28-8a8d-41d5-8bf2-732d40275295")
 	)
 	(wire
 		(pts
@@ -7919,7 +7919,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "934d0ede-75ef-4707-9613-51ba75ca382c")
+		(uuid "9900f443-ce46-4a63-a7e8-00774fe515b3")
 	)
 	(wire
 		(pts
@@ -7930,7 +7930,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1ec452da-7161-4e32-935c-bb51414c4659")
+		(uuid "aed59835-3a55-445b-8bee-b2ebb7156ba7")
 	)
 	(wire
 		(pts
@@ -7941,7 +7941,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "09da4673-b32d-4ddd-bc9a-ffd4890ca6c0")
+		(uuid "3b0cef79-6ab5-450e-ac63-2a8d456f3977")
 	)
 	(wire
 		(pts
@@ -7952,7 +7952,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "437fd24d-77c9-4ce2-b8e4-3c6b7c0903f8")
+		(uuid "1877c2d9-ff33-4d0e-b2c1-86ab4d94e226")
 	)
 	(wire
 		(pts
@@ -7963,7 +7963,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d316eba5-9fad-4671-a06f-a7db494a13e8")
+		(uuid "b295d57c-faf3-4b5b-9b7b-3ac71edd6e71")
 	)
 	(wire
 		(pts
@@ -7974,7 +7974,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c8cfa9cd-ef12-41ce-a519-61aa76b81f2f")
+		(uuid "63528e5f-f5a7-41ec-ab0d-bfc0cdfaea57")
 	)
 	(wire
 		(pts
@@ -7985,7 +7985,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ea03ee28-a4aa-4bad-b2e2-f484bd720325")
+		(uuid "4a98b0e2-50c4-44d4-888f-b230c047b033")
 	)
 	(wire
 		(pts
@@ -7996,7 +7996,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b0e3b8c5-d7cb-497d-a966-28502ce01f5e")
+		(uuid "7abaa9e7-0771-436d-969b-90a5da3f057d")
 	)
 	(wire
 		(pts
@@ -8007,7 +8007,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b94cbdb4-c83c-4632-9774-7ec3d7e1289c")
+		(uuid "67169c3c-b65b-4e8a-816d-d2672e8de766")
 	)
 	(wire
 		(pts
@@ -8018,7 +8018,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "183dc97b-4b91-4c0f-813b-f0edef581a1d")
+		(uuid "65358987-5791-43cc-99b2-3712fa4b8eaa")
 	)
 	(wire
 		(pts
@@ -8029,7 +8029,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "53f16310-e299-4d9d-8608-259fecff92b3")
+		(uuid "7346c410-ebd4-468c-8e76-7e72df16f6e8")
 	)
 	(wire
 		(pts
@@ -8040,7 +8040,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "96e573b5-00e3-4e84-adb4-8f25798fb372")
+		(uuid "8bf2897d-4692-4092-a97b-6bc1d6ebff0a")
 	)
 	(wire
 		(pts
@@ -8051,7 +8051,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "587838c8-2f9b-47ec-9de5-2ec52598221c")
+		(uuid "88d5347c-9c91-445b-a345-8fa87bf1bc7f")
 	)
 	(wire
 		(pts
@@ -8062,7 +8062,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "11d711a1-5d6d-416b-b297-889e2b5cb5cf")
+		(uuid "cf454751-5792-41d7-8fa7-b1871ae36443")
 	)
 	(wire
 		(pts
@@ -8073,7 +8073,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "664ccdb4-553f-4b3c-bb56-c261c8eb5571")
+		(uuid "f362fa81-ea22-45e0-a030-cde7c45b040f")
 	)
 	(wire
 		(pts
@@ -8084,7 +8084,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ae9fca96-42cd-4c22-9f4b-b1134a207e11")
+		(uuid "49a5e783-ecd7-449a-a590-dca3f5b81522")
 	)
 	(wire
 		(pts
@@ -8095,7 +8095,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3f718aab-227a-4bbc-9a68-0dc32665ade8")
+		(uuid "4a3aa017-bb03-4f1c-8965-091be57b3a4b")
 	)
 	(wire
 		(pts
@@ -8106,7 +8106,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d41d5ff2-4ac6-4737-b0f7-c37a3535723c")
+		(uuid "60876e24-e682-42e6-96f8-25bb6c1c1adc")
 	)
 	(wire
 		(pts
@@ -8117,7 +8117,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "90d3f63b-5a46-47b4-a552-435f0444c3f6")
+		(uuid "e1baa30d-4516-40eb-8ccb-b44279c070ea")
 	)
 	(wire
 		(pts
@@ -8128,7 +8128,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "23f17db4-af0c-4e1c-8b60-23bffceced6a")
+		(uuid "1789d216-01f3-481e-ba0c-c60f8e7e976c")
 	)
 	(wire
 		(pts
@@ -8139,7 +8139,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ac5721e0-6464-4448-991e-2356f16cebd4")
+		(uuid "fdb7774d-640d-4edd-b335-3f33fa2ed0f1")
 	)
 	(wire
 		(pts
@@ -8150,7 +8150,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "48a2c2cd-d90d-43e0-b0ad-63aae7427be1")
+		(uuid "340f3f09-e64a-43e1-9cd0-a1d8c3896c99")
 	)
 	(wire
 		(pts
@@ -8161,7 +8161,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b02e8816-5f70-4aa9-ad9a-336d35aeb808")
+		(uuid "03857e02-19cf-48d2-a355-9466871b47d8")
 	)
 	(wire
 		(pts
@@ -8172,7 +8172,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "519b5521-aaae-41e8-8cbf-68e326775e0e")
+		(uuid "772c26ea-6be4-4116-ae5a-878ad3485888")
 	)
 	(wire
 		(pts
@@ -8183,7 +8183,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "946844de-c183-403c-8199-9b05c0e19bde")
+		(uuid "0223312b-264c-4604-8b34-fb51fdae51fc")
 	)
 	(wire
 		(pts
@@ -8194,7 +8194,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dbb7ac0c-587d-40fd-b197-82f2618a61fc")
+		(uuid "47a3979f-8c31-4b1e-82a6-f1e347fa2f9f")
 	)
 	(wire
 		(pts
@@ -8205,7 +8205,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9380005e-f0e5-4279-85e4-3c4d0d132c16")
+		(uuid "10c0e5f3-1693-4de1-b731-3765b0efa4be")
 	)
 	(wire
 		(pts
@@ -8216,7 +8216,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6ba9d2b2-a2a5-4b0b-a292-dc6bd9b47483")
+		(uuid "904ad358-a427-43b9-86be-1eb2985d7cc6")
 	)
 	(wire
 		(pts
@@ -8227,7 +8227,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dff395a2-eb68-4c87-9a28-8051e54ce2a8")
+		(uuid "0cdaf2ac-f679-4ac1-a3ee-60e5fc1081af")
 	)
 	(wire
 		(pts
@@ -8238,7 +8238,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6b36b16c-6e8e-4dc5-9c12-8630fd627aaf")
+		(uuid "946eba39-d646-4053-8a60-a72e50865254")
 	)
 	(wire
 		(pts
@@ -8249,7 +8249,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d95d0646-214f-4c1d-9d13-28c60b2ae768")
+		(uuid "3cfd4020-6302-4a94-8ae6-5635cd5940ae")
 	)
 	(wire
 		(pts
@@ -8260,7 +8260,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "60600455-865b-4d02-8d51-bd0c00d64d6c")
+		(uuid "e2053b73-4b06-4857-be76-367a89ac89e6")
 	)
 	(wire
 		(pts
@@ -8271,7 +8271,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b77bc702-f442-4334-94eb-d27a3a41f985")
+		(uuid "63d9702e-2309-4fa6-b9fd-f9b682517429")
 	)
 	(wire
 		(pts
@@ -8282,7 +8282,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7bd55a39-770a-42e3-a1fd-61f865fbda71")
+		(uuid "24b07dad-4bdf-45b3-a08a-a1b64ac88342")
 	)
 	(wire
 		(pts
@@ -8293,7 +8293,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e7c4c1d5-c959-4381-87cb-67a60ffefaa1")
+		(uuid "21824503-a09d-419a-ad98-d34067db9d01")
 	)
 	(wire
 		(pts
@@ -8304,7 +8304,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f86e291d-78c3-4262-bdf7-93cd64312d92")
+		(uuid "b4d69ec5-7dfd-484f-9160-8a3d7e62ac57")
 	)
 	(wire
 		(pts
@@ -8315,7 +8315,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "09b3e10e-6f8d-4d40-8fdd-be8033e7ed1e")
+		(uuid "0c5dc8a5-0903-4fd7-ac9d-f0f4afe9dc24")
 	)
 	(wire
 		(pts
@@ -8326,7 +8326,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e93bdb33-b224-4480-afb8-416f612e0864")
+		(uuid "a0d160d3-186d-4b3f-a9d4-956d070d9033")
 	)
 	(wire
 		(pts
@@ -8337,7 +8337,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "17946551-2153-419e-a4d9-0def52914515")
+		(uuid "2711ce4b-fedb-4359-a8cb-806e46c599cc")
 	)
 	(wire
 		(pts
@@ -8348,7 +8348,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7fe334db-1eb5-4bbd-ba2c-892193b568be")
+		(uuid "36a5bcc2-f4ed-4ac6-92cf-08c5a3b6fc38")
 	)
 	(wire
 		(pts
@@ -8359,7 +8359,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bb3058b1-1423-43a1-8bbc-f5f7b2125b0d")
+		(uuid "ce81dde2-9a79-419d-88ea-81f3d1fe669c")
 	)
 	(wire
 		(pts
@@ -8370,7 +8370,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c283ef6e-bf74-410a-9194-4687caf4996e")
+		(uuid "8474ec55-8a02-41e6-8e23-28f94f13b22f")
 	)
 	(wire
 		(pts
@@ -8381,7 +8381,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3ff0532d-3185-4a29-8187-c2c5c1b4a771")
+		(uuid "b3bbaf1b-7be2-4eab-bd9e-ec8f29310dde")
 	)
 	(wire
 		(pts
@@ -8392,7 +8392,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1898961b-b3fc-41d8-b9e5-9ab32028c86b")
+		(uuid "27a43856-4209-4062-872b-5fd93d3617a9")
 	)
 	(wire
 		(pts
@@ -8403,7 +8403,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "46d6e7bf-27d4-437e-bc84-8de6b0481daf")
+		(uuid "8ad646f0-57fc-48c8-9446-8cf37f6f83c9")
 	)
 	(wire
 		(pts
@@ -8414,7 +8414,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "111f2462-60ac-4f87-9829-3e94d1f27de7")
+		(uuid "33ec69e9-cd72-49b4-8a1a-f4e46ddb1d5d")
 	)
 	(wire
 		(pts
@@ -8425,7 +8425,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bc72ba27-5dac-4d73-8082-d9362cc0ff9e")
+		(uuid "5b936803-c2bb-4c5d-a168-5d896b596c7e")
 	)
 	(wire
 		(pts
@@ -8436,7 +8436,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "643956d4-ab52-4985-bbd7-178a1122e043")
+		(uuid "2cc3fd95-7b7b-4621-9950-192423beaaea")
 	)
 	(wire
 		(pts
@@ -8447,7 +8447,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4ecce754-c70b-4f5c-8e35-c4f678d0ff0e")
+		(uuid "4798aafb-dc2d-43fb-8ece-4f4abad7cf5a")
 	)
 	(wire
 		(pts
@@ -8458,7 +8458,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "eb52dec4-6d3d-4785-acc1-cdcf5192506a")
+		(uuid "18e23954-60b6-4a60-9e51-c99eda1200b9")
 	)
 	(wire
 		(pts
@@ -8469,7 +8469,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a1c1fc21-0713-4443-bb18-350b8130769f")
+		(uuid "6797e737-044a-4e01-bd9d-d08128ff5614")
 	)
 	(wire
 		(pts
@@ -8480,7 +8480,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c937864c-12dc-456b-b359-c937ae9abe14")
+		(uuid "cde464f7-34e8-44c7-8389-0b490ed207dd")
 	)
 	(wire
 		(pts
@@ -8491,7 +8491,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e48a2e37-082c-439d-8187-7cb2279bec89")
+		(uuid "3deabc41-c000-4c21-a34c-8124f98c3c5a")
 	)
 	(wire
 		(pts
@@ -8502,7 +8502,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "92c7c733-de9a-4e05-9c8d-834a5d7a7c2f")
+		(uuid "3a9cc135-7d36-4e4a-879e-e27e217f145c")
 	)
 	(wire
 		(pts
@@ -8513,7 +8513,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1d9c8a0e-0b70-4680-a295-0fcfd0ce0056")
+		(uuid "3149eb8b-a158-47a3-9fc0-9e648725ea69")
 	)
 	(wire
 		(pts
@@ -8524,7 +8524,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8db75e94-8787-43f5-ad95-6fb8ce86f34b")
+		(uuid "9fbdaf74-21ea-4b49-9f6e-39385cd589c4")
 	)
 	(wire
 		(pts
@@ -8535,7 +8535,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a262383a-6099-4301-9b7f-ebb30dd94bf0")
+		(uuid "b840f242-ae38-40cf-a509-6fe9ed36a24f")
 	)
 	(wire
 		(pts
@@ -8546,7 +8546,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bd4049d6-72e7-4af1-b12f-483f80a9efe8")
+		(uuid "ea09b50b-a0e4-43c0-bb6e-be309f4f49f9")
 	)
 	(wire
 		(pts
@@ -8557,7 +8557,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4f7628fb-cffd-40ec-b870-3f91d2625aa2")
+		(uuid "e325e3de-f746-4715-b3b3-ff90146e4e52")
 	)
 	(wire
 		(pts
@@ -8568,7 +8568,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0245a2d9-f6c6-4ffa-9380-ce186aae959d")
+		(uuid "41b4cabb-17dd-489c-a860-0a02df0cd0dc")
 	)
 	(wire
 		(pts
@@ -8579,7 +8579,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "f5432b44-94cd-452f-b0be-e3d3bdb54831")
+		(uuid "48c6dee9-c4c5-4cd9-9a18-e7c4888e9552")
 	)
 	(wire
 		(pts
@@ -8590,7 +8590,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dfb806a8-54f3-456c-a390-13495af9e9d4")
+		(uuid "d985d0cd-2a06-47f8-94e6-6980a7c19502")
 	)
 	(wire
 		(pts
@@ -8601,7 +8601,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "43a0ff3e-1143-4ed5-b504-5040a4c7f511")
+		(uuid "34a0df88-e074-4239-b950-f616b917dacc")
 	)
 	(wire
 		(pts
@@ -8612,7 +8612,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "695131c8-1a63-4d14-930b-20c8d1d9d349")
+		(uuid "f753dede-7678-4e2f-a6e3-5bc6e366cac4")
 	)
 	(wire
 		(pts
@@ -8623,7 +8623,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8086e224-8eb4-46fa-8387-ccae4dc1e69e")
+		(uuid "a658a33a-e871-4d9b-b558-f7610c099031")
 	)
 	(wire
 		(pts
@@ -8634,7 +8634,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7a48e119-cf73-47aa-8587-f28fc602ab32")
+		(uuid "6ae7ede9-8126-4336-9551-91e47c342468")
 	)
 	(wire
 		(pts
@@ -8645,7 +8645,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9b7cedd6-8951-4b48-9e18-006cce41cc4b")
+		(uuid "90a5e4fc-2f1f-4deb-b65d-1f5ddda24934")
 	)
 	(wire
 		(pts
@@ -8656,7 +8656,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "dc5dc9f7-0d29-42c8-99ac-9ca944cce82b")
+		(uuid "19d78b70-e89c-41d6-b5c7-e379478028e2")
 	)
 	(wire
 		(pts
@@ -8667,7 +8667,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "44e2f483-1c71-4704-bbfe-9368921517b5")
+		(uuid "6c4076ec-ad25-493a-b71f-de41ea49f4b7")
 	)
 	(wire
 		(pts
@@ -8678,7 +8678,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "79ad50f1-b6f0-4a4d-81cd-bc38f0b168b1")
+		(uuid "be522547-1a0b-400a-8933-ce048c6ac396")
 	)
 	(wire
 		(pts
@@ -8689,7 +8689,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "aa5e1695-1866-45ca-9e3f-d44b4b692a61")
+		(uuid "1a216f33-efb5-477e-b15c-5d3eb04249ae")
 	)
 	(wire
 		(pts
@@ -8700,7 +8700,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "70c169ac-6527-4826-999a-91b47bd719fa")
+		(uuid "20d7dca6-27aa-46a8-ae58-88a9c5572511")
 	)
 	(wire
 		(pts
@@ -8711,7 +8711,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "fe608282-4f62-4bbb-ba6f-1127a6f7c351")
+		(uuid "21100b7b-5e02-478f-8c25-c713a0469539")
 	)
 	(wire
 		(pts
@@ -8722,7 +8722,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "19d500a1-1277-4c2a-a326-96e8a161d6a9")
+		(uuid "6877b7e6-d775-4603-be3a-0b99d76bba25")
 	)
 	(wire
 		(pts
@@ -8733,7 +8733,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a4415334-9399-43b5-9226-7bc380f4235f")
+		(uuid "a953ee03-638b-4169-b8f8-78b8951757ca")
 	)
 	(wire
 		(pts
@@ -8744,7 +8744,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a0dcd6cd-4d65-45dd-8df2-c068a97fb97c")
+		(uuid "ff14fa67-33d5-4b41-a08b-f44c0b2b7cc6")
 	)
 	(wire
 		(pts
@@ -8755,7 +8755,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4c7e1571-594c-4b80-a3c4-f3ae5444f492")
+		(uuid "8638e6b8-644c-45c1-9c38-c75b333cfe36")
 	)
 	(wire
 		(pts
@@ -8766,7 +8766,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "63ec128c-bfb7-4128-a707-e7eeb12890a6")
+		(uuid "64b34161-e65e-426e-9e8d-06d254ae122b")
 	)
 	(wire
 		(pts
@@ -8777,7 +8777,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "2629895e-6cfb-439f-89fc-8e4e056cc704")
+		(uuid "09e029d4-6b76-4f86-849c-78cce8f18d88")
 	)
 	(wire
 		(pts
@@ -8788,7 +8788,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "25a6c250-6864-4d5e-8f99-6386f5bf440c")
+		(uuid "87dd4de3-0d86-4b48-b55e-a480996ec91f")
 	)
 	(wire
 		(pts
@@ -8799,7 +8799,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "e88a9b82-7de1-479f-aed8-3b9888b1180c")
+		(uuid "febf8d05-7a13-46cc-8863-ab471b0cbde0")
 	)
 	(wire
 		(pts
@@ -8810,7 +8810,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8c33bec4-40de-4ea1-8e94-068ff16598b2")
+		(uuid "6e315991-fd5c-4412-a592-f9239471d9e5")
 	)
 	(wire
 		(pts
@@ -8821,7 +8821,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a55493c8-841a-428d-938e-e6e7655d4a51")
+		(uuid "7b274244-3ae5-47bc-9f22-0f7ceae0b6e3")
 	)
 	(wire
 		(pts
@@ -8832,7 +8832,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6346663e-7c3a-4680-9858-32ebfa0ade7f")
+		(uuid "06dcfe44-df34-4ad8-a365-599e0b82e646")
 	)
 	(wire
 		(pts
@@ -8843,7 +8843,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "eb7ffb60-4246-47b0-ba2c-9617490e3b1e")
+		(uuid "a606f68f-e05e-4e86-ba04-5b18bbeca41f")
 	)
 	(wire
 		(pts
@@ -8854,7 +8854,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5ff3e51d-a35a-4401-af24-4c7893e2f7e1")
+		(uuid "34665604-2979-4d3a-aa27-65b58e9b9065")
 	)
 	(wire
 		(pts
@@ -8865,7 +8865,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b1006b45-2889-48fd-bd41-dfd2848d00b7")
+		(uuid "32f73e88-b89d-4481-aafc-cedd0a85861b")
 	)
 	(wire
 		(pts
@@ -8876,7 +8876,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1600136a-6e03-4cc8-ada2-642785a10a8a")
+		(uuid "a1605948-0ac1-4e0b-b340-dd0ad33eda0e")
 	)
 	(wire
 		(pts
@@ -8887,7 +8887,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9fea63e3-4f89-4372-a947-5403a79e8d1e")
+		(uuid "a55eac62-fce3-4bb4-ba9f-8af9a1fe2359")
 	)
 	(wire
 		(pts
@@ -8898,7 +8898,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "3357461d-b324-46eb-85e1-6a23ab2485d6")
+		(uuid "48e49db9-ea96-4fa3-a9bd-3fc2551c5564")
 	)
 	(wire
 		(pts
@@ -8909,7 +8909,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8cc69a12-8be5-493f-a493-958d94de12c0")
+		(uuid "f558eb17-41d3-4f0b-ab9e-d3c7798ab3ee")
 	)
 	(wire
 		(pts
@@ -8920,7 +8920,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "716e7236-c263-4e8d-ba0f-752c37c664f9")
+		(uuid "a892f0ef-16b0-49ca-aee6-d9fd9d634038")
 	)
 	(wire
 		(pts
@@ -8931,7 +8931,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "cf227694-e56c-4e05-8f05-273d93aeec52")
+		(uuid "85c3dd72-436d-4c66-9394-367b0b36213a")
 	)
 	(wire
 		(pts
@@ -8942,7 +8942,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "21ace43b-b197-483c-9fe0-6bb3e4503a09")
+		(uuid "68c08174-d5ab-4d35-a7ba-d045de81dd52")
 	)
 	(wire
 		(pts
@@ -8953,7 +8953,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b2475f5f-3497-420b-b1f9-7203ebe151c1")
+		(uuid "73a177ca-d10b-4687-9b39-433cf2805d0e")
 	)
 	(wire
 		(pts
@@ -8964,7 +8964,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "ba99420f-33c4-4ffa-9f7a-34c2cf0f31d1")
+		(uuid "542a7c83-5c1a-4863-aabc-c51f6f1d4bae")
 	)
 	(wire
 		(pts
@@ -8975,7 +8975,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "505df6bd-4d7f-4405-97c5-432c787f7f54")
+		(uuid "cecff824-c1cf-4b18-a3ff-cdbec836fdc0")
 	)
 	(wire
 		(pts
@@ -8986,7 +8986,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9bd0f21c-f620-4ead-af3b-e85f1d934e1e")
+		(uuid "710077a5-4ef4-461f-8130-3205d0b8bab6")
 	)
 	(wire
 		(pts
@@ -8997,7 +8997,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "51462b8b-9c5c-4c8c-8f53-a404516f3399")
+		(uuid "2236746e-6f2d-432a-bd46-ec6950d737b2")
 	)
 	(wire
 		(pts
@@ -9008,7 +9008,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "069dc776-b15b-4d97-afd0-5f863b9c415a")
+		(uuid "4e342f1d-62b0-40ba-8941-c77ceec85070")
 	)
 	(wire
 		(pts
@@ -9019,7 +9019,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1cac6aab-06ec-4445-a45b-b7dfab820ab2")
+		(uuid "c07ba499-9f43-4b6d-be05-7be1c68edba1")
 	)
 	(wire
 		(pts
@@ -9030,7 +9030,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9cdc4cf2-f9aa-4b37-a580-abf19db71c73")
+		(uuid "31d4a0a5-3dce-4cc3-a071-31beb881033c")
 	)
 	(wire
 		(pts
@@ -9041,7 +9041,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "88b3eb82-c05d-4c05-a5c8-2559268c1681")
+		(uuid "1879f9db-5c7e-41d1-94a1-fe732c29e3d7")
 	)
 	(wire
 		(pts
@@ -9052,7 +9052,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "aeaff715-3344-4a43-9b74-7f015fedb32d")
+		(uuid "bfcc405a-8534-400b-b24e-b4ee5e880536")
 	)
 	(wire
 		(pts
@@ -9063,7 +9063,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "68b6d984-99ac-4d5e-8fef-eef34e67518f")
+		(uuid "f5a4b7ca-3757-491d-b7c5-003fdf806dc5")
 	)
 	(wire
 		(pts
@@ -9074,7 +9074,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5ca10d3e-6225-4ac6-800a-f7b1f63b39ea")
+		(uuid "6a3ff8ca-9e87-4f08-8a63-561e871374a6")
 	)
 	(wire
 		(pts
@@ -9085,7 +9085,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a5cdaa5a-9f94-4aad-ac90-065e5d63c100")
+		(uuid "7239ab17-7c4c-4f41-b7de-089bb7de2cf5")
 	)
 	(wire
 		(pts
@@ -9096,7 +9096,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "23a6c84a-dfbb-4217-bf66-4c6d31dbf831")
+		(uuid "0f77bb27-9a02-4b3e-ac89-dd3dd322f9ea")
 	)
 	(wire
 		(pts
@@ -9107,7 +9107,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "861aa562-f45c-4e9b-9d48-a3c9ff5a0b62")
+		(uuid "4f0048b8-ae38-4a4e-a968-7866dd75ea3c")
 	)
 	(wire
 		(pts
@@ -9118,7 +9118,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bd644d72-643d-4434-9600-a2b735a1fd78")
+		(uuid "0da4373d-4c31-4bc6-8e9f-2bde38bdd592")
 	)
 	(wire
 		(pts
@@ -9129,7 +9129,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "28ee39fc-2bba-4f3b-8551-d1bc54132e86")
+		(uuid "31bd90a3-54cd-49a9-961b-648eb93394d6")
 	)
 	(wire
 		(pts
@@ -9140,7 +9140,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5dfe2f43-a3f2-4db0-a94a-c0b2fcfb3f4f")
+		(uuid "0631cdf4-2f5b-482a-87e2-4b5a6fbc500c")
 	)
 	(wire
 		(pts
@@ -9151,7 +9151,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bcfbcb66-f0d9-4ad9-a165-8923b421a56c")
+		(uuid "31b10583-bbd0-408f-826d-558119d05b56")
 	)
 	(wire
 		(pts
@@ -9162,7 +9162,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "596b0bac-b785-48c5-aae2-bfe9fce705b0")
+		(uuid "17ea24b3-9e6e-43d8-b415-88a15b139171")
 	)
 	(wire
 		(pts
@@ -9173,7 +9173,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "15a024a4-c0a6-42d8-be93-1e568798fb23")
+		(uuid "a2fae85d-82be-4dc8-9409-af3f7938a3bf")
 	)
 	(wire
 		(pts
@@ -9184,7 +9184,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d11523a8-b5c9-4f33-ac9d-6abd7ebea572")
+		(uuid "b25b1a69-0641-498e-8a5d-6816ed5cabcc")
 	)
 	(wire
 		(pts
@@ -9195,7 +9195,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "0b1f36e9-be29-480b-8398-ca1a5f3fe091")
+		(uuid "ca3afbd9-29cb-4f27-92dd-51fd122ba80a")
 	)
 	(wire
 		(pts
@@ -9206,7 +9206,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "967b4a7b-4dd0-409a-879b-facfd7431b5a")
+		(uuid "633e511a-df19-46bf-9c68-c4d7a54dc49d")
 	)
 	(wire
 		(pts
@@ -9217,7 +9217,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "b3520d1a-aa7e-42c3-a531-3612568991fc")
+		(uuid "9d87dc3f-db3b-40bf-ab99-dd2e306526cd")
 	)
 	(wire
 		(pts
@@ -9228,7 +9228,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "24c18deb-c6df-4559-b3d8-a3ec30cbe99c")
+		(uuid "946eed82-7299-4c84-9c05-fa381d4395a6")
 	)
 	(wire
 		(pts
@@ -9239,7 +9239,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8f1f67ba-5e11-46f9-aa21-2fc0084850ef")
+		(uuid "f51e4fda-c1f2-466f-9415-ccaad348031c")
 	)
 	(wire
 		(pts
@@ -9250,7 +9250,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "43dadcbd-9365-41ab-9adf-31198c789250")
+		(uuid "dd20e20a-5c76-4f61-8068-9ca35231b25c")
 	)
 	(wire
 		(pts
@@ -9261,7 +9261,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "055a0965-f185-47ad-b97f-accdd431d323")
+		(uuid "c9a151bf-fe71-454e-9382-62de2c7c52c9")
 	)
 	(wire
 		(pts
@@ -9272,7 +9272,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "22b9a421-05d1-4e29-9ccb-866abe81cc6d")
+		(uuid "58c76ad4-3439-4ca5-9395-95363a522c90")
 	)
 	(wire
 		(pts
@@ -9283,7 +9283,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "d12f1918-6c9a-42e0-95d2-31eda867cb27")
+		(uuid "56b312ca-5734-42df-9039-a45c944b3b08")
 	)
 	(wire
 		(pts
@@ -9294,7 +9294,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7f1d4f67-734d-4187-831c-100199b19019")
+		(uuid "7e511481-74d1-44d2-a3ec-5b4a2d38ea74")
 	)
 	(wire
 		(pts
@@ -9305,7 +9305,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "6abf2b49-c583-4b05-abea-8d224b0b3c58")
+		(uuid "b5e658a2-245a-4c72-b858-154a34d99581")
 	)
 	(wire
 		(pts
@@ -9316,7 +9316,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "7f474232-7a90-4d69-b979-bb3a22ca43cc")
+		(uuid "777fc958-9384-432d-bbc5-f2611dd7f1a4")
 	)
 	(wire
 		(pts
@@ -9327,7 +9327,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "18eb6962-f33c-4a31-9ed6-5f22f6db7f3f")
+		(uuid "f99a9de9-4b9c-4234-8539-11b87f472d83")
 	)
 	(wire
 		(pts
@@ -9338,7 +9338,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "9eee5f84-7f77-4b1f-aea5-f6075af133ab")
+		(uuid "e4046a79-3a0a-4d84-856e-f95026fd3341")
 	)
 	(wire
 		(pts
@@ -9349,7 +9349,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "fbb91f8a-f988-472a-890c-b5210e9ff8cc")
+		(uuid "d6c4af5b-c0fc-4098-90f8-61e7eb8de23a")
 	)
 	(wire
 		(pts
@@ -9360,7 +9360,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "8524efe4-5aa9-40d4-ba56-036d8e5a3e37")
+		(uuid "8fc7f4ae-a58c-4f68-b2c9-1f51a54929e2")
 	)
 	(wire
 		(pts
@@ -9371,7 +9371,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c13ff9c7-6cf6-4376-9be5-ac99da864948")
+		(uuid "a900fbfe-7945-47f4-b0cf-0335437dc484")
 	)
 	(wire
 		(pts
@@ -9382,7 +9382,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a2aa7a3c-29c5-476c-acf0-3075453e9138")
+		(uuid "53891159-9d20-4a70-bd83-3b804e902467")
 	)
 	(wire
 		(pts
@@ -9393,7 +9393,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "5a9272f4-5e3b-414f-a057-30f926573311")
+		(uuid "564f3cf9-6585-4ae7-8d99-4676f6ce4ba6")
 	)
 	(wire
 		(pts
@@ -9404,7 +9404,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "c0656417-6127-41b9-b1a0-5c55c5869cb9")
+		(uuid "cf4ebecb-9d35-4d7c-a4cb-bc29f7dad6c9")
 	)
 	(wire
 		(pts
@@ -9415,7 +9415,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "4cb5665c-a502-49e1-a7e5-4c4f85e1f318")
+		(uuid "e4ee368f-7a72-409e-a32b-2685faa642c2")
 	)
 	(wire
 		(pts
@@ -9426,7 +9426,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "bf07b379-1c55-432e-aaae-8803d956d886")
+		(uuid "ee80fe43-0a65-430d-982a-6f93899c1317")
 	)
 	(wire
 		(pts
@@ -9437,7 +9437,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "1e2b62b7-85fd-49df-a64d-74fc604bbda8")
+		(uuid "5bc45bc1-d526-4aba-b358-800aa3ac7843")
 	)
 	(wire
 		(pts
@@ -9448,7 +9448,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "311651fe-3c73-4f4e-94d3-457055b7f283")
+		(uuid "4b1c49c2-1fb7-45df-a3c6-95d957a4fae7")
 	)
 	(wire
 		(pts
@@ -9459,7 +9459,7 @@
 			(width 0.1524)
 			(type default)
 		)
-		(uuid "a4dc85ee-eb66-4458-bd91-612f2e142d87")
+		(uuid "ba4911fb-6b5c-4425-b905-8e66ede6540f")
 	)
 	(label "CC1"
 		(at 62.23 52.07 0)
@@ -9469,7 +9469,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4e8dce4c-a4dc-4da1-ab70-11d4b72249bc")
+		(uuid "358b56be-a3f5-44a3-8aa9-04ea3fece982")
 	)
 	(label "CC2"
 		(at 62.23 54.61 0)
@@ -9479,7 +9479,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "8c4afbcb-2f7e-49c8-acae-7e9ab8dd7ece")
+		(uuid "70dc801f-99dc-4909-9079-0e5df509357e")
 	)
 	(label "PMID"
 		(at 153.67 54.61 180)
@@ -9489,7 +9489,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "e4fc79cc-8bbf-4a6f-b514-b180de80041d")
+		(uuid "d5919758-1d42-4b81-a15c-680739cbcd8b")
 	)
 	(label "REGN"
 		(at 156.21 57.15 180)
@@ -9499,7 +9499,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d3f35707-03bf-4ca8-9740-da33d467136c")
+		(uuid "28a88f38-d35a-4630-a283-3f0d11241ff7")
 	)
 	(label "PSEL"
 		(at 156.21 59.69 180)
@@ -9509,7 +9509,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3cb41d8d-90a5-480a-a6d2-5eb925ed9909")
+		(uuid "523f2b79-11f0-4dc6-a03e-9e373c992566")
 	)
 	(label "QON"
 		(at 156.21 64.77 180)
@@ -9519,7 +9519,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "28cd5ab3-4e0a-46e5-a386-a0ca6788c474")
+		(uuid "8dce2e4a-35ea-44a6-8ccf-8f88ce57f151")
 	)
 	(label "TS"
 		(at 156.21 67.31 180)
@@ -9529,7 +9529,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "6a8563e9-8e48-43b0-a8dd-06b3429c723e")
+		(uuid "b230ff28-5a5b-49c3-9202-b311a41c5612")
 	)
 	(label "SW"
 		(at 201.93 44.45 0)
@@ -9539,7 +9539,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "f891864a-df1e-485c-8e83-ec6917575525")
+		(uuid "dff0fe3f-9503-4f16-afe7-d2bc66bae8e4")
 	)
 	(label "SW"
 		(at 201.93 46.99 0)
@@ -9549,7 +9549,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "dfda9623-c486-4c27-a309-312494126029")
+		(uuid "b1cb2567-ca3a-4108-83a0-f7f712486805")
 	)
 	(label "BTST"
 		(at 201.93 49.53 0)
@@ -9559,7 +9559,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2df00d39-ec65-4f06-9bc5-f1c6d3465bbb")
+		(uuid "93fa915e-60db-41e7-b284-239056e7acf8")
 	)
 	(label "STAT"
 		(at 201.93 62.23 0)
@@ -9569,7 +9569,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b1f5fd50-7a5e-4582-ad12-9a4cbef33022")
+		(uuid "aca937b1-a750-440e-b87b-2118e80bb11b")
 	)
 	(label "REGN"
 		(at 135.89 100.33 180)
@@ -9579,7 +9579,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3d00775e-a112-482a-bf62-4f8ff9c3791b")
+		(uuid "7db43cd0-aa8d-4006-8847-bb1d597e7ddc")
 	)
 	(label "TS"
 		(at 162.56 111.76 0)
@@ -9589,7 +9589,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4616d939-e158-4a92-938d-d1c9fb528776")
+		(uuid "7c99c771-5719-4684-ad3c-821df8a9d981")
 	)
 	(label "PSEL"
 		(at 135.89 132.08 180)
@@ -9599,7 +9599,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "eb14d068-3eb7-4390-9726-f6fa95f50afb")
+		(uuid "f6504be6-71b3-4dfd-aad7-33d9c999f75c")
 	)
 	(label "QON"
 		(at 135.89 143.51 180)
@@ -9609,7 +9609,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3b34e98f-77e0-4dfb-a6de-86e470275917")
+		(uuid "cd8a4792-9167-4f29-8636-fa94386bcec8")
 	)
 	(label "SW"
 		(at 176.53 100.33 180)
@@ -9619,7 +9619,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "11b728dd-9ed7-4110-92a6-de7747663fd8")
+		(uuid "473baaf0-b774-4de6-bed5-0a62a1e23c00")
 	)
 	(label "BTST"
 		(at 181.61 114.3 0)
@@ -9629,7 +9629,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7f5928cb-8813-4fd2-a323-5714a6480133")
+		(uuid "cb7c0792-1475-4213-9074-cef286c6fc3f")
 	)
 	(label "PMID"
 		(at 204.47 119.38 180)
@@ -9639,7 +9639,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "27a43595-bc24-4c10-bcc3-b1e93a358ea3")
+		(uuid "43002f5b-0315-49e0-9978-752f68a5c936")
 	)
 	(label "STAT"
 		(at 222.25 152.4 0)
@@ -9649,7 +9649,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "14c3e89b-dff9-4b1b-b17b-9484b0869d29")
+		(uuid "f23664cf-1b84-4c78-a49c-0546d73fd302")
 	)
 	(label "BAT-"
 		(at 27.94 180.34 270)
@@ -9659,7 +9659,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d06cefad-30ea-4fb8-b01e-61eefae0274a")
+		(uuid "39b4dc11-ee24-44c7-9b28-74f16d380c7f")
 	)
 	(label "BAT-"
 		(at 41.91 214.63 270)
@@ -9669,7 +9669,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b5fa2551-761c-4a5e-8594-a52c2c780ad7")
+		(uuid "0d1eaaec-28ab-46cb-b1c7-9d9bb65da0ba")
 	)
 	(label "BAT-"
 		(at 52.07 201.93 180)
@@ -9679,7 +9679,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3baef74a-2253-4a5e-adab-84143c8c8cdf")
+		(uuid "8d1cedac-14cf-4bbe-b1fa-dd8d8b57df5f")
 	)
 	(label "OD"
 		(at 74.93 210.82 270)
@@ -9689,7 +9689,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0b7063ef-abf3-4e08-bfa1-23be38ad96b8")
+		(uuid "252f2a6b-43b9-4840-92c6-c3d7a22a594c")
 	)
 	(label "OC"
 		(at 80.01 210.82 270)
@@ -9699,7 +9699,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a573ab03-c3bc-42da-9e21-6d7054c4ba3f")
+		(uuid "4fa971c8-7b7f-44c3-9a3b-c4e610ef973a")
 	)
 	(label "OD"
 		(at 60.96 233.68 180)
@@ -9709,7 +9709,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f972eab7-071f-4f5c-9375-70a77123987a")
+		(uuid "2f2c85e3-e5f5-4fe4-bda5-33d3105e5b4e")
 	)
 	(label "OC"
 		(at 93.98 233.68 0)
@@ -9719,7 +9719,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "6312edce-378c-442f-bbf0-02e00bf55b08")
+		(uuid "445b3bec-64ed-40d4-b266-4209715ea541")
 	)
 	(label "BAT-"
 		(at 60.96 236.22 180)
@@ -9729,7 +9729,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "18908182-0116-4795-ac97-86d579b54ee8")
+		(uuid "e1fdfe89-258a-4deb-9910-fd5497d8c2f0")
 	)
 	(label "CC1"
 		(at 138.43 220.98 180)
@@ -9739,7 +9739,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "02530c0c-eb42-4654-b3ef-533703307a46")
+		(uuid "05c6e5df-88e3-418c-a23a-7d047bc3a7db")
 	)
 	(label "CC2"
 		(at 138.43 223.52 180)
@@ -9749,7 +9749,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "573be90d-ac76-4ff0-8253-5b6506edabfa")
+		(uuid "abfc2786-27de-4ef2-907f-c39e3c970bd4")
 	)
 	(global_label "USB_D-"
 		(shape passive)
@@ -9760,7 +9760,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d2c8e27c-1e70-4ca2-bdc8-9770eef9b7b1")
+		(uuid "c1ae20eb-f18c-4d2a-8bf4-b1af4c1068b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 62.23 0)
 			(hide yes)
@@ -9780,7 +9780,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "272bf19a-94fc-4b94-a612-a9145992f6ee")
+		(uuid "0850c578-5866-4a14-9fd6-36682bf86a7b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 105.41 64.77 0)
 			(hide yes)
@@ -9800,7 +9800,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9f77a0d2-e0a2-4c56-ac90-148bcf59b58c")
+		(uuid "294bce9c-a894-4672-b0dd-a60173acbba7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 204.47 67.31 0)
 			(hide yes)
@@ -9820,7 +9820,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "7c9881fa-efa0-41f0-b9ac-bf9dd38f2c3c")
+		(uuid "6124099c-94af-4133-9842-7ae3dca14cad")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.93 69.85 0)
 			(hide yes)
@@ -9840,7 +9840,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "aa8ab0a0-4acb-4897-9b0a-bb02069db5a6")
+		(uuid "dc1b0add-f3e7-4635-9491-34859ebfdb01")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.93 72.39 0)
 			(hide yes)
@@ -9860,7 +9860,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "66c9f4a0-5cd5-4da6-ab37-064fbffe1e3b")
+		(uuid "0db12fd4-6a5d-4a5d-9e47-b16591a7fc38")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 160.02 142.24 270)
 			(hide yes)
@@ -9880,7 +9880,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "27b0c8c4-0ed5-40fb-91fc-a777a8c50f24")
+		(uuid "7fe9913b-cfb1-4285-b4d3-d3f07cc82526")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 194.31 213.36 0)
 			(hide yes)
@@ -9900,7 +9900,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e91769b2-05e5-402b-8ee3-dd21b301a49e")
+		(uuid "54ff63c8-4ba1-42eb-9930-d14354e2d1ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 194.31 215.9 0)
 			(hide yes)
@@ -9920,7 +9920,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "d0fb0868-92ed-40e4-9447-fca66d36056d")
+		(uuid "7096888d-4c17-4bae-999d-a35080b5ab86")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.93 247.65 0)
 			(hide yes)
@@ -9940,7 +9940,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "54411ffa-4a77-4d76-979c-f981cea4e229")
+		(uuid "f147b444-9abd-4725-a7a2-face602ca99d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.93 250.19 0)
 			(hide yes)
@@ -9960,7 +9960,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "9ccf5c87-245a-4a74-b7c1-a66a406ba5b1")
+		(uuid "11730fe6-1ebe-4a9f-8f29-fb2b96b1a6ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 201.93 252.73 0)
 			(hide yes)
@@ -9980,7 +9980,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b7728d5f-c470-410a-9563-d00f69fa348b")
+		(uuid "26065eb3-48d9-42af-8fba-91bd6430d629")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 274.32 139.7 180)
 			(hide yes)
@@ -10000,7 +10000,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c323ab97-8bc7-41e5-b73b-ec541c6ec17c")
+		(uuid "d9061872-e38e-4e58-b469-1f63635a9731")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 251.46 223.52 180)
 			(hide yes)
@@ -10020,7 +10020,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "be51224c-4092-4462-a65c-43a34ed7bf81")
+		(uuid "76c3b284-4aa2-4263-a598-f33480ab194d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 303.53 223.52 180)
 			(hide yes)
@@ -10040,7 +10040,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2e2f33c0-63d8-45df-a604-a829cd02d8ed")
+		(uuid "90cf1b72-9376-4088-9252-d2b4a46f63d4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 355.6 232.41 180)
 			(hide yes)
@@ -10059,7 +10059,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "dc3e01b4-b1c9-49b0-854f-c32a85205b69")
+		(uuid "ae1b9fbb-e844-436d-b99d-97652699853c")
 		(property "Reference" "J101"
 			(at 31.496 43.25 0)
 			(effects
@@ -10113,59 +10113,59 @@
 			)
 		)
 		(pin "A1"
-			(uuid "94e83c0e-3f20-4a65-8571-5b6d014531ab")
+			(uuid "2b4efc5f-6ce9-460b-a37e-127862460677")
 		)
 		(pin "A4"
-			(uuid "393523e9-8d5c-4b42-9c29-11ce1d2a0e11")
+			(uuid "c4e38b6e-76e0-4559-b3d3-84a9740ae28f")
 		)
 		(pin "A5"
-			(uuid "d0770c38-0bf4-4270-9cd8-b05ee473c20a")
+			(uuid "461c3fc2-fa22-46da-b20b-2cac4d2bd825")
 		)
 		(pin "A6"
-			(uuid "0488317d-5246-41ae-9738-3ecf4f18bbc7")
+			(uuid "b3728bda-2eb7-493a-8968-5a66fcbcdf7c")
 		)
 		(pin "A7"
-			(uuid "7a52022c-0feb-467f-ab66-4e50a52f1ca4")
+			(uuid "691b085b-d30f-4902-b11e-2b43b6e70fb4")
 		)
 		(pin "A8"
-			(uuid "ab0c651e-e036-4ba8-8f01-c37a44954fc5")
+			(uuid "558b9d6f-3be3-4a60-9d7a-3afbf6820dfc")
 		)
 		(pin "A9"
-			(uuid "2f591df2-3960-410f-9b3e-f3a4b806f876")
+			(uuid "2ee4e079-3f46-4eae-b2b1-e3c126d91a19")
 		)
 		(pin "A12"
-			(uuid "22e507ad-d04a-4f5a-bf10-3aada41127d9")
+			(uuid "0b1aa863-46ad-443c-8a8b-98650277028d")
 		)
 		(pin "B1"
-			(uuid "088106de-619e-4a8a-b993-50a97f3dd3d9")
+			(uuid "84ade069-3b33-4011-ac00-c866cb707c91")
 		)
 		(pin "B4"
-			(uuid "e17d65fa-14ff-4f8c-9c2c-e53293c69510")
+			(uuid "1a4cdf7d-1e88-403c-9a3d-39167987a077")
 		)
 		(pin "B5"
-			(uuid "6c9302f5-3f69-47fa-b554-80bce26e2fa2")
+			(uuid "5fad577b-fb46-4615-8553-3decc5f8dc36")
 		)
 		(pin "B6"
-			(uuid "4aef46c3-b1e7-43d5-8b4c-7a67116a4988")
+			(uuid "30944036-cd7e-4d6d-92b8-0f4de352dd4e")
 		)
 		(pin "B7"
-			(uuid "ab588e44-61a7-4e9c-b261-adb08216a79c")
+			(uuid "aaac999f-c7d5-4388-bd35-1b2772fecacb")
 		)
 		(pin "B8"
-			(uuid "8b126a68-fddd-4f31-98ea-e5200721ed99")
+			(uuid "8673c3fa-7e38-48b0-8d56-bb07d574fb41")
 		)
 		(pin "B9"
-			(uuid "2b81d3e5-0c34-434f-bdca-964e63d4a59a")
+			(uuid "2a94d645-d4e9-4511-8c8a-9e3f1f5d3141")
 		)
 		(pin "B12"
-			(uuid "dce5cb75-b87e-4bba-a58c-37e1b0cbe066")
+			(uuid "8fba05e1-7ef3-46e0-9cf1-6d0f8ba18741")
 		)
 		(pin "SH"
-			(uuid "47d142e7-1a95-4282-a79d-93c783ff76af")
+			(uuid "3d3d08c9-7683-4f64-9811-f0738c7834e3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "J101")
 					(unit 1)
 				)
@@ -10180,7 +10180,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c81343e2-074d-479d-b6c0-fec5590009e4")
+		(uuid "9039cf0a-6ddb-4aa1-b619-ad0d9f15abdb")
 		(property "Reference" "#PWR001"
 			(at 69.85 46.99 0)
 			(hide yes)
@@ -10226,11 +10226,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "b22d9977-a5c0-46d0-927f-af3182707415")
+			(uuid "62c8a413-f8c2-4da9-83e4-bdfb27ef48c7")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR001")
 					(unit 1)
 				)
@@ -10245,7 +10245,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bc113b12-fdfb-4804-aac9-a32a918597c1")
+		(uuid "1d1fbb43-900c-4690-95c1-e1c0e706a4f6")
 		(property "Reference" "#FLG01"
 			(at 76.2 46.99 0)
 			(hide yes)
@@ -10291,11 +10291,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "91a89002-d601-432f-aaf4-55c6acb67d25")
+			(uuid "862cebd1-a5ae-43ca-b34b-05307fa3c4cb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -10310,7 +10310,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "753be024-14f3-45be-8aa8-4ca98c5cd910")
+		(uuid "851de6a2-b2da-4a88-a324-fa223204ac0b")
 		(property "Reference" "D101"
 			(at 92.456 55.95 0)
 			(effects
@@ -10364,26 +10364,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "4343beaa-8cb5-4dac-94ca-213acafb2d9c")
+			(uuid "810d46e4-7ab2-4e28-bc10-48d4e5f19409")
 		)
 		(pin "2"
-			(uuid "d396c9ab-e470-431f-ba32-a246c734dea2")
+			(uuid "61449fbe-9322-4a91-bb00-a62ff37e0c1d")
 		)
 		(pin "3"
-			(uuid "8b00f2ca-d302-4704-9e37-3f3ee379ce8e")
+			(uuid "d4afdabc-1c10-4a86-a159-96dba53b24ca")
 		)
 		(pin "4"
-			(uuid "13d07848-0c7b-46cc-90b6-d0b655e3bc45")
+			(uuid "939e1442-43cf-44d0-b74d-5757ab1bc044")
 		)
 		(pin "5"
-			(uuid "6831d4b2-79a8-4cf9-acb0-37a3cda60fa9")
+			(uuid "bb221615-9295-43fe-bc27-e09636f54f27")
 		)
 		(pin "6"
-			(uuid "743c306e-0767-44a7-ba51-a275411ec1ad")
+			(uuid "695bc631-51d1-4bc9-b63e-26ebc68b7e84")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "D101")
 					(unit 1)
 				)
@@ -10398,7 +10398,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "04cb8dab-2a64-48d3-b9ba-5bb43f4c46c6")
+		(uuid "07ab74e1-eac5-447c-9799-e97c6094926c")
 		(property "Reference" "#PWR002"
 			(at 95.25 54.61 0)
 			(hide yes)
@@ -10444,11 +10444,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2eecc9d2-c2e0-452c-a385-771d6303be47")
+			(uuid "d2f09fbc-132c-42d5-bace-e73a1de8c519")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR002")
 					(unit 1)
 				)
@@ -10463,7 +10463,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ba51bcfd-a1dd-4255-850c-49000ef4bdaf")
+		(uuid "9bc7fcb2-5c1d-47e8-a502-6418decef4f3")
 		(property "Reference" "#PWR003"
 			(at 95.25 72.39 0)
 			(hide yes)
@@ -10510,11 +10510,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "be57a77a-4f05-4b9a-8456-84e9f945d3a4")
+			(uuid "c97e7c60-3790-4630-8f57-32d8f1ce4dcd")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR003")
 					(unit 1)
 				)
@@ -10529,7 +10529,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ce213abb-ea40-4557-b9e1-decfe0f1570a")
+		(uuid "78ffc478-5fb0-49b8-90d3-b51a038e5c28")
 		(property "Reference" "#PWR004"
 			(at 39.37 87.63 0)
 			(hide yes)
@@ -10576,11 +10576,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f96c1ea3-f11c-404e-be77-fae941ec1e70")
+			(uuid "4df33ff3-8834-4c0e-8df1-773471d1b9a4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR004")
 					(unit 1)
 				)
@@ -10595,7 +10595,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "82e5e729-a8dd-4070-8873-655d7fa0236b")
+		(uuid "fa1e848a-4c62-4672-9060-08991d68337a")
 		(property "Reference" "#PWR005"
 			(at 31.75 87.63 0)
 			(hide yes)
@@ -10642,11 +10642,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "26ae5aa0-9842-4cad-9188-15453484cb90")
+			(uuid "2ef51462-d598-4ff7-8ffb-c26d07f9a416")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR005")
 					(unit 1)
 				)
@@ -10661,7 +10661,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "473c1050-edac-4aad-8178-0ebeed003a9a")
+		(uuid "caddc9b5-3d0b-4a70-9d50-288c92b17ca4")
 		(property "Reference" "U101"
 			(at 166.116 39.44 0)
 			(effects
@@ -10715,83 +10715,83 @@
 			)
 		)
 		(pin "24"
-			(uuid "680f7dff-63dd-4f29-8fe1-8d2acf10727b")
+			(uuid "0f21c543-2c04-487d-9501-5465d3e40b30")
 		)
 		(pin "1"
-			(uuid "ac03952a-3286-41f6-b50e-706e203cfd95")
+			(uuid "adb9fe80-603d-4316-b239-59bd9ca410aa")
 		)
 		(pin "23"
-			(uuid "3c13d08c-ed44-4bec-9464-d8029b07bf6f")
+			(uuid "b0496c00-4589-4ae5-b444-9d38e55806b1")
 		)
 		(pin "22"
-			(uuid "de6ac341-7592-448e-a9ec-edc7a4fedd40")
+			(uuid "6a2c42ae-7ac6-4023-8edd-d88141e22e56")
 		)
 		(pin "2"
-			(uuid "d2089651-185e-43e5-bd05-f769aaa6094a")
+			(uuid "832fbf14-e642-4f1f-a2eb-6c1492574058")
 		)
 		(pin "9"
-			(uuid "660a5303-6154-4675-b63e-fc4737343e59")
+			(uuid "3f207cf2-c1e1-476b-8944-9f2d3788e292")
 		)
 		(pin "12"
-			(uuid "eefb5d66-9796-4a20-9c85-a3196ee9e79e")
+			(uuid "081eec04-de06-4ce2-a52e-35aff832c780")
 		)
 		(pin "11"
-			(uuid "24ea3b79-51d5-48a5-9f05-d9ee89305d6a")
+			(uuid "df288574-ad12-4bde-bbbb-dc4961a443b1")
 		)
 		(pin "19"
-			(uuid "e9ab9308-390f-4119-9cf8-4ead3e3dcf75")
+			(uuid "cca67f98-2a8b-4183-9e06-a1ee87cadc78")
 		)
 		(pin "20"
-			(uuid "9a7c3d90-28cf-4b19-9d74-a78ca0f8c063")
+			(uuid "37f7ac34-a68e-43f3-a234-c60ad1d5e05a")
 		)
 		(pin "21"
-			(uuid "b93b44f9-06c7-4e6a-87cd-c6021417fea5")
+			(uuid "d6a5c9d3-3aa2-4723-8ab8-b55f0c15de3b")
 		)
 		(pin "15"
-			(uuid "94a8d033-1f18-43de-b195-53de3e655990")
+			(uuid "6f465f55-5baf-450e-b334-82968a59e2d4")
 		)
 		(pin "16"
-			(uuid "c6e2c170-8f8e-4dd1-a3f3-963d1d5d3b4c")
+			(uuid "ebcd002f-a33d-4811-bcdf-06c35a48a3de")
 		)
 		(pin "13"
-			(uuid "86045c79-a7af-4e33-adf2-48ade691faa3")
+			(uuid "befdc37b-850a-4ee4-a68f-89f29bfd23ee")
 		)
 		(pin "14"
-			(uuid "8749f8e0-5fc9-4e27-ba4e-1608693e0083")
+			(uuid "ea02de0b-1a97-4e5e-9c8b-e39c185e22fb")
 		)
 		(pin "4"
-			(uuid "29ef533b-042c-423c-b5a0-58dd0d7209f0")
+			(uuid "683b9ef0-9d5f-4640-b0f2-8401a4746a3a")
 		)
 		(pin "3"
-			(uuid "6a772735-9000-4b0a-bf29-c25b9f273a8b")
+			(uuid "36e2f0c1-6f70-42e0-9069-293670b281d0")
 		)
 		(pin "7"
-			(uuid "9368aabf-e321-4ab4-8a68-0c59f14b9770")
+			(uuid "95e50e94-411d-487b-b16c-c89323dd3716")
 		)
 		(pin "6"
-			(uuid "1cdc8383-8b40-411f-b6a8-29653b01fd97")
+			(uuid "28008116-b115-4d65-a5ff-487427364cce")
 		)
 		(pin "5"
-			(uuid "7186f9b2-1945-49a2-9092-96f3022f82eb")
+			(uuid "fba33cda-3186-456e-80bd-3387c7ddcb91")
 		)
 		(pin "17"
-			(uuid "28788b9a-34c1-47f4-974d-acedfb9229ae")
+			(uuid "9b6d285d-9cab-4e32-8c9b-6cb7094b07c2")
 		)
 		(pin "18"
-			(uuid "41d4b2a0-ceb1-4f8d-884f-96f2b0ffe13e")
+			(uuid "71581815-2b10-4e02-95a6-c13d39fe4007")
 		)
 		(pin "25"
-			(uuid "0cc59c3e-e168-48a9-87a7-af86db10d1dd")
+			(uuid "5a9247f3-fabc-47b2-8e7e-50c26b09437d")
 		)
 		(pin "8"
-			(uuid "5dfc0738-6ce3-4021-bfb7-6c1a1099f1e5")
+			(uuid "6b8f0043-3e3d-4985-98c8-1b943d906fed")
 		)
 		(pin "10"
-			(uuid "1d0b6776-6789-41ac-874a-86e892929046")
+			(uuid "44832994-bfa5-474b-b33c-953c6d945e79")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U101")
 					(unit 1)
 				)
@@ -10806,7 +10806,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "67fe4f58-41d0-4537-bc33-f7f641551172")
+		(uuid "b2bae2f0-3e80-44dd-a12a-da3b4cc91a27")
 		(property "Reference" "#PWR006"
 			(at 151.13 49.53 90)
 			(hide yes)
@@ -10852,11 +10852,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ae70968f-8559-4922-b38f-07772d06a5e9")
+			(uuid "7426fbc9-77ea-4a78-9ea2-39290564c58b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR006")
 					(unit 1)
 				)
@@ -10871,7 +10871,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6c984870-d0ba-4447-91d3-774dea98c026")
+		(uuid "f5e85c61-ce27-4911-b404-7f857d963fe1")
 		(property "Reference" "C101"
 			(at 159.858 40.91 0)
 			(effects
@@ -10925,14 +10925,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d53c7243-c026-49c7-b305-417186cc0e93")
+			(uuid "f5d41c56-11cb-4cfd-aac9-56a22230498f")
 		)
 		(pin "2"
-			(uuid "18019450-8f24-4280-a132-7b126f16fcfc")
+			(uuid "fbe0baf2-e0c2-4994-a989-b56c201f69fc")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C101")
 					(unit 1)
 				)
@@ -10947,7 +10947,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "edbee6c0-d576-4b38-8893-6044b8a9ee79")
+		(uuid "4681d01d-d2bb-4de9-8910-7e37eed699da")
 		(property "Reference" "#PWR007"
 			(at 154.94 35.56 0)
 			(hide yes)
@@ -10994,11 +10994,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5d530b11-c37a-4b76-84de-19ffc957bc86")
+			(uuid "67a423a1-97ea-4826-86b3-cca90208eaeb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR007")
 					(unit 1)
 				)
@@ -11013,7 +11013,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e7731a33-bd53-4383-8a72-e81496e65141")
+		(uuid "58cc0548-78b9-4e5d-8064-6dac6f40e6a7")
 		(property "Reference" "#PWR008"
 			(at 158.75 62.23 90)
 			(hide yes)
@@ -11060,11 +11060,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7b0aa20-6621-492e-b58b-2a74f7d73da6")
+			(uuid "591d5340-b00e-4a8f-a607-4929d601aff0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR008")
 					(unit 1)
 				)
@@ -11079,7 +11079,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3e275f83-39bc-48c2-b36a-e10451bc9969")
+		(uuid "bff1878d-2825-4576-adad-06da1794fdb0")
 		(property "Reference" "#PWR009"
 			(at 210.82 52.07 0)
 			(hide yes)
@@ -11125,11 +11125,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bad59e89-1348-4bfe-9ef4-cbcb2a9aa0a4")
+			(uuid "cd520602-07fc-4656-9c06-51a2429daadc")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR009")
 					(unit 1)
 				)
@@ -11144,7 +11144,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6789fe72-2aa7-4561-b869-787966e35e14")
+		(uuid "4a9ecfa7-8468-44f1-8dc0-4cd68b767fe4")
 		(property "Reference" "#PWR010"
 			(at 210.82 57.15 0)
 			(hide yes)
@@ -11190,11 +11190,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3686d097-3a3a-4854-b80e-49d02fe0461f")
+			(uuid "62f33b54-714c-4539-9085-2d1bc69e9392")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR010")
 					(unit 1)
 				)
@@ -11209,7 +11209,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "25abdc46-6c51-4e0f-9bfb-3f32479008ce")
+		(uuid "a87e6a9d-74d6-4b61-900e-117dfcbd597f")
 		(property "Reference" "#PWR011"
 			(at 180.34 83.82 0)
 			(hide yes)
@@ -11256,11 +11256,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3303f541-b062-4bda-8c0e-b375e68e839f")
+			(uuid "c9e91060-49f9-4011-89e6-f62bbb83c91a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR011")
 					(unit 1)
 				)
@@ -11275,7 +11275,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "03133c34-0758-4d6f-85f3-92e022c17380")
+		(uuid "e4bbe9b4-a5c2-4833-81b8-a3bf680d15df")
 		(property "Reference" "C116"
 			(at 144.618 106.95 0)
 			(effects
@@ -11329,14 +11329,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "480f8656-2c0c-453f-9eae-802078853353")
+			(uuid "614d917b-0c49-4a01-8aec-7252a6950931")
 		)
 		(pin "2"
-			(uuid "84aaa8bb-919d-4066-beff-a2c9103d388f")
+			(uuid "09365718-0b7e-4158-9edc-6710eea95167")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C116")
 					(unit 1)
 				)
@@ -11351,7 +11351,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d8036f3-eeee-4cd1-8c33-2ed589cdaec6")
+		(uuid "55093481-4e96-404a-820f-6dfe51b6cddf")
 		(property "Reference" "#PWR012"
 			(at 139.7 114.3 0)
 			(hide yes)
@@ -11398,11 +11398,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bdaea818-95d4-4376-b1e2-3bb469e5365d")
+			(uuid "2dd7a198-72a6-4f7f-a5ac-b429989eb34c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR012")
 					(unit 1)
 				)
@@ -11417,7 +11417,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "53cf0e4e-6940-4053-ab6e-78007ddebcc4")
+		(uuid "78803e29-9e4e-4298-8a2c-31aba470fe52")
 		(property "Reference" "R101"
 			(at 157.572 104.41 0)
 			(effects
@@ -11471,14 +11471,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "bfb45d4c-c972-4ab3-8c3e-77d111e4d795")
+			(uuid "c3f49f9e-8294-4dde-a546-f67648af1ab3")
 		)
 		(pin "2"
-			(uuid "45636c12-f5cc-44da-a051-b7c158d0aceb")
+			(uuid "c40c8bff-cdfd-4a14-8f8d-3f236b48b4d3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R101")
 					(unit 1)
 				)
@@ -11493,7 +11493,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "aa012045-382a-4991-8878-8939da3f681d")
+		(uuid "fe0f733c-df12-4d22-90d3-9a4db21d5954")
 		(property "Reference" "R102"
 			(at 157.572 117.11 0)
 			(effects
@@ -11547,14 +11547,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "78299607-b088-4d95-b2ba-3e25277232e8")
+			(uuid "a5a0f301-13c7-431a-aaab-cefd3ad5b226")
 		)
 		(pin "2"
-			(uuid "475bf598-b2c1-477f-9172-dcded8a95cb9")
+			(uuid "8aac7523-bb81-431e-b79c-597ce1577c08")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R102")
 					(unit 1)
 				)
@@ -11569,7 +11569,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f597fba9-6df9-4458-9243-c93556b6adba")
+		(uuid "90aa2c73-fc35-4dd1-9889-8b8367468de1")
 		(property "Reference" "#PWR013"
 			(at 153.67 124.46 0)
 			(hide yes)
@@ -11616,11 +11616,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "145b40aa-aae2-4774-8647-7f6e6f435403")
+			(uuid "651c34d1-0b4c-4088-b087-469bcaeb5fb2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR013")
 					(unit 1)
 				)
@@ -11635,7 +11635,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2d0c7737-5f4b-44c7-ba2c-a9f94cbfe65f")
+		(uuid "902920eb-ff4a-4fd3-955b-b11b13bb029a")
 		(property "Reference" "R103"
 			(at 142.24 130.064 90)
 			(effects
@@ -11689,14 +11689,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "f64d37bc-3367-4540-9a61-1a8c24922ec4")
+			(uuid "500147d2-d5e4-4e84-80c3-b581308f3a70")
 		)
 		(pin "2"
-			(uuid "5402d378-12ef-4706-b3d7-21f81972356b")
+			(uuid "dc6e71b0-1a03-4d17-a095-5eaede531c6b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R103")
 					(unit 1)
 				)
@@ -11711,7 +11711,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "aee057c6-b49a-46ef-9dbe-740886818840")
+		(uuid "fb682cd5-317c-41dc-9c67-fd5073c0c3c2")
 		(property "Reference" "#PWR014"
 			(at 149.86 132.08 90)
 			(hide yes)
@@ -11757,11 +11757,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "aea0e8e1-3b89-4ce1-aae1-872625afe422")
+			(uuid "6a4b68d2-5efb-47b8-958c-66df67f37dd0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR014")
 					(unit 1)
 				)
@@ -11776,7 +11776,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0258f5e5-b972-4ac2-8478-7257a6150de5")
+		(uuid "a675019b-fcdc-4297-a1a1-955e7c2f5e91")
 		(property "Reference" "SW101"
 			(at 143.51 139.462 0)
 			(effects
@@ -11830,14 +11830,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "52e5e1b6-13a7-42bd-9efb-6f9c6543f021")
+			(uuid "efa72317-d777-40a5-996a-7f1ecc02cb70")
 		)
 		(pin "2"
-			(uuid "5aa58168-feab-4de0-a154-fe659cbc88a9")
+			(uuid "53eb601e-3e67-4110-84df-514542bb04ac")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "SW101")
 					(unit 1)
 				)
@@ -11852,7 +11852,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1e2e98a5-9cb8-4ba2-9950-ce90d856f2c7")
+		(uuid "500da95b-879f-479b-b150-38e5f58d36bd")
 		(property "Reference" "#PWR015"
 			(at 151.13 143.51 90)
 			(hide yes)
@@ -11899,11 +11899,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "496331af-c88d-4048-8009-c1374db9132b")
+			(uuid "cbadcdcf-c694-49b3-82cc-759e53d0dbfb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR015")
 					(unit 1)
 				)
@@ -11918,7 +11918,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6db7f033-5000-463e-a3a1-b1cb73dc066a")
+		(uuid "99f6ffe8-df3e-472a-ad3e-7127819217fa")
 		(property "Reference" "L103"
 			(at 185.42 98.6977 90)
 			(effects
@@ -11972,14 +11972,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "48338c7f-dad0-4f97-b674-1bc23beaadac")
+			(uuid "91efd281-b347-4474-bc85-9508532c7617")
 		)
 		(pin "2"
-			(uuid "898d3c93-29e4-486a-9f3e-1bcc42ecb1fe")
+			(uuid "c5cb78ca-adfa-4afe-bb6a-2ea8ad181cec")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "L103")
 					(unit 1)
 				)
@@ -11994,7 +11994,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "268b8d8e-9499-45eb-ab95-7592641dc04f")
+		(uuid "0f8f747b-3f31-4e20-912a-d4677b79cec6")
 		(property "Reference" "#PWR016"
 			(at 198.12 100.33 0)
 			(hide yes)
@@ -12040,11 +12040,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6d6ab8b-af39-45c1-8b8a-b1d2dcef786b")
+			(uuid "694506a5-a257-4a98-8688-20c6d95cf59b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR016")
 					(unit 1)
 				)
@@ -12059,7 +12059,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d4995d0b-2387-486f-ba66-5599c590537f")
+		(uuid "7e6fb40a-c46b-4d90-99ec-a0a27b32ad75")
 		(property "Reference" "C117"
 			(at 181.448 106.95 0)
 			(effects
@@ -12113,14 +12113,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "159c788c-cbc4-474d-9b43-277b64e1627e")
+			(uuid "55f98cad-8663-4ae7-a364-1fbb5c2dc7ae")
 		)
 		(pin "2"
-			(uuid "34d13b92-18ae-46a5-8ba1-d5109b325f91")
+			(uuid "921f8d60-b8f5-49e3-9379-3f18bf8f8073")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C117")
 					(unit 1)
 				)
@@ -12135,7 +12135,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1bb368c5-e577-4661-b840-9ecdfded4ef7")
+		(uuid "b3490742-87b8-4074-8a3f-9bf7da9b364b")
 		(property "Reference" "C102"
 			(at 214.468 123.46 0)
 			(effects
@@ -12189,14 +12189,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a74ab8a-0f80-4b36-8ebf-6fabab213a47")
+			(uuid "4d687581-2bda-40e2-a375-c6524b9889f9")
 		)
 		(pin "2"
-			(uuid "be5af80c-688d-4ac6-88e1-af50234143d9")
+			(uuid "78e46187-19d5-4756-8a91-ac27a87096e3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C102")
 					(unit 1)
 				)
@@ -12211,7 +12211,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "66dcb00c-76cf-46ec-9d3b-a32a0099dfd6")
+		(uuid "d8ecd358-2ff6-4a60-949d-832a0ddcd6f5")
 		(property "Reference" "#PWR017"
 			(at 209.55 130.81 0)
 			(hide yes)
@@ -12258,11 +12258,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9af6ee7f-0725-4068-92d8-bd1deb809773")
+			(uuid "7fa307d9-d464-45f4-b728-5c4b6842bfc5")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR017")
 					(unit 1)
 				)
@@ -12277,7 +12277,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "06952fdd-8ede-432c-9e4f-7407e47d77f3")
+		(uuid "b8280318-2fa8-4282-89fd-f9a3a8655769")
 		(property "Reference" "C115"
 			(at 224.628 123.46 0)
 			(effects
@@ -12331,14 +12331,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "976ffad4-4601-4aba-a6c8-5787c1c6ae68")
+			(uuid "98cd47a9-74e9-44ba-acdf-e131e7f0e609")
 		)
 		(pin "2"
-			(uuid "7cdaef2a-260f-4720-a57a-c826b5f5ab26")
+			(uuid "b916000f-5d40-48d4-9f5d-647d80dbf50e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C115")
 					(unit 1)
 				)
@@ -12353,7 +12353,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0b676a8b-06da-4372-b87c-05b070ea746f")
+		(uuid "4500fa08-ce5a-438e-98b6-f21d1710d10c")
 		(property "Reference" "#PWR018"
 			(at 219.71 130.81 0)
 			(hide yes)
@@ -12400,11 +12400,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8d890ab5-8ebb-474b-80cd-b943d9dab687")
+			(uuid "b13aaa57-355a-4300-ac24-d291852a3e8c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR018")
 					(unit 1)
 				)
@@ -12419,7 +12419,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e9467eba-dd66-4a08-a22d-226660dc090d")
+		(uuid "f7703f59-486a-4d1f-b9e2-d0a147876d37")
 		(property "Reference" "C118"
 			(at 181.448 133.62 0)
 			(effects
@@ -12473,14 +12473,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4426765-0301-4fb1-9266-4a7cd961a34f")
+			(uuid "3e3e82e7-e5d0-45b9-b0c3-43bcf359c7eb")
 		)
 		(pin "2"
-			(uuid "eb0278a2-dae3-412f-b483-3b0514510922")
+			(uuid "8c353249-a101-4796-9c76-23509e3ff0f9")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C118")
 					(unit 1)
 				)
@@ -12495,7 +12495,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7612040e-9000-412d-a7bd-bf8761702b16")
+		(uuid "7dbcae66-df7c-468a-8ae1-5befc2dafb34")
 		(property "Reference" "#PWR019"
 			(at 176.53 128.27 0)
 			(hide yes)
@@ -12541,11 +12541,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d3ec147-ab6c-4a6e-8dbf-a20dc39770d6")
+			(uuid "84dd9f4a-30b2-4ae8-bb1b-d76a77e755d0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR019")
 					(unit 1)
 				)
@@ -12560,7 +12560,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9cc6667b-e11a-4697-b0bc-9f3439ff577c")
+		(uuid "0065c859-17ce-44b0-b480-7a82c848080a")
 		(property "Reference" "#PWR020"
 			(at 176.53 140.97 0)
 			(hide yes)
@@ -12607,11 +12607,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a3fea8f7-536f-4c09-81cb-067e1069b69c")
+			(uuid "fd91e92c-2d20-46a3-a8dd-167eabd5abbc")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR020")
 					(unit 1)
 				)
@@ -12626,7 +12626,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "be9bfd7e-dd41-4ec6-a72e-89028f158305")
+		(uuid "0fb46da7-1f51-4c93-ad41-1938f798ea3c")
 		(property "Reference" "C119"
 			(at 192.878 133.62 0)
 			(effects
@@ -12680,14 +12680,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b49fe04a-bac4-4f93-8eae-2be3132add75")
+			(uuid "f7f10533-46d0-4b57-9fd3-1636ddc71f97")
 		)
 		(pin "2"
-			(uuid "b0e6a898-2f9d-4c01-b2d9-eb6e44cd7498")
+			(uuid "8261657f-7fc8-4760-8d63-02f8ddc3facd")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C119")
 					(unit 1)
 				)
@@ -12702,7 +12702,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "90fbbe48-d904-4947-a9b0-0c28c23ac15a")
+		(uuid "ef487fbb-0da0-4dff-a276-6f02e1329e3c")
 		(property "Reference" "#PWR021"
 			(at 187.96 128.27 0)
 			(hide yes)
@@ -12748,11 +12748,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5bdfffe2-a3d0-4e53-9a9a-5fed573eb24f")
+			(uuid "007b61b0-9cf6-4f64-ac6b-106d24a70224")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR021")
 					(unit 1)
 				)
@@ -12767,7 +12767,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae7d074f-8581-4ebc-b6d6-867c83684d19")
+		(uuid "ba5ce86d-a03c-4889-91a5-30e595f75871")
 		(property "Reference" "#PWR022"
 			(at 187.96 140.97 0)
 			(hide yes)
@@ -12814,11 +12814,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "96eaaee7-2c36-4ba2-b1a7-50ca5575701a")
+			(uuid "8f38c2d5-6d2a-46a7-b578-49d470276f41")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR022")
 					(unit 1)
 				)
@@ -12833,7 +12833,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9c366008-4efd-49fe-9383-e77c05e9c4ac")
+		(uuid "7b8a4c87-e499-45ea-847d-6f204663568f")
 		(property "Reference" "C120"
 			(at 204.308 133.62 0)
 			(effects
@@ -12887,14 +12887,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "7f11ab0e-47e6-4ef0-baff-a6474ce8492f")
+			(uuid "a2226547-daef-45bb-87c8-1aae71f65f26")
 		)
 		(pin "2"
-			(uuid "d74e71a7-0255-4938-b241-c9033814d164")
+			(uuid "91d823fd-dbfa-4bf0-9927-f61d90b89345")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C120")
 					(unit 1)
 				)
@@ -12909,7 +12909,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "193f79ea-b048-4424-bd85-f0f15f79bb10")
+		(uuid "bf09d8dc-4ca1-42fd-a959-3796fc25a942")
 		(property "Reference" "#PWR023"
 			(at 199.39 128.27 0)
 			(hide yes)
@@ -12955,11 +12955,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c17e393d-4133-480d-90dd-3a1cd94c8810")
+			(uuid "ffe37c9f-282c-43d9-b69c-a3034b946999")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR023")
 					(unit 1)
 				)
@@ -12974,7 +12974,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e4e45ce8-35fb-4458-b254-86fb995719a7")
+		(uuid "8091f710-0203-490e-9bbc-cfac70f2803c")
 		(property "Reference" "#PWR024"
 			(at 199.39 140.97 0)
 			(hide yes)
@@ -13021,11 +13021,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d695907f-ad16-476f-8193-9b729b4ad84d")
+			(uuid "ec88b831-c55b-4e0b-9812-4aa834078008")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR024")
 					(unit 1)
 				)
@@ -13040,7 +13040,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "962274c5-c3af-4188-a4f2-c896661d3695")
+		(uuid "0960b8ad-2fa1-4ac9-8c1e-fed5f671b75f")
 		(property "Reference" "D102"
 			(at 215.011 149.114 0)
 			(effects
@@ -13094,14 +13094,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3663e1b2-6190-4fba-807c-c15eb9eef54d")
+			(uuid "afe7483c-5b26-4683-a66b-87a8837f526c")
 		)
 		(pin "2"
-			(uuid "e435ed8b-ebeb-4415-9cb0-618834eec8d0")
+			(uuid "eb016338-ab6b-4917-8800-25b7abac6f3a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "D102")
 					(unit 1)
 				)
@@ -13116,7 +13116,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2e717ba5-5806-46fb-a715-fd1c04f3ff17")
+		(uuid "efce6bcd-8f71-4143-a0a5-69a2c7aae0b7")
 		(property "Reference" "R104"
 			(at 204.47 150.384 90)
 			(effects
@@ -13170,14 +13170,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e5da853e-5686-4806-9a17-a6e1d8fa587a")
+			(uuid "1f6ca887-5ebd-446d-9e5a-55790086ba69")
 		)
 		(pin "2"
-			(uuid "4a468c76-b3ef-48f7-9005-62db7c6d979d")
+			(uuid "7da040dd-fe95-45e7-8d25-a6be2833e387")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R104")
 					(unit 1)
 				)
@@ -13192,7 +13192,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3e207282-e9e1-4cbe-83ad-2f9476d25233")
+		(uuid "100daea0-181c-4096-9d80-9694bf0224e7")
 		(property "Reference" "#PWR025"
 			(at 196.85 152.4 90)
 			(hide yes)
@@ -13238,11 +13238,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2115f9b3-a886-48d9-a220-f4fd1a8ad318")
+			(uuid "71dbf0a4-09f8-4a46-ac4f-7e1eb3dfe0c3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR025")
 					(unit 1)
 				)
@@ -13257,7 +13257,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e54b5daa-713d-4070-a053-ab727603749e")
+		(uuid "5a4ac8d4-a005-4028-b874-2c0495f3ac3e")
 		(property "Reference" "R105"
 			(at 156.114 134.5 0)
 			(effects
@@ -13311,14 +13311,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "919584ea-d3fb-4d44-94c0-1fddaf29ef05")
+			(uuid "82ac419c-bd35-448d-a84e-7ec6ffb72a34")
 		)
 		(pin "2"
-			(uuid "abc56db1-cd37-478a-9500-7aef1e0b4331")
+			(uuid "13fabc3f-bbac-4eda-a642-c21551627c53")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R105")
 					(unit 1)
 				)
@@ -13333,7 +13333,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f4b51700-5a23-458b-ac0a-886f4b76bbf6")
+		(uuid "6f6ce3b5-215d-492d-8011-269b502a89c1")
 		(property "Reference" "#PWR026"
 			(at 160.02 128.27 0)
 			(hide yes)
@@ -13379,11 +13379,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "40ad8fad-a7f1-4bbc-ab77-76f386b4a9fe")
+			(uuid "f722699a-2cbb-4de2-8709-9d6a6380ba5a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR026")
 					(unit 1)
 				)
@@ -13398,7 +13398,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "839c0f52-b3a7-49a9-98e2-266f744c12d9")
+		(uuid "3dbf6be8-e170-47df-b973-513d9410e8ef")
 		(property "Reference" "BT101"
 			(at 33.6835 147.59 0)
 			(effects
@@ -13452,14 +13452,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "5aed6631-abe8-435a-8bd9-b98436c0f307")
+			(uuid "20398a9b-24d3-44e1-886f-b6ef40d964c5")
 		)
 		(pin "2"
-			(uuid "8cf1a007-dd91-447e-9a71-545faf47a212")
+			(uuid "c9a2cdc9-0556-4a56-a420-aaa019961fd7")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "BT101")
 					(unit 1)
 				)
@@ -13474,7 +13474,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "479755ab-6dfa-405c-87cc-daef81f4f70a")
+		(uuid "d7d0ed1e-ec83-4e8b-bd5e-f3cc4dcaeae4")
 		(property "Reference" "BT102"
 			(at 50.1935 147.59 0)
 			(effects
@@ -13528,14 +13528,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c32527c4-9d5b-4770-b7c6-084b2231db5d")
+			(uuid "325ed769-8ffa-40cc-8c0a-5219947b0ef7")
 		)
 		(pin "2"
-			(uuid "473fd29a-67a2-4f36-8f5f-86d69a170161")
+			(uuid "76cd6788-83e4-410c-ae2a-75de19c08133")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "BT102")
 					(unit 1)
 				)
@@ -13550,7 +13550,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "595d3603-d033-421e-9138-c3f2a5a08936")
+		(uuid "45a16f79-2a9e-4aae-84d0-17b4b9e36985")
 		(property "Reference" "#PWR027"
 			(at 27.94 135.89 0)
 			(hide yes)
@@ -13596,11 +13596,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "3fba7548-3b30-4ea6-afd8-831b8a852132")
+			(uuid "fc91ae4d-836c-4e81-9e20-08fa8203218d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR027")
 					(unit 1)
 				)
@@ -13615,7 +13615,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3c750db2-96a0-45aa-b79c-725c8e2f9b9c")
+		(uuid "2fec464b-d69d-4d4f-b386-db80009ba77f")
 		(property "Reference" "#FLG02"
 			(at 52.07 173.99 0)
 			(hide yes)
@@ -13661,11 +13661,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "97419a06-6d6f-4712-9643-ffd079516dd4")
+			(uuid "45b95a3e-5c49-42be-bcf8-2ef709969a37")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG02")
 					(unit 1)
 				)
@@ -13680,7 +13680,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6b741502-fd3c-4b0b-b0ff-8623f12d9d09")
+		(uuid "0fa65487-e2ef-4871-8798-e5c2e9024158")
 		(property "Reference" "U102"
 			(at 69.596 193.11 0)
 			(effects
@@ -13734,26 +13734,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "fc236688-0260-40ef-b3fb-7e0bb00f4914")
+			(uuid "9836d78f-a314-4c68-9d0f-13e6ba2930fc")
 		)
 		(pin "2"
-			(uuid "1e11a0d3-84d5-46be-8097-2649371b66df")
+			(uuid "390c2dbb-7582-4a4c-9cc2-4421ab8c4d32")
 		)
 		(pin "3"
-			(uuid "13039eab-93a7-4f21-bc06-d658b3db4913")
+			(uuid "7f5f6a4c-b09c-4050-8839-feb0ef8a142b")
 		)
 		(pin "5"
-			(uuid "2fa6fc87-7c70-4466-9bfc-d0af997765e7")
+			(uuid "0160e093-18c4-4728-b47f-cb875701e238")
 		)
 		(pin "6"
-			(uuid "6df889d5-1664-4571-9951-f3f3a20ab188")
+			(uuid "c9d7883e-998a-4636-94c2-91e2f02500ef")
 		)
 		(pin "4"
-			(uuid "1a450e3b-a59d-4098-9f4c-5182ddceaafd")
+			(uuid "81ddf2fd-08da-4424-99fc-f5529dff24b4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U102")
 					(unit 1)
 				)
@@ -13768,7 +13768,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c764444b-1950-4276-be3e-393bff840407")
+		(uuid "9a16c0d8-9a23-4c0e-ba67-e9cf67899b7c")
 		(property "Reference" "#FLG03"
 			(at 49.53 196.85 0)
 			(hide yes)
@@ -13814,11 +13814,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "da62dc63-0d21-4757-8859-f998215e34d5")
+			(uuid "a65b6e78-aa0f-4400-a0cb-9e9cfe44d001")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG03")
 					(unit 1)
 				)
@@ -13833,7 +13833,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3d1f85e1-2b17-4f73-bf27-0bc92a2fdced")
+		(uuid "40845166-2f1a-45b5-b702-1d47f86429a8")
 		(property "Reference" "R106"
 			(at 62.322 188.23 0)
 			(effects
@@ -13887,14 +13887,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b6bb694-b803-4c47-80fb-b70138c8342d")
+			(uuid "668786a9-b5c6-466a-bae5-0314fbb9141f")
 		)
 		(pin "2"
-			(uuid "7335a23d-240c-4a88-9a64-10e41587176d")
+			(uuid "829cb442-1f27-41b6-8707-3ec9119c956b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R106")
 					(unit 1)
 				)
@@ -13909,7 +13909,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c627187f-a841-4126-8681-57941acfd00e")
+		(uuid "8aeafa37-9194-4542-899b-1ee8113bec9e")
 		(property "Reference" "#PWR028"
 			(at 58.42 182.88 0)
 			(hide yes)
@@ -13955,11 +13955,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2840303b-deb0-4e8d-866b-477ddc9ab310")
+			(uuid "47b50913-3f18-463e-a46a-8ab3af4b9db6")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR028")
 					(unit 1)
 				)
@@ -13974,7 +13974,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e52f853b-4b8e-46b7-a0e3-dc83d0b292a6")
+		(uuid "e04bde84-47be-4f91-82cf-24b5b3750a9c")
 		(property "Reference" "C103"
 			(at 46.828 203.47 0)
 			(effects
@@ -14028,14 +14028,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd4cb56a-ab6e-490d-8347-1c6191a95e58")
+			(uuid "72079262-7cb8-4e1c-b164-50200093b802")
 		)
 		(pin "2"
-			(uuid "bb646217-2112-440e-9223-130a0fd03ca9")
+			(uuid "d2681bb4-0782-4a97-a6a8-de189901b775")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C103")
 					(unit 1)
 				)
@@ -14050,7 +14050,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "74c82c74-acb2-4f98-9fe1-e25cd939a077")
+		(uuid "55edfaec-dd3c-430b-8252-ceeee6276bed")
 		(property "Reference" "R107"
 			(at 101.692 207.28 0)
 			(effects
@@ -14104,14 +14104,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "49450668-71d0-4ce5-b4c0-a651ec6a0cae")
+			(uuid "ee4efdc5-6ed7-4b8d-9e2d-b8737d7e3fa6")
 		)
 		(pin "2"
-			(uuid "62431105-5dab-4823-82b3-03ea8ebf1fa3")
+			(uuid "c4b506be-2c5f-4e86-a66b-42b22395eed7")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R107")
 					(unit 1)
 				)
@@ -14126,7 +14126,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e1457118-bb8b-4748-987a-fbf11332e101")
+		(uuid "2c423efd-0f0a-46a9-871e-bdf961571023")
 		(property "Reference" "#PWR029"
 			(at 97.79 214.63 0)
 			(hide yes)
@@ -14173,11 +14173,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa2ccc40-3001-4d26-8694-bfe1399320a4")
+			(uuid "041be965-a80b-45b0-844b-8ebd4225fd97")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR029")
 					(unit 1)
 				)
@@ -14192,7 +14192,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d8a3f670-c883-457d-98ce-8f405ce583ed")
+		(uuid "13ecff6f-629c-48a3-a615-223785d73b6f")
 		(property "Reference" "Q101"
 			(at 67.056 223.59 0)
 			(effects
@@ -14246,26 +14246,26 @@
 			)
 		)
 		(pin "6"
-			(uuid "f5cd51ac-8e64-476a-b793-7f4d4129185a")
+			(uuid "26f5f72a-0a81-49e1-8be5-e081169ce33d")
 		)
 		(pin "1"
-			(uuid "905d34f9-b96c-4d8f-a428-df48201f467f")
+			(uuid "0cc72577-bc20-4c67-949d-4d491fb9ae85")
 		)
 		(pin "4"
-			(uuid "b4c0c618-cc8f-42fa-aa10-c0ecfae2ff1b")
+			(uuid "84562822-94da-4990-ab29-18a1563a4202")
 		)
 		(pin "3"
-			(uuid "fccfa2c6-76c9-48ab-a8e8-d550b7ba2252")
+			(uuid "1f1cade4-0e85-4972-b84e-8b762664382e")
 		)
 		(pin "2"
-			(uuid "e823433b-7601-4d05-a8f8-4a896582a6f6")
+			(uuid "be1d0bfc-0857-4d93-9c49-0d2a6db3ef68")
 		)
 		(pin "5"
-			(uuid "e4383e32-0594-4825-9e66-835c84bc26ff")
+			(uuid "6561f7b7-b595-457e-ba9d-58b6932a6089")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q101")
 					(unit 1)
 				)
@@ -14280,7 +14280,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ca4fc9e1-fd0c-4c21-b706-b88833bc72fa")
+		(uuid "4b3035a2-f2a1-45ab-8ffa-a2440ad488df")
 		(property "Reference" "#PWR030"
 			(at 93.98 236.22 90)
 			(hide yes)
@@ -14327,11 +14327,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7f12ca9-e4e7-4619-953a-4beda158d845")
+			(uuid "872b8ec5-f9d7-487b-8160-fda590bca0e0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR030")
 					(unit 1)
 				)
@@ -14346,7 +14346,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9b72a20d-8ea4-44d6-a631-93b21a8891b5")
+		(uuid "735b76c1-525c-43ad-9061-71d82979ddc8")
 		(property "Reference" "U105"
 			(at 145.796 208.35 0)
 			(effects
@@ -14400,41 +14400,41 @@
 			)
 		)
 		(pin "1"
-			(uuid "d32e1949-3805-4a94-98d9-432226546e70")
+			(uuid "f229a624-cdc4-424d-af31-f7e30dfd3e92")
 		)
 		(pin "2"
-			(uuid "9ade4c81-34d2-4e65-a298-704e4326fe4d")
+			(uuid "26ed61a2-0167-4f95-81e8-2f0efe2dcc75")
 		)
 		(pin "3"
-			(uuid "6a141afb-252d-484e-8bb3-f5bf8ef088e2")
+			(uuid "7412db8e-8481-446d-8dca-89e7ec5e25bf")
 		)
 		(pin "4"
-			(uuid "daa90401-9ec4-466b-87ae-f78628e3d78c")
+			(uuid "1ecb0a15-9c01-46a1-b69f-e48231196139")
 		)
 		(pin "5"
-			(uuid "90d13ebb-459c-4740-9928-da96fc337525")
+			(uuid "c4afdccc-231e-4db7-9288-6b7b9f7b92c9")
 		)
 		(pin "6"
-			(uuid "4a888744-f5ee-4d7a-a257-77d7412d301c")
+			(uuid "bdba36d2-8f43-4224-ae71-472eb8db9b86")
 		)
 		(pin "7"
-			(uuid "bf649210-0aad-460c-a388-82347f09543f")
+			(uuid "d8f36683-160a-464e-b046-65deefa00fcb")
 		)
 		(pin "8"
-			(uuid "6141a7e8-d0d5-4b45-8b84-a88bb019bedd")
+			(uuid "f078cb8b-20e5-45a2-b65f-6350de7fc701")
 		)
 		(pin "9"
-			(uuid "4057cf2f-a871-47df-a2f5-69c2e801dc91")
+			(uuid "c44f1274-3ed2-41fc-bce1-cd8d68aa2641")
 		)
 		(pin "10"
-			(uuid "71ec9e3e-bee1-4799-9e44-713598e82b92")
+			(uuid "6b2d8d0d-017a-4653-a4e9-4ca20d1dcdd6")
 		)
 		(pin "11"
-			(uuid "181bdd16-825d-4b03-9c76-070ab7551ad1")
+			(uuid "fc78a116-99b0-419b-a57d-8cb97f108782")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U105")
 					(unit 1)
 				)
@@ -14449,7 +14449,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bd9114e0-a078-460d-9328-3fee6810f5ab")
+		(uuid "6f2d184b-cbbf-4213-b1bb-994487747d20")
 		(property "Reference" "#PWR031"
 			(at 138.43 213.36 90)
 			(hide yes)
@@ -14495,11 +14495,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0180573b-fecd-4893-9288-03b5c8a4f155")
+			(uuid "9611c11c-92e8-46bb-a281-df0cc29000a2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR031")
 					(unit 1)
 				)
@@ -14514,7 +14514,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5bda57ef-3915-45f1-9a6d-ba30aafc63fc")
+		(uuid "51b4cd87-c15b-4eb1-9bcd-dd50942027a8")
 		(property "Reference" "C121"
 			(at 145.888 204.74 0)
 			(effects
@@ -14568,14 +14568,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "69e7b3c8-5d2a-4f55-8faf-6ff5f33328a6")
+			(uuid "f34ed241-a7d0-43ac-baa8-d303d858f7ea")
 		)
 		(pin "2"
-			(uuid "3d5367e4-a3e1-4eac-9310-31073dbabd64")
+			(uuid "b41da5b2-51bb-4e4c-9402-2612eb873437")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C121")
 					(unit 1)
 				)
@@ -14590,7 +14590,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3e3f416b-cb09-4a3b-8f37-b0a71843454e")
+		(uuid "b3192393-280c-4371-87c1-3be690aa897c")
 		(property "Reference" "#PWR032"
 			(at 140.97 199.39 0)
 			(hide yes)
@@ -14637,11 +14637,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8bc7bd9e-e4b8-4656-9a57-c9f5eb66642a")
+			(uuid "19e82b3c-31c5-46c3-b7ff-f1a206369a9c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR032")
 					(unit 1)
 				)
@@ -14656,7 +14656,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b54f428f-5955-47bb-a654-6c4ba25ec937")
+		(uuid "0c01b8a3-a8d4-4212-b6ad-a99665c776ba")
 		(property "Reference" "R125"
 			(at 185.42 210.46 90)
 			(effects
@@ -14710,14 +14710,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ab2de49-8368-4418-9e15-a6aed522e12e")
+			(uuid "29756b2a-5b08-4ce2-ba46-d1a0b6439bf3")
 		)
 		(pin "2"
-			(uuid "eb5a585d-3e98-4df6-9f38-8db0e1b39eb6")
+			(uuid "9363c739-258c-4d7f-a26b-372cddec02f9")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R125")
 					(unit 1)
 				)
@@ -14732,7 +14732,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f9698cdf-6d65-4081-bede-eb8230653902")
+		(uuid "27aef3d7-188e-44b5-b6fe-9ef7a9e09835")
 		(property "Reference" "R126"
 			(at 177.8 217.3 90)
 			(effects
@@ -14786,14 +14786,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "99a3b2f3-664d-4dce-a4d1-ea9598542799")
+			(uuid "cf10d0fb-8aa7-41e9-9f49-9b08f1808935")
 		)
 		(pin "2"
-			(uuid "4fadb31f-41aa-4ac1-a7e2-ed68c526a2e8")
+			(uuid "56635161-4646-40e9-99e0-3ed9ed7af0e2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R126")
 					(unit 1)
 				)
@@ -14808,7 +14808,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7490ede1-e4d2-4c88-81ae-d1190a37b1ad")
+		(uuid "916afcbd-299d-49d7-95be-0bce8f446575")
 		(property "Reference" "R123"
 			(at 179.336 226.38 0)
 			(effects
@@ -14862,14 +14862,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff782fa5-e1c5-45e9-aa46-df3d0c8f1a47")
+			(uuid "9347c1a7-651a-4890-b29f-fa816d8f4fee")
 		)
 		(pin "2"
-			(uuid "6d9f979f-efa8-4463-812e-e6521cf04d9c")
+			(uuid "39722e84-a4a7-4bfd-9afd-75bef50cac0d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R123")
 					(unit 1)
 				)
@@ -14884,7 +14884,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "11130df5-4d7f-49c2-a0e0-bf8ff290f5da")
+		(uuid "16ed53a8-fd59-4046-9ed2-1dab91390c83")
 		(property "Reference" "#PWR033"
 			(at 175.26 233.68 0)
 			(hide yes)
@@ -14931,11 +14931,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f920d008-2e49-4f55-8613-30322dc4fc93")
+			(uuid "1d7065af-e6f6-4a22-acef-c5b8d53075d8")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR033")
 					(unit 1)
 				)
@@ -14950,7 +14950,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "caeb0fcf-23a9-43e7-946a-f5a024b27451")
+		(uuid "175f1f2c-2ff5-488c-a90a-11deffce2641")
 		(property "Reference" "#PWR034"
 			(at 157.48 234.95 0)
 			(hide yes)
@@ -14997,11 +14997,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8a4f9230-ec14-4e1c-b113-311a9709ff9e")
+			(uuid "6a72c064-b1a8-440b-bd32-aec14a7782a9")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR034")
 					(unit 1)
 				)
@@ -15016,7 +15016,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f6b48c22-f68a-484c-b29f-3afbace81d19")
+		(uuid "f23868a4-6a98-4244-b9d0-3d75a56cca8f")
 		(property "Reference" "U106"
 			(at 168.656 241.37 0)
 			(effects
@@ -15070,35 +15070,35 @@
 			)
 		)
 		(pin "3"
-			(uuid "d24fb4df-9e0b-4399-b0fb-2b903e767963")
+			(uuid "7273af69-322b-404b-b124-7b33079fb7e8")
 		)
 		(pin "2"
-			(uuid "a5fa6029-db3c-4c4f-9b4c-f1c9b741befb")
+			(uuid "140dc207-15b2-4803-826e-3bebd1a79505")
 		)
 		(pin "6"
-			(uuid "a92c67b2-a5fc-4ac2-8b14-79bf7bb15d80")
+			(uuid "4e9b4e4e-0e7f-496c-8ce5-44c1dbdb5289")
 		)
 		(pin "1"
-			(uuid "dc6c75cb-5773-4523-997c-6622ebde3cab")
+			(uuid "e92d2629-2b8c-4e49-b2a3-7d7f1d73e8a7")
 		)
 		(pin "8"
-			(uuid "ee43cd8b-855c-4d7f-a8bf-00228059eec7")
+			(uuid "fb921e5e-ed7b-442e-a53a-42a4badb959c")
 		)
 		(pin "7"
-			(uuid "a4fdf827-3e46-402f-9c1f-b165d6e936ae")
+			(uuid "f4541d86-6294-4142-acef-65a302de1e1e")
 		)
 		(pin "5"
-			(uuid "e9950968-3c3c-4477-8e14-5af5f4e0c798")
+			(uuid "85359f5e-bed5-40b2-957f-71a5ede26e57")
 		)
 		(pin "4"
-			(uuid "51dc654f-719d-429a-98e6-308dc46b5394")
+			(uuid "767494a2-1aaa-419d-afe9-ee0e3ddd86f4")
 		)
 		(pin "9"
-			(uuid "5b7d30ac-f93c-4880-9d3d-c57b5cbf13d8")
+			(uuid "83963a07-3b3c-4476-b2df-38372b92ad6c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U106")
 					(unit 1)
 				)
@@ -15113,7 +15113,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "410525e1-044b-4edd-b199-c8036a604868")
+		(uuid "5c30eeb2-5ad4-4ebb-a798-36c6a6cbe6a9")
 		(property "Reference" "#PWR035"
 			(at 156.21 246.38 0)
 			(hide yes)
@@ -15159,11 +15159,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c17ba2a9-c487-46bb-8e30-f978d8242485")
+			(uuid "dfb15597-3cae-42b7-af6d-2cb24ee51481")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR035")
 					(unit 1)
 				)
@@ -15178,7 +15178,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e10959ca-72ce-4ae9-9b39-caab5a095755")
+		(uuid "5198e805-0283-4b70-a5b9-e6e24f047057")
 		(property "Reference" "C122"
 			(at 152.484 253.18 0)
 			(effects
@@ -15232,14 +15232,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "08c36b53-1bb8-4915-b1d4-3c9550f2772d")
+			(uuid "e9b1ebb1-7642-4531-b4ed-0a2d1f008919")
 		)
 		(pin "2"
-			(uuid "60d342de-ab1d-406a-a8a4-2a36585059e1")
+			(uuid "604c0549-661d-4585-b34a-678efb754b80")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C122")
 					(unit 1)
 				)
@@ -15254,7 +15254,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5e52c072-04bc-491f-8f0e-27ea55ce4a61")
+		(uuid "ba4a7d57-8a45-4889-b0db-9ad8df6469ee")
 		(property "Reference" "#PWR036"
 			(at 156.21 260.35 0)
 			(hide yes)
@@ -15301,11 +15301,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2d7cf49-edfa-4908-a270-d2188951409b")
+			(uuid "74decc1e-5499-409d-8b48-50e45d9552f1")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR036")
 					(unit 1)
 				)
@@ -15320,7 +15320,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5d585256-042e-4b2f-82ea-26a7ae4438c6")
+		(uuid "d70b82f1-e441-4645-8059-aaebd7db574b")
 		(property "Reference" "#PWR037"
 			(at 161.29 251.46 90)
 			(hide yes)
@@ -15367,11 +15367,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a52cbd9-4cb5-45a2-a1a6-fdc6ed16e5d4")
+			(uuid "da3d5aad-2eb8-4720-9675-cbf804d3f3bf")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -15386,7 +15386,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "94c9b6b5-a5cf-4474-9ffd-455214a41d39")
+		(uuid "c3a5a55d-92af-4674-904d-5911c272e84e")
 		(property "Reference" "#PWR038"
 			(at 161.29 254 90)
 			(hide yes)
@@ -15433,11 +15433,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8eb5748f-401f-48c9-b903-a8bedca15f79")
+			(uuid "127cbfa1-bb6b-426e-836e-dc71680490c6")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR038")
 					(unit 1)
 				)
@@ -15452,7 +15452,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "807dc13e-7ca4-489b-8a2f-592fa65d4566")
+		(uuid "4341b222-9dc6-4919-af3c-c05e5e671c24")
 		(property "Reference" "#PWR039"
 			(at 180.34 265.43 0)
 			(hide yes)
@@ -15499,11 +15499,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a1ad1643-feaf-414f-9fb9-0f600b3d9068")
+			(uuid "6c71d1b5-9b5d-407e-896b-0a45b74d2479")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR039")
 					(unit 1)
 				)
@@ -15518,7 +15518,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "962d1d2f-d08d-44b0-b689-91046832129b")
+		(uuid "e6bdc5ff-fab9-49f7-9fd9-c1f5d38efee3")
 		(property "Reference" "U103"
 			(at 294.386 41.98 0)
 			(effects
@@ -15572,26 +15572,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "9459e89c-0781-4eca-b561-6f898b419151")
+			(uuid "f9bcbfd5-8e6e-4536-bc7b-7cdd47bd8193")
 		)
 		(pin "2"
-			(uuid "065041c4-b730-4a5f-a2a2-924c675152d2")
+			(uuid "bcadd163-e1f7-4772-adfb-1fb342df108b")
 		)
 		(pin "3"
-			(uuid "c9a88c67-9b2f-4ed1-99ed-71639028759a")
+			(uuid "1faa8055-00de-4da5-b712-8d2d96810ac7")
 		)
 		(pin "4"
-			(uuid "6ac46e56-fb83-4618-b368-e6ee14988a4c")
+			(uuid "54a55dd9-21e0-4dac-936a-e5c5406eaed8")
 		)
 		(pin "5"
-			(uuid "2e073d17-2a21-43c0-9a6f-ac491a6366a2")
+			(uuid "2f7e7c11-d631-4f09-b20b-1e1d584ec18a")
 		)
 		(pin "6"
-			(uuid "075983c2-bdae-4ebf-9030-dffef6b29a44")
+			(uuid "be4b6b10-a337-4b33-9dcb-8abc196235dc")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U103")
 					(unit 1)
 				)
@@ -15606,7 +15606,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "281ed412-7ed4-4c8f-852a-fffef6c6f366")
+		(uuid "2c646311-6a25-4fed-917a-055e4009cdd3")
 		(property "Reference" "#PWR040"
 			(at 279.4 45.72 0)
 			(hide yes)
@@ -15652,11 +15652,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "8b37cd61-3cfd-4be9-98c9-fa9ce7427574")
+			(uuid "5c877627-9760-4c5a-94af-85b9d820a706")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR040")
 					(unit 1)
 				)
@@ -15671,7 +15671,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "56ed60c1-4b5f-4077-8eea-554c0bd13b82")
+		(uuid "6b05feee-807b-40bd-af2c-848e52457aee")
 		(property "Reference" "L101"
 			(at 322.58 44.0877 90)
 			(effects
@@ -15725,14 +15725,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "307ddf85-c757-448d-b6ec-29ac2a6da001")
+			(uuid "649f8b9f-b2e5-4f2b-8d0c-ed891de956fe")
 		)
 		(pin "2"
-			(uuid "8f381f26-bfc1-40a7-b8a4-3f59964b86ba")
+			(uuid "b5c75c19-b1fb-42cd-a54c-60cda8ee1832")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "L101")
 					(unit 1)
 				)
@@ -15747,7 +15747,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ce1a8699-1849-40f7-a511-46d67b05977f")
+		(uuid "00316350-cd9f-4c6c-9f3d-f2d5b6af0633")
 		(property "Reference" "#PWR041"
 			(at 351.79 45.72 0)
 			(hide yes)
@@ -15793,11 +15793,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "16a5e724-d6c3-4d2a-9751-f74659d9b4b9")
+			(uuid "c0d016e9-5bd0-4036-bc0e-d4ea8d7cd0cd")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR041")
 					(unit 1)
 				)
@@ -15812,7 +15812,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "61b85a98-963e-4e7f-a2f7-9e90fa5afbc7")
+		(uuid "2f0e1233-d8a5-42d3-bc8e-fbc5f51a653f")
 		(property "Reference" "#FLG04"
 			(at 358.14 45.72 0)
 			(hide yes)
@@ -15858,11 +15858,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a29c3167-5a2f-40fc-9663-47e472a3f880")
+			(uuid "875a16ef-ede7-4427-9bb8-d35502f38710")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG04")
 					(unit 1)
 				)
@@ -15877,7 +15877,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c1a7fc57-22ac-4d50-8d57-fcdd50da5bc8")
+		(uuid "7c15605a-17e7-4214-a1b4-3b3cb8aab42c")
 		(property "Reference" "R111"
 			(at 341.722 53.61 0)
 			(effects
@@ -15931,14 +15931,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb7409f3-5d86-4bbb-befc-37af2ae76ca9")
+			(uuid "f18c743a-9cfc-457a-9639-b70bb8567842")
 		)
 		(pin "2"
-			(uuid "eaadd1de-9fa0-4920-934b-f95e59741717")
+			(uuid "fb68d16c-57bc-44dd-9ad9-f4faed2d099a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R111")
 					(unit 1)
 				)
@@ -15953,7 +15953,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3e9844ab-181c-4010-a256-655bddee64e1")
+		(uuid "e4e08865-3425-43ad-984c-68ca0b99ee93")
 		(property "Reference" "R112"
 			(at 341.722 68.85 0)
 			(effects
@@ -16007,14 +16007,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "316a529d-3cd7-4d5c-a678-fe2c02b7344e")
+			(uuid "e4d8eba2-8ea9-4c8d-9b05-a0da3e7f91b0")
 		)
 		(pin "2"
-			(uuid "34d1506d-4e3d-4c4d-b883-31aa128c4ff0")
+			(uuid "df595472-19ce-427f-9a22-621a2f4d7135")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R112")
 					(unit 1)
 				)
@@ -16029,7 +16029,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d7f55ed4-f34b-4ecb-8dcf-aea0592da471")
+		(uuid "99d5a42f-5312-4ff1-b5fc-50345b746a59")
 		(property "Reference" "#PWR042"
 			(at 337.82 76.2 0)
 			(hide yes)
@@ -16076,11 +16076,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9428aa4a-21af-43e5-b106-087dfc3990c9")
+			(uuid "a3109913-5577-480e-af1e-ce84243f1955")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR042")
 					(unit 1)
 				)
@@ -16095,7 +16095,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e60f7243-ca68-4724-83e5-a2f0d5b2381a")
+		(uuid "77d9120f-6713-4853-ab76-205368c056b1")
 		(property "Reference" "#PWR043"
 			(at 299.72 58.42 0)
 			(hide yes)
@@ -16142,11 +16142,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7f85692f-b596-4916-87a0-3e29b621425d")
+			(uuid "4e566fb1-d58e-4147-913e-d7f56d73b275")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR043")
 					(unit 1)
 				)
@@ -16161,7 +16161,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6c7e51ed-0a20-4c5e-a611-192429c3d544")
+		(uuid "74395790-293d-4a27-ba44-82c04cb2f342")
 		(property "Reference" "C105"
 			(at 260.188 79.01 0)
 			(effects
@@ -16215,14 +16215,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "173957f5-f88b-4d49-93c5-2c2c9465d0f6")
+			(uuid "6c323166-a2da-4d39-bed2-ec3220d2a468")
 		)
 		(pin "2"
-			(uuid "12e2b3ba-e2a1-4a8d-ad75-4ef0f0cf7087")
+			(uuid "9d476ad7-93ff-4f24-b13b-b944d8b9cf61")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C105")
 					(unit 1)
 				)
@@ -16237,7 +16237,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8acab20e-d3b6-4277-aff5-aad5039475fa")
+		(uuid "0e5b7e17-a67c-4fa4-828f-6a795578af8b")
 		(property "Reference" "#PWR044"
 			(at 255.27 73.66 0)
 			(hide yes)
@@ -16283,11 +16283,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "da04952f-6b4c-43af-b573-50c9288c10ee")
+			(uuid "4d70e853-2bcf-43d4-91c9-1b1014abf43f")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR044")
 					(unit 1)
 				)
@@ -16302,7 +16302,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e31c43a8-0967-44fd-9dad-9c08c836f60a")
+		(uuid "01e4e332-c3d9-43ff-b5d9-7747ab879072")
 		(property "Reference" "#PWR045"
 			(at 255.27 86.36 0)
 			(hide yes)
@@ -16349,11 +16349,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ed289b7-4e8f-4238-bda1-a68326344d97")
+			(uuid "18e9a0f5-c261-45e1-8d4d-2d37f0365c22")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR045")
 					(unit 1)
 				)
@@ -16368,7 +16368,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a81dae39-0bf0-4c12-93ef-a91e3c792507")
+		(uuid "2bec0123-6b88-4d38-9d26-0645bebb29b3")
 		(property "Reference" "C106"
 			(at 272.888 79.01 0)
 			(effects
@@ -16422,14 +16422,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "08864635-6c35-4d92-94fd-92b4d052259f")
+			(uuid "1f696153-a091-4c94-9696-2e9e7a60b739")
 		)
 		(pin "2"
-			(uuid "14dd88ba-7e2d-473d-b546-05b93ee67bbe")
+			(uuid "0c6ba84c-f07e-4a1a-9b74-2a79502d7345")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C106")
 					(unit 1)
 				)
@@ -16444,7 +16444,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8580e8b4-bcb2-4e80-beef-a042199c1480")
+		(uuid "fdec6a33-3d27-4235-b5f6-9d58afda6827")
 		(property "Reference" "#PWR046"
 			(at 267.97 73.66 0)
 			(hide yes)
@@ -16490,11 +16490,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c7433350-6230-44ab-886d-aeeb78c6f277")
+			(uuid "458f1e21-7d40-44b4-a3c2-fe38ba0e73a4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR046")
 					(unit 1)
 				)
@@ -16509,7 +16509,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fbaf5f5f-6365-4ddf-9a4c-1fc927813e4c")
+		(uuid "0e57fc1e-8d85-4d71-bc40-e12c969209fb")
 		(property "Reference" "#PWR047"
 			(at 267.97 86.36 0)
 			(hide yes)
@@ -16556,11 +16556,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4059b88a-2d0c-4221-b6c4-121989f9de4f")
+			(uuid "853d1ff9-ab65-4442-b90e-21b48cbbd07f")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR047")
 					(unit 1)
 				)
@@ -16575,7 +16575,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "520b8228-6b8b-49be-85d2-94232e712c71")
+		(uuid "c824b970-99b7-4a5c-965b-b079e377bc4b")
 		(property "Reference" "C107"
 			(at 377.028 79.01 0)
 			(effects
@@ -16629,14 +16629,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "46417d9c-1563-48b2-b689-b8b3db16be8b")
+			(uuid "d699d0d8-ad0e-4178-869f-405b7c196b9f")
 		)
 		(pin "2"
-			(uuid "5d5b62b2-0987-40c9-ba4e-af6994c10344")
+			(uuid "23349341-8b31-46b7-9991-509c345d30c3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C107")
 					(unit 1)
 				)
@@ -16651,7 +16651,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f3bc4ac4-b166-482a-a64c-32d7d85af16e")
+		(uuid "c8f1fc83-93d0-4f20-8481-ba5564002a62")
 		(property "Reference" "#PWR048"
 			(at 372.11 73.66 0)
 			(hide yes)
@@ -16697,11 +16697,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c305dad7-e8a9-4fb6-a5c2-126d6d5ef6f2")
+			(uuid "d25933c4-4234-485d-8078-252ea1f4101a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -16716,7 +16716,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9ddc42ea-2717-47cd-958d-9d8349173d0a")
+		(uuid "e1636349-e2ed-42c5-a1a9-e1f8821dcce9")
 		(property "Reference" "#PWR049"
 			(at 372.11 86.36 0)
 			(hide yes)
@@ -16763,11 +16763,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "70cfb00d-df22-47cb-9bf6-39cd2d429245")
+			(uuid "913f4ffa-b955-4e7a-ac7d-4bf8160782ab")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -16782,7 +16782,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "590d5250-44c2-46a1-bca6-f1c24c6f1794")
+		(uuid "a7af2a6a-abc7-4289-9e17-44192485863c")
 		(property "Reference" "C108"
 			(at 390.998 79.01 0)
 			(effects
@@ -16836,14 +16836,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "1b9dfa40-f930-4fc8-aeca-89e3c6efd8a5")
+			(uuid "24b18487-aeb5-4be2-a0d8-5c773062bc00")
 		)
 		(pin "2"
-			(uuid "c8aa8197-e0fb-47f5-805c-d6012e686dfa")
+			(uuid "1f203669-1b30-4429-8844-29cc7d6d2f5e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C108")
 					(unit 1)
 				)
@@ -16858,7 +16858,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c483c17f-06d8-4884-b6cb-8ee5678815a2")
+		(uuid "5b23273c-111d-48d0-917e-b56fec22736a")
 		(property "Reference" "#PWR050"
 			(at 386.08 73.66 0)
 			(hide yes)
@@ -16904,11 +16904,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f3851a8-2cd5-4919-9647-fee02f25a835")
+			(uuid "d5c4b9f0-c5ad-4d3c-b6aa-7290e57f3f67")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR050")
 					(unit 1)
 				)
@@ -16923,7 +16923,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ac4ed1f8-7ebd-45c2-ac4d-a308df8530f3")
+		(uuid "35f9cede-9602-49fd-9bb6-85db2decd190")
 		(property "Reference" "#PWR051"
 			(at 386.08 86.36 0)
 			(hide yes)
@@ -16970,11 +16970,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ae57eed-df8b-4184-8a02-0d3edb0b598d")
+			(uuid "33d089f4-2ceb-4d48-ab48-b04aaf3ef699")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR051")
 					(unit 1)
 				)
@@ -16989,7 +16989,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "dfe832c8-4ead-49bc-8ea3-3490af709a85")
+		(uuid "b6eeb823-68bd-41fb-bb3a-0d1db395e3e4")
 		(property "Reference" "U104"
 			(at 289.306 132.15 0)
 			(effects
@@ -17043,26 +17043,26 @@
 			)
 		)
 		(pin "3"
-			(uuid "1815ef93-7aea-4b30-9255-2de5d165e5c9")
+			(uuid "bb725182-4666-445d-8d79-19bcf4f731a3")
 		)
 		(pin "2"
-			(uuid "4b0f5add-7721-49b8-aed4-52a60c7cb11d")
+			(uuid "0ef7a0aa-0c0a-410b-9207-9dc3239e85d7")
 		)
 		(pin "1"
-			(uuid "f2a05a6e-2a3c-44d5-8fbd-4df0c027954d")
+			(uuid "90d76e36-69a6-48f7-b3f3-eacee6ba7a40")
 		)
 		(pin "5"
-			(uuid "a0403271-9aa8-4dfc-8f21-8a0667fd661c")
+			(uuid "fa419d0c-9174-4c49-b53a-d26081468049")
 		)
 		(pin "6"
-			(uuid "59142c96-b047-4eea-ae0b-89077e04c9f1")
+			(uuid "21927a54-73db-4818-825a-b0f9c1767b20")
 		)
 		(pin "4"
-			(uuid "5b0c1869-aa6a-4dff-ae8a-70c62a4f5ce7")
+			(uuid "09915ae6-4393-48c6-9875-10eb73bba550")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "U104")
 					(unit 1)
 				)
@@ -17077,7 +17077,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "60635ea2-53bf-436a-b1c5-05a6a7e53a66")
+		(uuid "edaab94b-e82d-48bf-90ac-655876e28255")
 		(property "Reference" "#PWR052"
 			(at 270.51 137.16 0)
 			(hide yes)
@@ -17123,11 +17123,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2213976-ba55-4182-a314-1428ffe43c0e")
+			(uuid "6f0451ce-63f3-40c7-b309-b11962f22aa2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR052")
 					(unit 1)
 				)
@@ -17142,7 +17142,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5106f148-fd5d-48f1-af8d-44823e2f37f8")
+		(uuid "d6394892-72e2-4bdd-a1e1-91796e851e02")
 		(property "Reference" "L102"
 			(at 289.56 120.2877 90)
 			(effects
@@ -17196,14 +17196,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "107a92ef-fb43-46b7-a829-b258f6f98776")
+			(uuid "35ce37e6-46b0-42da-a6e0-118effd301da")
 		)
 		(pin "2"
-			(uuid "5c85fb7c-706f-4956-b8e8-0e79aa403010")
+			(uuid "2738ea47-56fa-4df7-aa42-b1eab51cfd24")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "L102")
 					(unit 1)
 				)
@@ -17218,7 +17218,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b0c509b2-83c8-4ac2-afb4-64eca7b925f0")
+		(uuid "aaa25023-5a19-4540-98d2-6677a5278a25")
 		(property "Reference" "R121"
 			(at 279.492 131.08 0)
 			(effects
@@ -17272,14 +17272,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "00a4a60c-f18a-4f9e-b882-e01fa387f4b4")
+			(uuid "e5796c32-0b6e-497e-ab93-7682e2e4f281")
 		)
 		(pin "2"
-			(uuid "80795666-b2ec-43b5-8285-e9721153759d")
+			(uuid "02d434a0-2959-4c43-952c-ecd19a503a44")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R121")
 					(unit 1)
 				)
@@ -17294,7 +17294,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "73de7eae-718d-474e-83c3-4777e37ef481")
+		(uuid "3da2c99d-90b4-45a1-8ed6-32dbd83f7ea2")
 		(property "Reference" "#PWR053"
 			(at 275.59 125.73 0)
 			(hide yes)
@@ -17341,11 +17341,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f67d8ff6-7d9f-456c-a781-84d1e2412dff")
+			(uuid "c6e7fe52-3c56-49f9-9ae0-788202737d69")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR053")
 					(unit 1)
 				)
@@ -17360,7 +17360,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5137a6e8-ca08-48d2-92a9-48c3e4d7319c")
+		(uuid "f9d42fca-ec02-4265-b643-f385a91a7f54")
 		(property "Reference" "#PWR054"
 			(at 345.44 140.97 0)
 			(hide yes)
@@ -17406,11 +17406,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1ba6fe39-e6b0-4082-b987-bc0834643ace")
+			(uuid "b190b58b-2c9d-4a15-9584-e9582a88cce8")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR054")
 					(unit 1)
 				)
@@ -17425,7 +17425,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4483c45d-3bb8-4c98-86e7-572bf9e98b23")
+		(uuid "ee89f6d4-987d-4e5b-b46d-8ed888f51389")
 		(property "Reference" "R113"
 			(at 339.182 148.86 0)
 			(effects
@@ -17479,14 +17479,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "cd719a23-c731-4cb0-aa8f-0bbc4a296b28")
+			(uuid "62aff18b-7d14-4b31-adcb-a09064fa9733")
 		)
 		(pin "2"
-			(uuid "28ee05a9-79bc-4a1c-8219-acf48ca8a81a")
+			(uuid "0433109c-6127-4c8a-bb04-e088d2a934e1")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R113")
 					(unit 1)
 				)
@@ -17501,7 +17501,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eb20b96b-a495-4934-a2cc-2d3b9661f80f")
+		(uuid "dd00b162-fb40-45c5-b5d6-56b84e522937")
 		(property "Reference" "R114"
 			(at 339.182 164.1 0)
 			(effects
@@ -17555,14 +17555,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e2ee87c-1f97-40db-8eaa-776d97736bf8")
+			(uuid "b411ea19-ccf5-4128-8df0-9dfb0a78ce25")
 		)
 		(pin "2"
-			(uuid "5dd2e3a1-deee-4acc-b4b2-9bf6d45eb85b")
+			(uuid "bd02fbac-1ae6-4549-acb2-0956b84904c3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R114")
 					(unit 1)
 				)
@@ -17577,7 +17577,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "72f050a2-579a-4523-85cc-1966eb780fbb")
+		(uuid "f0a8bad5-ee75-422e-a237-ce91137973ba")
 		(property "Reference" "#PWR055"
 			(at 335.28 171.45 0)
 			(hide yes)
@@ -17624,11 +17624,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6e3bbb3e-e6a4-485f-8e85-8f46378fc6bc")
+			(uuid "5efbaf4a-67a4-406c-aa83-4cc2c439ad34")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR055")
 					(unit 1)
 				)
@@ -17643,7 +17643,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b398e2f4-8240-4417-b006-8f1cf191670e")
+		(uuid "1d77f23d-a07f-4af0-92e6-b2a6811a080b")
 		(property "Reference" "C113"
 			(at 354.168 148.86 0)
 			(effects
@@ -17697,14 +17697,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "71e81a5a-d39a-4ab3-aa2e-b7adeac84949")
+			(uuid "3f7d4f9d-9106-4ce6-acd5-f0a952293f3b")
 		)
 		(pin "2"
-			(uuid "828f0a0c-5a3d-48e4-a54e-d386ba6a8e04")
+			(uuid "8fa8e36d-9e4c-4721-ac8e-e0be80f02b8d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C113")
 					(unit 1)
 				)
@@ -17719,7 +17719,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f3e4731a-2f6e-401c-90b0-cf87ae9d38f6")
+		(uuid "753dd8ff-1163-4052-bbb1-43a4ef964396")
 		(property "Reference" "#PWR056"
 			(at 299.72 153.67 0)
 			(hide yes)
@@ -17766,11 +17766,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "48d02ad7-9afa-45e1-b6e4-af71936d83c3")
+			(uuid "a4cfb388-1898-4356-94e0-50e9f42d06cb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR056")
 					(unit 1)
 				)
@@ -17785,7 +17785,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "15d6768d-f218-4d81-b73b-f288475e2de6")
+		(uuid "648a0c89-d168-4a32-939c-df63b6f95e51")
 		(property "Reference" "C109"
 			(at 260.188 164.1 0)
 			(effects
@@ -17839,14 +17839,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8eed43d-e03b-4157-a9c3-d09da30c8d4d")
+			(uuid "289255dd-604f-45ec-97a0-d100805bafe1")
 		)
 		(pin "2"
-			(uuid "f8d2e33d-22eb-41f7-a65a-28a649b3ef55")
+			(uuid "c4ad5de7-4653-4fa9-814c-dcca8db35aa0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C109")
 					(unit 1)
 				)
@@ -17861,7 +17861,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5e831e4d-c5f9-4d0a-905f-28bc7ab01372")
+		(uuid "533dcf2c-20b7-466c-8c30-e36f5d5506f1")
 		(property "Reference" "#PWR057"
 			(at 255.27 158.75 0)
 			(hide yes)
@@ -17907,11 +17907,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "bad7504a-328c-489c-b7de-1de8ffda17f9")
+			(uuid "bf102825-fc8b-4887-8ac6-587b9ccca896")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR057")
 					(unit 1)
 				)
@@ -17926,7 +17926,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b293c325-f672-4ea2-8be4-010119437e5b")
+		(uuid "885c1919-157f-4695-858c-2245f919dc57")
 		(property "Reference" "#PWR058"
 			(at 255.27 171.45 0)
 			(hide yes)
@@ -17973,11 +17973,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "a600d9cd-8b67-4cc4-ac83-dc992dab69fa")
+			(uuid "9ba50499-f51e-42d4-b289-3534c3d13ffb")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR058")
 					(unit 1)
 				)
@@ -17992,7 +17992,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5a591db7-3891-4bdd-ac21-426ccc3582db")
+		(uuid "96eef098-a2c9-4cae-9aca-3ca5f4fe0d1e")
 		(property "Reference" "C110"
 			(at 272.888 164.1 0)
 			(effects
@@ -18046,14 +18046,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a25ca4c-2886-432e-9f3e-de0eca2b4e26")
+			(uuid "028c2636-ccab-4a92-b507-e559e7fef433")
 		)
 		(pin "2"
-			(uuid "2de0def1-6c09-4a21-abad-3498db902bab")
+			(uuid "6867771b-f9f9-4074-a484-ef8b57bbe137")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C110")
 					(unit 1)
 				)
@@ -18068,7 +18068,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a23ed1c7-5c25-44c4-b681-61f71d957173")
+		(uuid "6d722cfd-7612-4a44-b5b7-852fdd41f68a")
 		(property "Reference" "#PWR059"
 			(at 267.97 158.75 0)
 			(hide yes)
@@ -18114,11 +18114,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f385a40-03f4-4def-bc70-f0aa1dd0ef54")
+			(uuid "ffe4d053-dd13-4cc1-bf35-e0fe9a1a7ad4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR059")
 					(unit 1)
 				)
@@ -18133,7 +18133,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "dcded7b4-c803-4cba-8d39-13ffd04ad757")
+		(uuid "e2426cc8-a10c-47a1-b040-4d4b1b868570")
 		(property "Reference" "#PWR060"
 			(at 267.97 171.45 0)
 			(hide yes)
@@ -18180,11 +18180,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "505dafb3-5de1-43d4-892d-efe3358c91f0")
+			(uuid "119a55b0-7353-44cf-8908-67e18a40a473")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR060")
 					(unit 1)
 				)
@@ -18199,7 +18199,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa18bba7-fb22-4af1-9337-b771b96f953f")
+		(uuid "386c78bd-5c0f-429e-99df-4a860027a6dc")
 		(property "Reference" "C111"
 			(at 377.028 164.1 0)
 			(effects
@@ -18253,14 +18253,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "00312603-5c9b-4d83-9b1c-50f9c0d2857b")
+			(uuid "9df00455-66f8-421b-af76-097c97b58ce0")
 		)
 		(pin "2"
-			(uuid "cb3cfce8-1b16-4ec5-8cec-04843a9cd316")
+			(uuid "54d534a6-098c-4b5d-b8ec-40325a92cdc0")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C111")
 					(unit 1)
 				)
@@ -18275,7 +18275,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e49c1667-87be-4ccb-8866-5b443dfe7ab0")
+		(uuid "30acf120-5061-480b-b214-52fec2bb9c3c")
 		(property "Reference" "#PWR061"
 			(at 372.11 158.75 0)
 			(hide yes)
@@ -18321,11 +18321,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ea982c4b-17d5-4a84-8aed-43aa43199c22")
+			(uuid "fa8e4e1c-8714-4ec2-8e58-15637963ba57")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR061")
 					(unit 1)
 				)
@@ -18340,7 +18340,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "13a80b2d-2bbb-49f7-ac9d-803eb79c698c")
+		(uuid "b33a09a3-171a-4928-8a5c-48645d96dc16")
 		(property "Reference" "#PWR062"
 			(at 372.11 171.45 0)
 			(hide yes)
@@ -18387,11 +18387,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0378099-da35-451d-b108-c95391623865")
+			(uuid "a5cfe4dc-1aab-4615-bf1b-e1183576aa26")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR062")
 					(unit 1)
 				)
@@ -18406,7 +18406,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c1c81ec-6c96-4515-ab8d-e9a4146dce24")
+		(uuid "87b6e6c4-9d00-4489-a5da-065d2a4f0aa9")
 		(property "Reference" "C112"
 			(at 390.998 164.1 0)
 			(effects
@@ -18460,14 +18460,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "eb9d4ced-3e9e-4aef-a5d0-666f8986c6a3")
+			(uuid "8ed41718-7886-4d12-a649-794b3948cf05")
 		)
 		(pin "2"
-			(uuid "9b6c11e0-84ab-4d42-98a9-28798c21c583")
+			(uuid "35fcbee5-490c-4103-b3a3-b9282962603b")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C112")
 					(unit 1)
 				)
@@ -18482,7 +18482,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5aa48376-62ed-4da6-9f68-181fe26ea225")
+		(uuid "d4ba1bc3-77e4-4171-9716-fb81c27c8f35")
 		(property "Reference" "#PWR063"
 			(at 386.08 158.75 0)
 			(hide yes)
@@ -18528,11 +18528,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "62336a1a-1d54-4c33-8d5f-df861780ece0")
+			(uuid "ed60116d-afd3-4c0c-967b-fe846564831c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR063")
 					(unit 1)
 				)
@@ -18547,7 +18547,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "93444b41-4651-43bb-8090-b5f3bd4c247e")
+		(uuid "80bf809a-9dc8-4e7f-8d82-8d7fa892c895")
 		(property "Reference" "#PWR064"
 			(at 386.08 171.45 0)
 			(hide yes)
@@ -18594,11 +18594,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "0e48cda3-1593-41f5-a75e-a77a0d54256c")
+			(uuid "c7fe8dd2-9da6-4a97-9ad9-8f05927777b3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR064")
 					(unit 1)
 				)
@@ -18614,7 +18614,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ec8f5b44-d0c4-4941-b078-dc15620a8530")
+		(uuid "af4728f9-0a92-4a82-82a5-78162f073214")
 		(property "Reference" "Q103"
 			(at 267.716 198.825 90)
 			(effects
@@ -18668,17 +18668,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "210e2155-eeb9-4a15-8b36-40081f5a4e6d")
+			(uuid "f9acce41-47c6-4a59-a52d-8185e7cdca2e")
 		)
 		(pin "2"
-			(uuid "5b4e9c27-da2e-4d52-a679-c801c20684e8")
+			(uuid "e4421a29-d0ca-48f7-bd09-03177a400652")
 		)
 		(pin "3"
-			(uuid "b0acf2ee-ba0c-4d0a-836d-9ec981dcb72f")
+			(uuid "65bd8963-10d8-471e-9ca0-e4b836accfa5")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q103")
 					(unit 1)
 				)
@@ -18693,7 +18693,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b3095389-1769-4c78-a4e6-3a3da5b7cb3a")
+		(uuid "826ab8d6-d1a2-4fa9-8926-ba08c863aac5")
 		(property "Reference" "#PWR065"
 			(at 251.46 201.93 0)
 			(hide yes)
@@ -18739,11 +18739,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "4dd3808c-6e07-49d9-a0bd-4fe86524700b")
+			(uuid "02f83962-7a6d-474d-abcc-5869b89569d4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR065")
 					(unit 1)
 				)
@@ -18758,7 +18758,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "19af41b1-99f0-4208-9161-10d7d67e82b4")
+		(uuid "622da3e5-d452-4a29-bbe7-4650b9c2ebfd")
 		(property "Reference" "#PWR066"
 			(at 285.75 201.93 0)
 			(hide yes)
@@ -18804,11 +18804,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe8dc0eb-14f6-4bfa-8afd-9effb0b92239")
+			(uuid "aa51f93f-28b4-451f-8e4c-489c86096943")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR066")
 					(unit 1)
 				)
@@ -18823,7 +18823,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4e4ec47f-3a63-40dd-a131-fc1b32ba76eb")
+		(uuid "b12fe324-6250-406a-97f9-c556e35d672e")
 		(property "Reference" "#FLG05"
 			(at 292.1 201.93 0)
 			(hide yes)
@@ -18869,11 +18869,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "316e160a-57a1-4c79-8af9-62019e8dba38")
+			(uuid "b36f70d9-18ac-43c1-b7d9-2119ed4aa142")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG05")
 					(unit 1)
 				)
@@ -18888,7 +18888,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "51363639-7133-4ccc-a493-d495d86a7787")
+		(uuid "d5480060-0106-43f6-9cf7-4ba84fdd25ff")
 		(property "Reference" "R115"
 			(at 260.442 207.28 0)
 			(effects
@@ -18942,14 +18942,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "07990a09-744e-46ff-bb0d-bdfa1628076e")
+			(uuid "ae893034-098b-4843-838c-5060ba0e021d")
 		)
 		(pin "2"
-			(uuid "76dcc994-8593-4ca2-992b-d4eec3531cba")
+			(uuid "33b08ee3-9159-4953-abe7-14db4501e56f")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R115")
 					(unit 1)
 				)
@@ -18964,7 +18964,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6d958cc2-0bc8-4c66-bfbd-5fd1f4e60c39")
+		(uuid "e7759d26-8865-4372-bc9a-9b52cef42720")
 		(property "Reference" "Q104"
 			(at 265.176 217.24 0)
 			(effects
@@ -19018,17 +19018,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "450a8b17-cbd2-4cf4-a9d8-b76cdd2e0dc6")
+			(uuid "2bba68d6-c18d-48e3-a230-2208b981887c")
 		)
 		(pin "2"
-			(uuid "7b7d054f-669c-463f-90a3-c723b2027235")
+			(uuid "74f3a9c5-b820-4de6-baab-33e259801d88")
 		)
 		(pin "3"
-			(uuid "97488dc9-d1c1-49c2-a60b-8f7cd5bfad67")
+			(uuid "6ea05741-421f-4fdc-9a6a-6d8690e61efe")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q104")
 					(unit 1)
 				)
@@ -19043,7 +19043,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "166027a0-3ea5-4265-aa09-51b7718628cb")
+		(uuid "e82d5c23-3608-48e5-838f-3052d0d94683")
 		(property "Reference" "#PWR067"
 			(at 270.51 231.14 0)
 			(hide yes)
@@ -19090,11 +19090,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c0ee3d0-8b98-4d57-821a-d4402c7b74b8")
+			(uuid "dd30b0ac-9660-4e41-a2cd-53d8c75f6f48")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR067")
 					(unit 1)
 				)
@@ -19109,7 +19109,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6c4e3504-ab12-4a3a-ae08-c809aa7f7599")
+		(uuid "a454e7b3-e432-482a-a41e-9338d39c976e")
 		(property "Reference" "R116"
 			(at 260.442 230.14 0)
 			(effects
@@ -19163,14 +19163,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "e889c47e-0bdb-41de-b9e1-bd6da9b66863")
+			(uuid "f7493f87-5858-413e-a3ef-dfab789fc15b")
 		)
 		(pin "2"
-			(uuid "31ecd318-6563-4920-9395-d26c45b6e553")
+			(uuid "a88a0891-95ec-4f9a-8f67-f404e00dc1a2")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R116")
 					(unit 1)
 				)
@@ -19185,7 +19185,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2e875dfb-945e-4b2a-a7b1-bbdfdeb4e952")
+		(uuid "9e3d5fc3-05ed-4c58-b97b-3c198cccb410")
 		(property "Reference" "#PWR068"
 			(at 256.54 237.49 0)
 			(hide yes)
@@ -19232,11 +19232,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "13da68f4-d707-4973-a2a9-7eb78e5a1131")
+			(uuid "146d1e02-422a-4dc9-a577-c644b043e46e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR068")
 					(unit 1)
 				)
@@ -19252,7 +19252,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "63a43f37-afbb-4b08-81b2-aed8aac5e0c2")
+		(uuid "9512d67c-dbca-49d6-98fa-a98d43fe3b4c")
 		(property "Reference" "Q105"
 			(at 319.786 198.825 90)
 			(effects
@@ -19306,17 +19306,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "f690118d-db70-49a4-96a0-678db176ac9d")
+			(uuid "46369e3f-2788-4997-920b-3fbdf22353bd")
 		)
 		(pin "2"
-			(uuid "8da264a4-54e4-4688-b463-4b8d8080d746")
+			(uuid "32264c66-036f-4a1e-9a8a-1d03f90182ed")
 		)
 		(pin "3"
-			(uuid "0f16fda7-7bcc-4b14-8682-0d1eadf37995")
+			(uuid "9be9f586-1c0e-4613-a8e5-989b53d39a0a")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q105")
 					(unit 1)
 				)
@@ -19331,7 +19331,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1536685e-7ba3-4e56-bcce-9ee58c85b6bb")
+		(uuid "c96779c9-245a-4ac7-a4aa-a15249cdf19f")
 		(property "Reference" "#PWR069"
 			(at 303.53 201.93 0)
 			(hide yes)
@@ -19377,11 +19377,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "df68aa6a-8b9a-4eb0-a3af-6a575f699c4f")
+			(uuid "21ebc58b-de79-4209-a3cc-987a21d1cf18")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR069")
 					(unit 1)
 				)
@@ -19396,7 +19396,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5ced031d-f3f5-492e-9c8d-c128adf0732a")
+		(uuid "b0f36e5b-03a3-4540-9f8a-c9d8f37dcef7")
 		(property "Reference" "#PWR070"
 			(at 337.82 201.93 0)
 			(hide yes)
@@ -19442,11 +19442,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "9bfb74a5-2460-4b9c-abb3-cbe2e7d7f916")
+			(uuid "54e548f2-30b4-4e2c-b624-c7631588604e")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR070")
 					(unit 1)
 				)
@@ -19461,7 +19461,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e78d5ca3-2678-4a08-875e-78920f2929fd")
+		(uuid "de24c335-b1af-4cf4-8659-72723c413a3b")
 		(property "Reference" "#FLG06"
 			(at 344.17 201.93 0)
 			(hide yes)
@@ -19507,11 +19507,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "1da65e44-0699-4dd8-91a0-00bb6a95f6e2")
+			(uuid "22effc36-bc9b-4141-b29a-25eecc32cd40")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG06")
 					(unit 1)
 				)
@@ -19526,7 +19526,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "072b7f36-b0df-441e-a667-f7bc0c71c7bf")
+		(uuid "2b9ed9af-9df6-47d5-81a4-42ef88a2740a")
 		(property "Reference" "R117"
 			(at 312.512 207.28 0)
 			(effects
@@ -19580,14 +19580,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "4db747a4-a9ac-49a1-88a9-88200110fbb9")
+			(uuid "075956b0-be8e-4f14-baf2-0a930001569d")
 		)
 		(pin "2"
-			(uuid "8a99a446-7339-4d4e-858e-403783c3eb23")
+			(uuid "efed76e7-3e0a-482d-8d9c-68726ae746df")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R117")
 					(unit 1)
 				)
@@ -19602,7 +19602,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c8bf8431-8994-412e-82b7-a42693a2b529")
+		(uuid "74b457b3-a024-4e09-a417-3eec83953eb6")
 		(property "Reference" "Q106"
 			(at 317.246 217.24 0)
 			(effects
@@ -19656,17 +19656,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2d53e9c-1a50-4fde-aa04-ebd6c353b9a7")
+			(uuid "cc470a42-fc7e-4baf-b715-8fb51b34eab1")
 		)
 		(pin "2"
-			(uuid "24e2dca0-27ae-4341-b5f5-2f76bea0d7b6")
+			(uuid "7da4b67e-ed0e-4c6b-9861-127430983108")
 		)
 		(pin "3"
-			(uuid "29b271cc-d81b-4164-90b1-cf12fbfec8ff")
+			(uuid "a15b5c7e-fc28-4ece-8f23-2a7079ec924d")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q106")
 					(unit 1)
 				)
@@ -19681,7 +19681,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ad5bc862-b344-4228-8497-021b1cc7b26b")
+		(uuid "2d1580b1-69eb-41b8-845e-afdb3f22e6f8")
 		(property "Reference" "#PWR071"
 			(at 322.58 231.14 0)
 			(hide yes)
@@ -19728,11 +19728,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "72574764-e6d0-45da-b7c5-33823f369485")
+			(uuid "9d446654-4f79-4b2d-b42d-094027947598")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR071")
 					(unit 1)
 				)
@@ -19747,7 +19747,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4c753445-42d1-418b-86f5-7b583ad53c0a")
+		(uuid "07f687c7-0cc9-4a2e-b408-5ca546ae2b1f")
 		(property "Reference" "R118"
 			(at 312.512 230.14 0)
 			(effects
@@ -19801,14 +19801,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "76d581d8-357e-47dc-9b85-d28589b7fa8d")
+			(uuid "5836f404-2660-4996-af9b-fc3ae2a04c35")
 		)
 		(pin "2"
-			(uuid "37417c8b-5fef-462e-8540-4a474bb23d33")
+			(uuid "2e1dc154-b121-403d-a4fd-796a8112da0c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R118")
 					(unit 1)
 				)
@@ -19823,7 +19823,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "59da6212-4ebb-405c-a4c0-9df1be978bc3")
+		(uuid "2ee2e468-32ce-4575-9305-eaf202036a81")
 		(property "Reference" "#PWR072"
 			(at 308.61 237.49 0)
 			(hide yes)
@@ -19870,11 +19870,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "ad39573b-5502-400e-82ab-4095dafd5486")
+			(uuid "1c790c4c-cdd5-4336-8faf-2d8b7200374c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR072")
 					(unit 1)
 				)
@@ -19890,7 +19890,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8fa544c8-52a5-47ca-bae0-5e0a07a5c33b")
+		(uuid "354f542e-7ae2-4d20-9bae-08ef4e24fd66")
 		(property "Reference" "Q107"
 			(at 370.586 198.825 90)
 			(effects
@@ -19944,17 +19944,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "3e725ae8-0d94-4516-8da9-82f499e01856")
+			(uuid "62965370-9006-4935-ac0f-bb66e6cc127b")
 		)
 		(pin "2"
-			(uuid "3a3db09c-4636-495f-b8e2-6f75cefe781b")
+			(uuid "ee1a3d12-f43a-4c32-a532-a0c1fa8c1dcd")
 		)
 		(pin "3"
-			(uuid "d0366c99-97d8-4609-81fa-7854b0ece357")
+			(uuid "9e6ab44f-e644-4597-b739-2aac0b604e03")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q107")
 					(unit 1)
 				)
@@ -19969,7 +19969,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cd56161f-8668-4123-95cb-10ff3a006172")
+		(uuid "140b2684-6691-40b9-ad6b-9737b11ec21c")
 		(property "Reference" "#PWR073"
 			(at 355.6 201.93 0)
 			(hide yes)
@@ -20015,11 +20015,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "dc027dd4-f683-4757-aaef-71fc62662c21")
+			(uuid "9280800d-c008-47d1-80a9-d93046576cbc")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR073")
 					(unit 1)
 				)
@@ -20034,7 +20034,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "024c294d-314c-4d01-a836-8efed0f95152")
+		(uuid "36b2afe0-dd76-4f71-bb3a-15090457c4d8")
 		(property "Reference" "#PWR074"
 			(at 389.89 201.93 0)
 			(hide yes)
@@ -20080,11 +20080,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ec845a3-1a30-49b6-9c10-bb89d0ac353c")
+			(uuid "e8f02f23-1ddc-4f1d-8888-22bfdca9a00c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR074")
 					(unit 1)
 				)
@@ -20099,7 +20099,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "34fb7275-9b66-45ce-bc03-b5538d862a3c")
+		(uuid "6e41ab15-a6e1-4860-9a76-2b4a951e6c6f")
 		(property "Reference" "#FLG07"
 			(at 396.24 201.93 0)
 			(hide yes)
@@ -20145,11 +20145,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "b1359a2a-7086-4147-be7a-86cd3d1a8ec9")
+			(uuid "39c3bd05-54f1-48d5-8765-fed664c3c599")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG07")
 					(unit 1)
 				)
@@ -20164,7 +20164,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "51a5c1db-9e47-4913-863a-08958754292d")
+		(uuid "b03be44b-2439-4c06-96fa-112b7ee04629")
 		(property "Reference" "R119"
 			(at 363.312 207.28 0)
 			(effects
@@ -20218,14 +20218,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "5ba1ce7d-74db-4656-97a5-9ab419858ca6")
+			(uuid "82bcb43e-19bb-43ae-8c34-77ce411141a1")
 		)
 		(pin "2"
-			(uuid "21cd8511-c461-41d7-8b4e-76c28b105bbd")
+			(uuid "b08444fb-3951-48a5-b315-075792f33b30")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R119")
 					(unit 1)
 				)
@@ -20240,7 +20240,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f54913d8-ea79-4b85-8c85-f7dbf099888d")
+		(uuid "8ee22c0e-8fcd-4719-b118-e2e2537c2497")
 		(property "Reference" "R122"
 			(at 377.282 221.25 0)
 			(effects
@@ -20294,14 +20294,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "c0c44fff-48b9-4e18-872f-4222bcc67e75")
+			(uuid "2c24d455-f84d-4ab4-9033-e9c82b3484ee")
 		)
 		(pin "2"
-			(uuid "691f4636-8820-47fb-9242-cc3e65b4f1d3")
+			(uuid "6efa0fdf-122c-4265-a768-45acf00aced3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R122")
 					(unit 1)
 				)
@@ -20316,7 +20316,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "2845dc56-8963-420b-a1e6-7473667813f0")
+		(uuid "d159eca0-a374-4d92-ab60-b23a870e6374")
 		(property "Reference" "C114"
 			(at 366.868 221.25 0)
 			(effects
@@ -20370,14 +20370,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c865542-c329-47f4-bc27-4914e11094de")
+			(uuid "25369583-777e-41f5-979d-44d47bc42622")
 		)
 		(pin "2"
-			(uuid "b08d5439-c1de-4066-899d-dc05b7da6cca")
+			(uuid "59f98385-431f-42eb-a588-dbaf33c75dc4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "C114")
 					(unit 1)
 				)
@@ -20392,7 +20392,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4d999270-43f0-441c-80d3-e0c722423562")
+		(uuid "5dbc8558-8017-49e2-89dc-2b6754e3f222")
 		(property "Reference" "Q108"
 			(at 368.046 226.13 0)
 			(effects
@@ -20446,17 +20446,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b43f701-e59b-4e87-9b8c-c2745328f52e")
+			(uuid "59e507a0-4db5-4965-ba4a-c34e2ac1b5cb")
 		)
 		(pin "2"
-			(uuid "c852ae49-c903-43e1-9787-9dfb184b2c37")
+			(uuid "1c57fba3-f4c2-411f-ae78-9831f1ba7b51")
 		)
 		(pin "3"
-			(uuid "f42ed944-a0ff-46cf-ab49-e82209e94d94")
+			(uuid "49290183-4e04-447c-99cf-c68beb3a52b5")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "Q108")
 					(unit 1)
 				)
@@ -20471,7 +20471,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "614384e4-c401-416d-aa40-6bb94cc6dfe1")
+		(uuid "255dc4c8-1953-4ae0-8b6c-1e85529ef6c6")
 		(property "Reference" "#PWR075"
 			(at 373.38 240.03 0)
 			(hide yes)
@@ -20518,11 +20518,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "27587fe7-8973-4952-a4ca-d627a6e9e69b")
+			(uuid "143f6f02-d76a-4357-b5df-82a3015c2b3c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR075")
 					(unit 1)
 				)
@@ -20537,7 +20537,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "36336edc-c8ce-4633-bacc-0b12a2442b19")
+		(uuid "19d4a1af-f7eb-4523-b55d-766b013de478")
 		(property "Reference" "R120"
 			(at 363.312 239.03 0)
 			(effects
@@ -20591,14 +20591,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef33aeb5-a9c7-47b9-9da1-4f6b4a5f3357")
+			(uuid "01dba2b3-16ef-4123-9082-0b2531d3537a")
 		)
 		(pin "2"
-			(uuid "28f1366c-b565-455b-9f4c-6b9f3739a7ab")
+			(uuid "810bb442-2668-42c1-ba50-81a9d5ef9210")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "R120")
 					(unit 1)
 				)
@@ -20613,7 +20613,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1026217f-806e-49c5-af59-8b3089cea874")
+		(uuid "5f37c065-63e8-4a7d-a1d3-5f6b2a8933a8")
 		(property "Reference" "#PWR076"
 			(at 359.41 246.38 0)
 			(hide yes)
@@ -20660,11 +20660,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "83c0fac1-5938-4b91-9c31-9f3597f296db")
+			(uuid "6ace4acf-f0e8-4d39-b382-375d4c35f0d4")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR076")
 					(unit 1)
 				)
@@ -20679,7 +20679,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7e64ef46-c279-4f94-9233-d3b52042571c")
+		(uuid "63c39467-334c-4fd2-8116-042e11a6ba39")
 		(property "Reference" "#FLG08"
 			(at 250.19 261.62 0)
 			(hide yes)
@@ -20725,11 +20725,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c191e93-0051-40da-bb7a-efdbb17f464e")
+			(uuid "5e8dc998-ab23-44a3-b2c0-1a08eac9a85c")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#FLG08")
 					(unit 1)
 				)
@@ -20744,7 +20744,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b426f3db-2448-43a5-9703-c196c9b6129f")
+		(uuid "6a08d3e7-0424-4606-920a-44e21a7140cf")
 		(property "Reference" "#PWR077"
 			(at 250.19 265.43 0)
 			(hide yes)
@@ -20791,11 +20791,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "6b7a11ad-d7b5-41c8-b41c-3056b65abdfb")
+			(uuid "d8c55028-01df-44fa-9365-5effb12797d3")
 		)
 		(instances
 			(project "LazerGamebox"
-				(path "/d3191818-98c1-4acb-a19c-9433d83eba7d/7b157188-6768-4d2b-baec-219cf2d9e5a8"
+				(path "/336127ae-e2c7-4639-9703-e6168b17e9e0/19b1e656-4400-4d72-aa7e-1be839063b6a"
 					(reference "#PWR077")
 					(unit 1)
 				)

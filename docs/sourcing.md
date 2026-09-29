@@ -46,6 +46,9 @@ switches, red LEDs. TP4056 C16581 is "Preferred" (no fee).
 | Maxim MAX17048G+T10 gauge (U106) | C2682616 | 24 759 | Extended, TDFN-8 2x2, the most expensive small part (about 1.9 USD) |
 | Uni-Royal 2.2 k, Samsung 47 nF 0603 | C4190, C1622 | Basic | STAT LED, bootstrap |
 | second MYOUNG 18650 holder (BT102) | C2988620 | 4 430 | two per board now |
+| HanElectricity 2541WV-2x10P header (J602) | C5383109 | 4 758 | Extended, THT; any 2.54 mm 2x10 male header fits |
+| AOS AO3400A (Q603, Q604) | C20917 | 1 013 098 | Basic |
+| second TCA9555PWR (U602) | C465732 | 39 178 | Extended, already on the BOM |
 
 ## Library provenance (symbols, footprints, STEP)
 

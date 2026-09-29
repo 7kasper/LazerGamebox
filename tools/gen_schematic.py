@@ -720,6 +720,65 @@ def gen_io(sh):
     sh.noconn(prev)
     sh.text("LEDs run from VBAT_SW (3.0-4.2 V); data is 3.3 V, fine for WS2812B-V6.", (278, 112), size=1.27)
 
+    # ---------------- Expansion: second expander, header, two power drivers ----------------
+    sh.box(276, 133, 405, 252, "EXPANSION (TCA9555 #2 at 0x21, 2x10 header, 2 drivers)")
+    x2 = sh.symbol("Interface_Expansion:TCA9555PWR", "U602", "TCA9555PWR", (310, 178),
+                   footprint="Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm", lcsc="C465732",
+                   description="TI TCA9555PWR 16-bit I2C GPIO expander with interrupt")
+    for i in range(10):
+        sh.pin_label(x2, f"P0{i}" if i < 8 else f"P1{i - 8}", f"EXP{i}", length=5.08, kind="local")
+    sh.pin_label(x2, "P12", "DRV1", length=5.08, kind="local")
+    sh.pin_label(x2, "P13", "DRV2", length=5.08, kind="local")
+    for n in ("P14", "P15", "P16", "P17"):
+        sh.pin_nc(x2, n)                                    # spare, internal 100k pull-ups keep them defined
+    sh.pin_label(x2, "SCL", "SCL", length=2.54, kind="global", shape="passive")
+    sh.pin_label(x2, "SDA", "SDA", length=2.54, kind="global", shape="passive")
+    sh.pin_label(x2, "1", "EXP_INT", length=2.54, kind="global", shape="passive")   # open drain, shares the 10k on the mcu sheet
+    sh.pin_power(x2, "A0", "+3V3", length=2.54)             # address 0x21
+    sh.pin_power(x2, "A1", G, length=2.54)
+    sh.pin_power(x2, "A2", G, length=2.54)
+    sh.pin_power(x2, "VCC", "+3V3", length=3.81)
+    sh.pin_power(x2, "GND", G, length=2.54)
+    cap_between(sh, "C611", "100nF", 345, 148, "+3V3")
+    hd = sh.symbol("Connector_Generic:Conn_02x10_Odd_Even", "J602", "EXPANSION 2x10", (372, 178),
+                   footprint="Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical", lcsc="C5383109",
+                   description="HanElectricity 2541WV-2x10P 2.54 mm pin header, THT")
+    hmap = {1: "GND", 2: "+3V3", 3: "VBAT_SW", 4: "VSYS", 5: "SDA", 6: "SCL", 17: "OUT1", 18: "OUT2", 19: "GND", 20: "GND"}
+    for i in range(10):
+        hmap[7 + i] = f"EXP{i}"
+    for pin, net in hmap.items():
+        if net in ("GND", "+3V3", "VBAT_SW", "VSYS"):
+            sh.pin_power(hd, str(pin), net, length=5.08, lib=lib_for(net))
+        elif net in ("SDA", "SCL"):
+            sh.pin_label(hd, str(pin), net, length=5.08, kind="global", shape="passive")
+        else:
+            sh.pin_label(hd, str(pin), net, length=5.08, kind="local")
+    # low-side drivers: expander line -> AO3400A -> OUTx, load returns to VBAT_SW (or +3V3), SS34 flyback to VBAT_SW
+    for k, (qref, rref, dref, x) in enumerate((("Q603", "R609", "D605", 350), ("Q604", "R610", "D606", 386)), start=1):
+        q = sh.symbol("Transistor_FET:AO3400A", qref, "AO3400A", (x, 228), footprint="Package_TO_SOT_SMD:SOT-23", lcsc="C20917",
+                      description="AOS AO3400A N-MOSFET 5.7 A, 30 mR, low-side driver")
+        g = q.pin("G")
+        sh.wire(g, (g[0] - 8, g[1]))
+        sh.label(f"DRV{k}", (g[0] - 8, g[1]), 180)
+        r = R(sh, rref, "10k", (g[0] - 4, g[1] + 7))
+        r.ref_pos = (g[0] - 5.6, g[1] + 6, "right"); r.val_pos = (g[0] - 5.6, g[1] + 8, "right")
+        sh.wire(r.pin("1"), (g[0] - 4, g[1]))
+        sh.pin_power(r, "2", G, length=2.54)
+        sh.pin_power(q, "S", G, length=2.54)
+        d = q.pin("D")
+        sh.wire(d, (d[0], d[1] - 4), (d[0] + 10, d[1] - 4))
+        sh.label(f"OUT{k}", (d[0] + 10, d[1] - 4), 0)
+        fb = sh.symbol("Device:D_Schottky", dref, "SS34", (d[0] + 6, d[1] - 11), rot=270, footprint="Diode_SMD:D_SMA", lcsc="C8678")
+        sh.wire(fb.pin("A"), (d[0] + 6, d[1] - 4))                     # anode at the bottom, on the OUT wire
+        sh.pin_power(fb, "K", "VBAT_SW", length=3.81, lib="LazerGamebox")
+    sh.text("EXP0-9: 3.3 V GPIO, 10 mA sink, 25 mA source,\n"
+            "no PWM, about 1 ms latency.\n"
+            "OUT1/OUT2: open drain to GND, 2 A each; loads\n"
+            "return to VBAT_SW or +3V3. Gates pulled down,\n"
+            "off until firmware enables them.\n"
+            "I2C on the header for more gadgets.",
+            (278, 222), size=1.1)
+
     sh.box(12, 133, 268, 215, "IR: 38 kHz RECEIVER and 940 nm HIGH-POWER EMITTER (laser-tag style)")
     ir = sh.symbol("LazerGamebox:IRM-H638T", "U601", "IRM-H638T", (70, 180), footprint="LazerGamebox:Everlight_IRM-H6xxT",
                    lcsc="C91447")

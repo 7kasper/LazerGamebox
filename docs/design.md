@@ -33,6 +33,7 @@ TARGET_BOM_EUR = 40
 | Charging | faster | PROG 1.1k = 1 A (1.2k is 900 mA per the TP4056 table). Superseded on 2026-09-29, see next rows |
 | Cells (2026-09-29) | two 18650 in parallel for a full day of play | BT101 + BT102 on one 1S rail; nothing else changes electrically. About 4000 mAh, 3500 usable |
 | Charger (2026-09-29) | negotiated 2 A USB-C charge, integrated battery management | BQ25601 (switching, NVDC power path, ship mode, I2C 0x6B) replaces TP4056, SS34 and the AO3401A load-share FET. HUSB238 PD sink (I2C 0x08) reports the source's 5 V current so firmware sets the input limit; 5 V only, never 9 V. MAX17048 fuel gauge (I2C 0x36) replaces the VBAT divider, GPIO39 is now free. New PWR button on QON (wake from ship mode). Charger INT + gauge ALRT go to GPIO39 (PWR_INT, RTC wake); the expander keeps GPS 1PPS |
+| Expansion (2026-09-29) | spare IO wanted for game gadgets | second TCA9555 (U602, 0x21) with EXP0-9 on a 2x10 header J602 (GND, +3V3, VBAT_SW, VSYS, SDA, SCL, EXP0-9, OUT1, OUT2, GND), two AO3400A low-side drivers with SS34 flyback for motors or solenoids up to 2 A; INT shared with the first expander on GPIO32 |
 | Datasheet review (2026-09-29) | all findings applied, see docs/review.md | 22 component changes: PTT pull-up, RADIO_EN pull-down, boost and VBAT_SW fed from VSYS, series resistors on UART lines into switched modules, auto-reset polarity fixed, LIS3DH SA0 tied hard, IR drive limits, soft start, feed-forward cap, GPS pi pads |
 | Flash | 16 MB | ESP32-WROOM-32E-N16 |
 | Board sides | battery and most parts on the back, screen/buttons/pot/LEDs/IR on the front | two-sided SMT assembly; the 5 THT parts (speaker, SMA, 2 antennas, pot) can be JLC-assembled or hand-soldered |
@@ -328,6 +329,10 @@ through 20 R with an SS8050 PWM sink on LCD_BL), 10 k pot on LCD_3V3 with 10 k /
 GPIO34, 3 buttons to the expander with 100 nF each, 3x WS2812B-2020 on VBAT_SW with 100 nF
 each and 330 R on data, IRM-H638T on LCD_3V3 with 100 R + 4.7 uF and 10 k pull-up on OUT to
 GPIO35, VSMY2940G from VBAT_SW through 12 R with an SS8050 driver (330 R base) on GPIO26.
+Expansion: second TCA9555 at 0x21 (A0 high, INT wire-ORed onto EXP_INT, 100 nF), P00-P11 as
+EXP0-9 plus DRV1/DRV2, P14-P17 spare; 2x10 header J602: 1 GND, 2 +3V3, 3 VBAT_SW, 4 VSYS,
+5 SDA, 6 SCL, 7-16 EXP0-9, 17 OUT1, 18 OUT2, 19-20 GND; OUT1/OUT2 are AO3400A low-side
+switches (10 k gate pull-down, SS34 flyback to VBAT_SW) driven by DRV1/DRV2.
 
 Firmware rules that the hardware relies on: configure the TCA9555 first thing after boot
 (RADIO_EN, AUX_EN, GPS_EN, LCD_EN default low through the pull-downs until then); AUX_EN on
@@ -354,14 +359,15 @@ SPI is active; IR carrier at 38 kHz and 50 % duty or less, bursts under 100 ms; 
 | Charger and power path BQ25601 + L, HUSB238 PD sink, MAX17048 gauge, DW01A, FS8205A, buck | 3.75 | 3.45 |
 | NS4150B, TS5A3159, TCA9555 | 1.11 | 1.02 |
 | SMA, 868 spring, pot, 5 buttons, 3x WS2812, IRM, IR LED, 2x 470 uF | 1.88 | 1.73 |
-| Discretes (FETs, NPN) and passives (about 120 pcs) | 1.20 | 1.10 |
+| Discretes (FETs, NPN) and passives (about 130 pcs) | 1.30 | 1.20 |
+| Expansion: second TCA9555, 2x10 header, 2x AO3400A, 2x SS34 | 0.95 | 0.87 |
 | Review-round additions: N16 instead of N4 (+1.21), boost TPS61023 + L (+0.31), high-power IR LED (+0.73), LDO (+0.14) | 2.4 | 2.2 |
-| **Parts subtotal** | **39.7** | **36.5** |
+| **Parts subtotal** | **40.8** | **37.5** |
 | Extended-part loading fees: about 31 part numbers x 3 USD / 25 boards | 3.7 | 3.4 |
 | SMT assembly (about 330 joints x 0.0017 USD + 25 USD setup / 25) | 1.6 | 1.5 |
 | THT assembly (speaker, 3 antennas and SMA, pot): about 10 joints, setup about 35 USD / 25 | 1.8 | 1.7 |
 | PCB, 2 layer, 70 x 100 mm, 1.6 mm, ENIG (about 55 USD / 25) | 2.2 | 2.0 |
-| **Estimated total per unit** | **about 49** | **about 45** |
+| **Estimated total per unit** | **about 50** | **about 46** |
 
 About 5 EUR over the 40 EUR target after the 2026-09-29 power decision (second cell holder 1.2, charger/PD/gauge
 stack 3.3 plus one more loading fee). The SA818S-U alone is 20 % of it. The cellular option adds about 14 USD when
